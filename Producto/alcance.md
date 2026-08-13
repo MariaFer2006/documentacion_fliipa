@@ -36,7 +36,7 @@ Delimitar el alcance del MVP para validar el modelo de crédito empresarial basa
 
 # Contexto
 
-Fliipa es una plataforma de crédito rotativo B2B orientada a micro y pequeñas empresas, especialmente tenderos y comerciantes, diseñada para facilitar el acceso al crédito formal mediante el análisis de información transaccional y comportamiento comercial.
+Fliipa es una plataforma de crédito rotativo B2B orientada a micro y pequeñas empresas, diseñada para facilitar el acceso al crédito formal mediante el análisis de información transaccional y comportamiento comercial.
 
 Durante el MVP, el crédito estará disponible para ser utilizado en tiendas D1, permitiendo validar el modelo de negocio, la aceptación del mercado y el desempeño del modelo de riesgo antes de su expansión a nuevos comercios y productos financieros.
 
@@ -53,15 +53,15 @@ La primera versión del producto comprende los siguientes procesos de negocio. E
 | # | Proceso | Incluye |
 |---|---------|---------|
 | 1 | Captación comercial | Contacto inicial con clientes preaprobados; campañas comerciales; comunicación por WhatsApp; contacto telefónico; gestión del interés del cliente; seguimiento comercial. |
-| 2 | Onboarding digital | Acceso mediante enlace único; validación del NIT; registro del representante legal; validación mediante OTP; aceptación de términos y condiciones; registro de ubicación; configuración del PIN de seguridad; vinculación de cuenta bancaria; cargue de certificación y extractos bancarios. |
-| 3 | Validación de identidad | Validación biométrica con Olimpia para verificación de identidad (KYC); validación automática del resultado; gestión de casos en revisión; rechazo automático cuando corresponda. |
+| 2 | Onboarding digital | Acceso mediante enlace único; validación de Documento de Identidad; validación mediante un código; aceptación de términos y condiciones; registro de ubicación; configuración del PIN de seguridad; vinculación de cuenta bancaria; cargue de certificación y extractos bancarios. |
+| 3 | Validación de identidad | *Validación biométrica con Olimpia para verificación de identidad (KYC); validación automática del resultado; gestión de casos en revisión; rechazo automático cuando corresponda. |
 | 4 | Evaluación del riesgo | Consulta de Experian; consulta del histórico transaccional de D1; evaluación automática de reglas de negocio (definidas por Colpatria); cálculo del cupo aprobado; validación de capacidad de endeudamiento. |
-| 5 | Originación del crédito | Aprobación del crédito; comunicación del cupo aprobado; generación del contrato; firma digital; generación del pagaré; activación del cupo. |
-| 6 | Administración del crédito | Administración del cupo rotativo; consulta del estado del crédito, plan de pagos y saldo disponible; liberación automática del cupo al cancelar el crédito. |
+| 5 | Originación del crédito | Aprobación del crédito; comunicación del cupo aprobado; generación del contrato; firma digital; activación del cupo. |
+| 6 | Administración del crédito | Administración del cupo rotativo; consulta del estado del crédito, plan de pago y saldo disponible; liberación automática del cupo al cancelar el crédito. |
 | 7 | Uso del crédito | Generación del bono D1; compra en tiendas D1; bloqueo temporal del cupo durante la compra; evaluación para renovación del cupo. |
-| 8 | Gestión de pagos | Débito automático mediante Druo; pago por PSE; prepago; actualización automática del saldo; liquidación del crédito. |
+| 8 | Gestión de pagos | Débito automático mediante Druo; pago por PSE; actualización automática del saldo; liquidación del crédito. |
 | 9 | Cobranza | Reintentos automáticos de débito; recordatorios de pago; bloqueo del cupo; acuerdos de pago; reestructuración de obligaciones; reporte a centrales de riesgo; cobro jurídico; castigo de cartera. |
-| 10 | Servicio al cliente | Atención mediante asistente virtual basado en IA; escalamiento a agentes humanos; atención por WhatsApp y telefónica; gestión de PQRS; medición de satisfacción mediante NPS y CSAT. |
+| 10 | Servicio al cliente | Atención mediante asistente virtual *basado en IA; escalamiento a agentes humanos; atención por WhatsApp y telefónica; gestión de PQRS; medición de satisfacción mediante NPS y CSAT. |
 | 11 | Portal administrativo | Gestión de clientes y solicitudes; seguimiento del onboarding; consulta del análisis de riesgo; administración de la originación; seguimiento del ciclo de vida del crédito; gestión de cobranza y de campañas comerciales; consulta de indicadores operativos. |
 
 
@@ -141,22 +141,6 @@ La implementación del alcance definido permitirá:
 
 ---
 
-# Exclusiones
-
-Este documento no describe:
-
-- Arquitectura de software.
-- APIs.
-- Modelo de datos.
-- Casos de uso.
-- Historias de usuario.
-- Reglas de negocio detalladas.
-- Manuales de usuario.
-- Casos de prueba.
-
-Cada uno de estos temas se desarrolla en la documentación correspondiente.
-
----
 
 # Documentos relacionados
 
