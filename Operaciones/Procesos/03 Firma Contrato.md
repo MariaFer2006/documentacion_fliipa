@@ -1,4 +1,4 @@
-# 4. Firma de contrato y activación
+# 3. Firma de contrato y activación
 
 *Versión corregida — incorpora los ajustes acordados en el check-in de Producto del 23 de julio de 2026 (ver "Fuentes consultadas").*
 
