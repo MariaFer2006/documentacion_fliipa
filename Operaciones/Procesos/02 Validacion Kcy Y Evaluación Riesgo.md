@@ -39,7 +39,7 @@ La cuenta bancaria ingresada por el cliente también se registra en Druo para ha
 
 **Información utilizada:** Solicitud finalizada durante el onboarding digital.
 
-**Proceso:** Al cerrarse exitosamente el onboarding, el sistema dispara el motor de riesgo de forma inmediata, sin esperar respuesta de Druo, y adicionalmente lanza una alerta al canal de Slack de operaciones —cubriendo también llegada de nuevos clientes, aprobaciones, rechazos y alertas de fraude—, sin que el cliente deba realizar ninguna acción adicional.
+**Proceso:** Al cerrarse exitosamente el onboarding, el sistema dispara el motor de riesgo de forma inmediata, sin esperar respuesta de Druo, y adicionalmente lanza una alerta al canal de Slack de operaciones, cubriendo la llegada de nuevos clientes, aprobaciones, rechazos y alertas de fraude, sin que el cliente deba realizar ninguna acción adicional.
 
 **Resultado:** El sistema recibe la solicitud y abre automáticamente el caso dentro del Admin. A partir de este momento inicia el proceso de KYC.
 
@@ -55,7 +55,7 @@ La cuenta bancaria ingresada por el cliente también se registra en Druo para ha
 
 **Información utilizada:** Información del cliente registrada durante el onboarding.
 
-**Proceso:** El sistema ejecuta, en el caso abierto en el Admin, las consultas correspondientes a Experian —incluyendo el historial de crédito para persona natural y jurídica, y el servicio Reconocer para contrastar los datos de contacto— y el histórico transaccional de D1 del cliente. Cada resultado se almacena como parte del expediente del caso. Adicionalmente, el resultado de la validación biométrica obtenida durante el onboarding con el proveedor externo (Olimpia)* se registra en el Admin como un insumo más del expediente, sin volver a ejecutarse en esta etapa.
+**Proceso:** El sistema ejecuta, en el caso abierto en el Admin, las consultas correspondientes a Experian incluyendo el historial de crédito para personas, y el servicio Reconocer para contrastar los datos de contacto y el histórico transaccional de D1 del cliente. Cada resultado se almacena como parte del expediente del caso. Adicionalmente, el resultado de la validación biométrica obtenida durante el onboarding con el proveedor externo (Olimpia)* se registra en el Admin como un insumo más del expediente, sin volver a ejecutarse en esta etapa.
 
 La cuenta bancaria informada por el cliente se registra también en Druo para habilitar futuros débitos; este registro es paralelo al expediente de KYC y no sustituye la validación contra Experian del Paso 5.
 
@@ -180,22 +180,20 @@ La cuenta bancaria informada por el cliente se registra también en Druo para ha
 > **Placeholder\*:** no está definido si el rechazo por incumplimiento de requisitos (Paso 4) y el rechazo por cuenta bancaria inválida (Paso 6) requieren distinto nivel de severidad de alerta dentro del mismo canal de Slack.
 
 ---
-
 ### 10. Notificación al cliente
 
 **Actor:** Sistema.
 
 **Sistemas involucrados:** Sendgrid.
 
-**Proceso:** Una vez el equipo de operaciones confirma el rechazo en el Paso 9, el sistema dispara automáticamente un correo electrónico al cliente informando que la solicitud no fue aprobada. Con esta acción finaliza el proceso de Validación de Identidad (KYC).
+**Proceso:** Una vez que el equipo de operaciones confirma el rechazo en el Paso 9, el sistema envía automáticamente una notificación al cliente informando que la solicitud de crédito no fue aprobada. La comunicación no incluye información sobre las razones o causales asociados a la decisión.
 
-**Resultado:** Notificación de rechazo enviada al cliente por correo electrónico.
+**Resultado:** Notificación de rechazo enviada al cliente.
 
 **Tiempo estimado:** Instantáneo del lado del sistema tras la confirmación operativa; recepción asíncrona según el proveedor de correo.
 
-> **Placeholder\*:** no está definido el contenido/copy exacto del correo de rechazo, ni si existe algún canal adicional (SMS/WhatsApp vía Zenvia) para esta notificación.
+> **Placeholder*:** no está definido el contenido/copy exacto de la notificación de rechazo, ni si existe algún canal adicional al correo para esta notificación.
 
----
 
 ## Reglas de negocio
 
