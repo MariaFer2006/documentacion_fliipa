@@ -52,19 +52,17 @@ La primera versión del producto comprende los siguientes procesos de negocio. E
 
 | # | Proceso | Incluye |
 |---|---------|---------|
-| 1 | Captación comercial | Contacto inicial con clientes preaprobados.<br>Campañas comerciales.<br>Comunicación por WhatsApp.<br>Contacto telefónico.<br>Gestión del interés del cliente.<br>Seguimiento comercial. |
-| 2 | Onboarding digital | Acceso mediante enlace único.<br>Validación de Documento de Identidad.<br>Validación mediante un código.<br>Aceptación de términos y condiciones.<br>Registro de ubicación.<br>Configuración del PIN de seguridad.<br>Vinculación de cuenta bancaria.<br>Cargue de certificación y extractos bancarios. |
-| 3 | Validación de identidad | Validación biométrica con Olimpia para verificación de identidad (KYC).<br>Validación automática del resultado.<br>Gestión de casos en revisión.<br>Rechazo automático cuando corresponda. |
-| 4 | Evaluación del riesgo | Consulta de Experian.<br>Consulta del histórico transaccional de D1.<br>Evaluación automática de reglas de negocio (definidas por Colpatria).<br>Cálculo del cupo aprobado.<br>Validación de capacidad de endeudamiento. |
-| 5 | Originación del crédito | Aprobación del crédito.<br>Comunicación del cupo aprobado.<br>Generación del contrato.<br>Firma digital.<br>Activación del cupo. |
-| 6 | Administración del crédito | Administración del cupo rotativo.<br>Consulta del estado del crédito, plan de pago y saldo disponible.<br>Liberación automática del cupo al cancelar el crédito. |
-| 7 | Uso del crédito | Generación del bono D1.<br>Compra en tiendas D1.<br>Bloqueo temporal del cupo durante la compra.<br>Evaluación para renovación del cupo. |
-| 8 | Gestión de pagos | Débito automático mediante Druo.<br>Pago por PSE.<br>Actualización automática del saldo.<br>Liquidación del crédito. |
-| 9 | Cobranza | Reintentos automáticos de débito.<br>Recordatorios de pago.<br>Bloqueo del cupo.<br>Acuerdos de pago.<br>Reestructuración de obligaciones.<br>Reporte a centrales de riesgo.<br>Cobro jurídico.<br>Castigo de cartera. |
-| 10 | Servicio al cliente | Atención mediante asistente virtual basado en IA.<br>Escalamiento a agentes humanos.<br>Atención por WhatsApp y telefónica.<br>Gestión de PQRS.<br>Medición de satisfacción mediante NPS y CSAT. |
-| 11 | Portal administrativo | Gestión de clientes y solicitudes.<br>Seguimiento del onboarding.<br>Consulta del análisis de riesgo.<br>Administración de la originación.<br>Seguimiento del ciclo de vida del crédito.<br>Gestión de cobranza y de campañas comerciales.<br>Consulta de indicadores operativos. |
-
-
+| 1 | Captación comercial | • Contacto inicial con clientes preaprobados.<br>• Campañas comerciales.<br>• Comunicación por WhatsApp.<br>• Contacto telefónico.<br>• Gestión del interés del cliente.<br>• Seguimiento comercial. |
+| 2 | Onboarding digital | • Acceso mediante enlace único.<br>• Validación de Documento de Identidad.<br>• Validación mediante un código.<br>• Aceptación de términos y condiciones.<br>• Registro de ubicación.<br>• Configuración del PIN de seguridad.<br>• Vinculación de cuenta bancaria.<br>• Cargue de certificación y extractos bancarios. |
+| 3 | Validación de identidad | • Validación biométrica con Olimpia para verificación de identidad (KYC).<br>• Validación automática del resultado.<br>• Gestión de casos en revisión.<br>• Rechazo automático cuando corresponda. |
+| 4 | Evaluación del riesgo | • Consulta de Experian.<br>• Consulta del histórico transaccional de D1.<br>• Evaluación automática de reglas de negocio (definidas por Colpatria).<br>• Cálculo del cupo aprobado.<br>• Validación de capacidad de endeudamiento. |
+| 5 | Originación del crédito | • Aprobación del crédito.<br>• Comunicación del cupo aprobado.<br>• Generación del contrato.<br>• Firma digital.<br>• Activación del cupo. |
+| 6 | Administración del crédito | • Administración del cupo rotativo.<br>• Consulta del estado del crédito, plan de pago y saldo disponible.<br>• Liberación automática del cupo al cancelar el crédito. |
+| 7 | Uso del crédito | • Generación del bono D1.<br>• Compra en tiendas D1.<br>• Bloqueo temporal del cupo durante la compra.<br>• Evaluación para renovación del cupo. |
+| 8 | Gestión de pagos | • Débito automático mediante Druo.<br>• Pago por PSE.<br>• Actualización automática del saldo.<br>• Liquidación del crédito. |
+| 9 | Cobranza | • Reintentos automáticos de débito.<br>• Recordatorios de pago.<br>• Bloqueo del cupo.<br>• Acuerdos de pago.<br>• Reestructuración de obligaciones.<br>• Reporte a centrales de riesgo.<br>• Cobro jurídico.<br>• Castigo de cartera. |
+| 10 | Servicio al cliente | • Atención mediante asistente virtual basado en IA.<br>• Escalamiento a agentes humanos.<br>• Atención por WhatsApp y telefónica.<br>• Gestión de PQRS.<br>• Medición de satisfacción mediante NPS y CSAT. |
+| 11 | Portal administrativo | • Gestión de clientes y solicitudes.<br>• Seguimiento del onboarding.<br>• Consulta del análisis de riesgo.<br>• Administración de la originación.<br>• Seguimiento del ciclo de vida del crédito.<br>• Gestión de cobranza y de campañas comerciales.<br>• Consulta de indicadores operativos. |
 # Integraciones incluidas
 
 El MVP contempla integración con los siguientes sistemas externos. Para información detallada sobre cada integración, incluyendo especificaciones técnicas, costos, riesgos y SLAs, consulte la documentación en la carpeta de Integraciones.
