@@ -34,9 +34,9 @@ Una vez el contrato ha sido firmado y el crédito queda activo, Colpatria crea y
 
 Posteriormente la fiducia desembolsa el dinero a D1 para emitir el bono correspondiente al valor del cupo utilizado (**desembolso recurrente, uno por cada ciclo de crédito**).
 
-Cuando el cliente utiliza el bono en una tienda D1, un **worker automatizado**\* (el mismo mecanismo de detección descrito en el documento 5, Calculadora y Cobro del Crédito) detecta la compra y el sistema registra la utilización del crédito, bloqueando el cupo remanente hasta finalizar el ciclo de pago. El bono tiene una **vigencia de 15 días calendario** para ser utilizado por el cliente (ver detalle en el paso 4).
+Cuando el cliente utiliza el bono en una tienda D1, un **worker automatizado**\* (el mismo mecanismo de detección descrito en el documento 4, Calculadora y Cobro del Crédito) detecta la compra y el sistema registra la utilización del crédito, bloqueando el cupo remanente hasta finalizar el ciclo de pago. El bono tiene una **vigencia de 15 días calendario** para ser utilizado por el cliente (ver detalle en el paso 4).
 
-Posteriormente el cliente paga su obligación y el dinero retorna nuevamente a la fiducia como cuenta de recaudo — este retorno no vuelve a generar GMF adicional.
+Posteriormente el cliente paga su obligación y el dinero retorna nuevamente a la fiducia como cuenta de recaudo este retorno no vuelve a generar GMF adicional.
 
 > **Aclaración :** el dinero recaudado a través de los canales de pago **no se reinvierte en su totalidad** en el fondeo de nuevos créditos. Únicamente el **capital recuperado** vuelve a utilizarse para fondear nuevos créditos; los intereses y demás cargos cobrados al cliente quedan excluidos de esa reinversión.
 
@@ -51,11 +51,11 @@ Cada paso incluye el **proceso** (qué ocurre técnica u operativamente) y un **
 **Actor:** Colpatria.
 
 **Proceso:** Colpatria crea una cuenta fiduciaria destinada exclusivamente a administrar los recursos del piloto y la fondea con el capital destinado a los desembolsos. Esta cuenta centraliza tanto la salida del dinero hacia D1 como el retorno de los pagos realizados por los clientes.
-NOTA: El dinero que se recaude a través de los canales de pago no se reinvierte nuevamente en su totalidad en el portafolio; únicamente el capital recuperado se reutiliza para fondear nuevos créditos, excluyendo intereses y otros cargos (Acta de reunión Check-in, 29 jul 2026).
+*NOTA: El dinero que se recaude a través de los canales de pago no se reinvierte nuevamente en su totalidad en el portafolio; únicamente el capital recuperado se reutiliza para fondear nuevos créditos, excluyendo intereses y otros cargos.*
 
 **Resultado:** Cuenta fiduciaria creada y fondeada, lista para operar los desembolsos del piloto.
 
-**Tiempo estimado:** Actividad de fondeo puntual, **única al inicio de la operación del piloto** (o cuando se requiera reforzar el fondo) — no ocurre en cada ciclo de crédito, a diferencia del desembolso hacia D1 (paso 3).
+**Tiempo estimado:** Actividad de fondeo puntual, **única al inicio de la operación del piloto** (o cuando se requiera reforzar el fondo), no ocurre en cada ciclo de crédito, a diferencia del desembolso hacia D1 (paso 3).
 
 **Placeholder\*:** no está definido el monto exacto del fondo fiduciario ni la periodicidad con la que Colpatria debe reforzarlo a medida que se originan más créditos, ni el banco/entidad fiduciaria específica donde se constituirá la fiducia. **Pendiente para mañana:** llevar una cifra tentativa del monto de fondeo inicial, aunque sea preliminar, para no dejar el punto completamente abierto en la presentación.
 
@@ -95,9 +95,7 @@ NOTA: El dinero que se recaude a través de los canales de pago no se reinvierte
 
 **Proceso:** El cliente recibe el bono y realiza la compra en una tienda D1. Cuando el **worker automatizado** de consulta de bono detecta una compra realizada, el sistema registra la utilización efectiva del crédito y comienza formalmente el ciclo de vida de la obligación financiera. Aunque el bono queda emitido y disponible desde el desembolso (paso 3), la obligación financiera formal del cliente solo inicia cuando el sistema detecta que el bono fue efectivamente utilizado en una compra en D1. Después del primer uso, el sistema bloquea automáticamente el cupo remanente para evitar compras adicionales durante el mismo ciclo de crédito.
 
-**Vigencia y expiración del bono ):** el bono tiene un plazo de **15 días calendario** para que el cliente lo utilice. Este plazo se implementará como una **variable configurable** en el panel administrativo (a cargo de Francisco Javier Martínez Vargas), en lugar de un valor fijo en el código, de modo que pueda ajustarse sin requerir nuevos despliegues.
-
-**Comunicación automatizada :** el equipo acordó diseñar un flujo automatizado de recordatorios (vía WhatsApp o correo electrónico) para incentivar al cliente a usar el bono durante los 15 días de vigencia. La frecuencia y el canal definitivo de estos mensajes están a cargo de Alejandra Suárez y aún deben definirse.
+**Vigencia y expiración del bono :** el bono tiene un plazo de **15 días calendario** para que el cliente lo utilice. Este plazo se implementará como una **variable configurable** en el panel administrativo, en lugar de un valor fijo en el código, de modo que pueda ajustarse sin requerir nuevos despliegues.
 
 **Resultado:** Crédito activado mediante el uso del bono; cupo remanente bloqueado hasta finalizar el ciclo.
 
@@ -113,13 +111,13 @@ NOTA: El dinero que se recaude a través de los canales de pago no se reinvierte
 
 **Actor:** Cliente / Fiducia.
 
-**Proceso:** Cuando llega la fecha de pago, el cliente realiza el pago correspondiente a su obligación mediante **Pagos Seguros en Línea (PSE)** o **débito automático** (ver documento 5). El dinero no retorna a D1: se consigna nuevamente en la cuenta fiduciaria, que funciona como cuenta de recaudo del producto, cerrando el ciclo financiero del crédito.
+**Proceso:** Cuando llega la fecha de pago, el cliente realiza el pago correspondiente a su obligación mediante **Pagos Seguros en Línea (PSE)** o **débito automático** (ver documento 4). El dinero no retorna a D1: se consigna nuevamente en la cuenta fiduciaria, que funciona como cuenta de recaudo del producto, cerrando el ciclo financiero del crédito.
 
-**Prepago voluntario (Acta de reunión Check-in, 29 jul 2026):** si el cliente desea realizar un prepago voluntario de su obligación, este únicamente puede efectuarse a través de **PSE**; no está habilitado por débito automático.
+**Prepago voluntario:** si el cliente desea realizar un prepago voluntario de su obligación, este únicamente puede efectuarse a través de **PSE**; no está habilitado por débito automático.
 
 **Resultado:** Pago recibido por la fiducia; ciclo financiero cerrado.
 
-**Tiempo estimado:** Depende del método de pago utilizado (ver documento 5: PSE es prácticamente inmediato; débito automático ocurre en la fecha de corte, sujeto además a los tiempos de la red ACH — ver documento 5, paso 6b).
+**Tiempo estimado:** Depende del método de pago utilizado (ver documento 4: PSE es prácticamente inmediato; débito automático ocurre en la fecha de corte, sujeto además a los tiempos de la red ACH — ver documento 5, paso 6b).
 
 ---
 
