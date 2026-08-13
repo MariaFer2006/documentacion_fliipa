@@ -1,4 +1,4 @@
-# 6. Dispersión de fondos
+# 5. Dispersión de fondos
 
 ## Objetivo
 
