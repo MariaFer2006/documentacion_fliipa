@@ -1,4 +1,4 @@
-# 5. Calculadora y cobro del crédito
+# 4. Calculadora y cobro del crédito
 
 ## Objetivo
 
