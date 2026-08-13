@@ -30,7 +30,7 @@ Este journey describe el flujo financiero del crédito una vez ha sido aprobado 
 
 Una vez el contrato ha sido firmado y el crédito queda activo, Colpatria crea y fondea una **cuenta fiduciaria** desde donde se administran los recursos del piloto (**fondeo inicial, único**, no recurrente por crédito) *el Banco donde se creara la fiducia*.
 
-> **Definición:** Una fiducia es un contrato mediante el cual una entidad fiduciaria administra recursos entregados por Colpatria (el fideicomitente) con una finalidad específica y previamente definida; en este caso, centralizar el fondeo de los desembolsos hacia D1 y el recaudo de los pagos de los clientes. **Pendiente:** confirmar el nombre de la entidad fiduciaria y el banco donde se constituirá, dato aún no definido.
+> **Definición:** Una fiducia es un contrato mediante el cual una entidad fiduciaria administra recursos entregados por Colpatria (el fideicomitente) con una finalidad específica y previamente definida; en este caso, centralizar el fondeo de los desembolsos hacia D1 y el recaudo de los pagos de los clientes. 
 
 Posteriormente la fiducia desembolsa el dinero a D1 para emitir el bono correspondiente al valor del cupo utilizado (**desembolso recurrente, uno por cada ciclo de crédito**).
 
