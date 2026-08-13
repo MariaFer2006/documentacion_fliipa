@@ -22,18 +22,7 @@ Este documento cubre el propósito comercial y estratégico del producto, sus me
 | 1.1 | 2026-07-08 | María Fernanda Herazo | Ajuste de metas, principios e indicadores de éxito para alinear el documento con las observaciones de Francisco Javier Martínez Vargas e Iván Aponte. |
 | 1.2 | 2026-08-13 | María Fernanda Herazo  | Corrección tras el Weekly Sync de Producto (10 jul 2026): se reformula el principio de rentabilidad — deja de ser una condición inicial y pasa a ser un objetivo de escalamiento durante el piloto. |
 
-## Documentos relacionados
-- [Producto](README.md)
-- [Flipa - Biblioteca de Conocimiento](../README.md)
-- [Mapa Del Conocimiento](../MAPA_DEL_CONOCIMIENTO.md)
-- [Onboarding](../ONBOARDING.md)
-- [Convenciones](../CONVENCIONES.md)
-- [Negocio](../negocio/README.md)
-- [Funcional](../funcional/README.md)
-- [Conocimiento](../conocimiento/README.md)
-- [Visión](vision.md)
-- [Roadmap](roadmap.md)
-- [Alcance](alcance.md)
+
 ## Contenido
 ### Propósito del producto
 Fliipa busca ofrecer crédito formal a micro y pequeñas empresas que compran con frecuencia en D1, usando información transaccional real para tomar mejores decisiones de riesgo que las que ofrece la banca tradicional.
