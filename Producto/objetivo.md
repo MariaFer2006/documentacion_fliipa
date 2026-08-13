@@ -46,22 +46,12 @@ Fliipa busca ofrecer crédito formal a micro y pequeñas empresas que compran co
 - Generar información crediticia que fortalezca la estrategia de datos del Grupo Santo Domingo.
 - Crear un negocio financiero sostenible para Sumz y para el Grupo Santo Domingo.
 ### Principios del producto
-- El crédito debe estar alineado con el comportamiento real del negocio.
 - La información del cliente es el activo clave del modelo.
 - La automatización debe simplificar y agilizar el proceso de originación del crédito.
 - La rentabilidad es un objetivo de escalamiento, no una condición inicial: durante el piloto no es necesario que el negocio sea rentable; la meta es demostrar una trayectoria clara hacia la sostenibilidad financiera a medida que el producto crece.
 - La seguridad y el cumplimiento normativo son condiciones no negociables.
 - El producto debe iniciar de forma simple, regulada y medible, para luego escalar.
 
-### Indicadores de éxito
-
-El producto será exitoso si demuestra, según el horizonte de madurez:
-
-| Horizonte | El producto será exitoso si... |
-|---|---|
-| **MVP (piloto)** | los clientes usan el crédito; los clientes pagan; la originación del crédito está automatizada. |
-| **Evolución** | el riesgo se evalúa mejor que con modelos tradicionales, a medida que se acumula información transaccional del piloto. |
-| **Largo plazo** | el modelo genera información crediticia de valor para el Grupo Santo Domingo; la operación logra sostenerse financieramente. |
 
 ## Fuentes consultadas
 
