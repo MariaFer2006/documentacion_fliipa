@@ -61,9 +61,9 @@ El proceso inicia cuando el cliente recibe una invitación personalizada por cor
 
 **Actor:** Cliente.
 
-**Sistemas involucrados:** Plataforma web (landing page).
+**Sistemas involucrados:** Portal De Usuario.
 
-**Información utilizada:** NIT o número de cédula de ciudadanía.
+**Información utilizada:** Documento de Identificación.
 
 **Proceso:** El cliente ingresa su documento en la landing page. El backend consulta contra las bases de datos existentes para identificar si el cliente ya tiene información previa (persona natural o jurídica) y determinar el tipo de flujo a seguir.
 
@@ -81,16 +81,16 @@ El proceso inicia cuando el cliente recibe una invitación personalizada por cor
 
 **Sistemas involucrados:** Información transaccional de D1.
 
-**Información utilizada:** NIT o cédula registrada; cupo preaprobado por Colpatria.
+**Información utilizada:** Documento de Identidad registrado; cupo preaprobado por Colpatria.
 
 **Proceso:** El cupo preaprobado **no se calcula en este momento**: corresponde a un valor ya calculado previamente a partir del historial de consumos en D1 y almacenado en base de datos. En este paso el sistema únicamente consulta y recupera ese valor.
 
 **Decisión:** ¿La validación del cupo fue exitosa?
 
 - **Exitoso:** el flujo continúa hacia el registro de ubicación.
-- **Fallido:** el cliente vuelve a la pantalla de ingreso del NIT o identificación para intentarlo de nuevo.
+- **Fallido:** el cliente vuelve a la pantalla de ingreso para intentarlo de nuevo.
 
-**Resultado:** Cupo preaprobado recuperado de base de datos. Esta evaluación corresponde únicamente a una preaprobación y no representa la aprobación definitiva del crédito.
+**Resultado:** Cupo preaprobado recuperado de la base de datos. Esta evaluación corresponde únicamente a una preaprobación y no representa la aprobación definitiva del crédito.
 
 **Tiempo estimado:** ~5 segundos (consulta directa, no cálculo en línea).
 
@@ -245,7 +245,7 @@ El proceso inicia cuando el cliente recibe una invitación personalizada por cor
 
 **Actor:** Cliente y proveedor externo (Olimpia).
 
-**Proceso:** El cliente completa el proceso biométrico directamente en la plataforma de Olimpia, fuera de la web de Colpatria B2B. El detalle técnico de esta integración aún está en definición.
+**Proceso:** El cliente completa el proceso biométrico directamente en la plataforma de Olimpia. El detalle técnico de esta integración aún está en definición.
 
 **Resultado:** El resultado puede ser Aprobado (exitoso), En revisión o Rechazado.
 
@@ -339,9 +339,9 @@ El proceso inicia cuando el cliente recibe una invitación personalizada por cor
 
 **Proceso:** El sistema envía automáticamente toda la información recopilada al motor de riesgo para el análisis de crédito, el cual queda **completamente automatizado** (ya no se envía una solicitud manual a un asesor). En su lugar, se genera una **notificación automática de funnel** para que el equipo interno monitoree el flujo, sin que esto sea un paso manual del proceso de aprobación.
 
-**Resultado:** El sistema informa al cliente que debe esperar respuesta en un plazo de hasta 1 día.
+**Resultado:** El sistema informa al cliente que debe esperar respuesta en un plazo de 24 horas.
 
-**Tiempo estimado:** Instantáneo (envío automático); la respuesta del análisis toma hasta 1 día y ocurre fuera del journey activo del cliente.
+**Tiempo estimado:** Instantáneo (envío automático); la respuesta del análisis toma 24 horas.
 
 ---
 
@@ -438,16 +438,6 @@ El proceso inicia cuando el cliente recibe una invitación personalizada por cor
 
 ---
 
-## Notas
-
-- Los tiempos de aprobación, número de cuotas y demás parámetros operativos pueden modificarse durante la evolución del producto.
-- Queda pendiente el ajuste técnico de cambiar la URL de la página en el paso de registro del documento de identificación.
-- Queda pendiente agregar un copy que indique al cliente revisar su correo tras la confirmación de cuenta.
-- Debe confirmarse con el dueño del proceso si todo rechazo automático de biometría pasa por revisión manual del analista de riesgo.
-- Pendiente documentar en detalle el proceso de KYC y motor de riesgo, incluyendo los servicios específicos de Experian utilizados (acción asignada a María Fernanda Herazo en el check-in del 16 de julio de 2026).
-- **Pendiente (ago 2026):** actualizar las Figuras 2 y 3 del journey (`imagenes/page-02.png`, `imagenes/page-03.png`) para reflejar la eliminación del paso "Envío y validación del código OTP"; las imágenes actuales aún muestran ese paso.
-
----
 
 ## Fuentes consultadas
 
