@@ -29,7 +29,7 @@ Este documento proporciona una referencia para que las decisiones de negocio, pr
 
 # Visión del producto
 
-Fliipa aspira a consolidarse como una solución financiera digital líder en crédito empresarial, democratizando el acceso al financiamiento para micro y pequeñas empresas mediante la automatización de la originación del crédito y el uso estratégico de datos transaccionales. Su propósito es ofrecer una experiencia ágil, segura y escalable que impulse el crecimiento de tenderos y pequeños comerciantes.
+Fliipa aspira a consolidarse como una solución financiera digital líder en crédito empresarial, democratizando el acceso al financiamiento para micro y pequeñas empresas mediante la automatización de la originación del crédito y el uso estratégico de datos transaccionales. Su propósito es ofrecer una experiencia ágil, segura y escalable que impulse el crecimiento de sus clientes y pequeños comerciantes.
 
 Durante el MVP, el crédito podrá utilizarse en tiendas D1. La visión de largo plazo contempla expandirse hacia otros aliados estratégicos y empresas del Grupo Santo Domingo, evolucionando hacia un ecosistema financiero digital escalable.
 
@@ -57,7 +57,7 @@ La meta es construir un producto que combine tecnología, analítica de datos y 
 
 # Visión tecnológica
 
-Desde la perspectiva tecnológica, Flipa evolucionará hacia una plataforma modular, escalable e integrada, capaz de soportar el crecimiento del negocio sin comprometer la estabilidad operativa.
+Desde la perspectiva tecnológica, Fliipa evolucionará hacia una plataforma modular, escalable e integrada, capaz de soportar el crecimiento del negocio sin comprometer la estabilidad operativa.
 
 La plataforma buscará:
 
@@ -65,7 +65,7 @@ La plataforma buscará:
 - Centralizar la gestión del ciclo completo del crédito.
 - Integrarse con servicios externos y terceros mediante APIs.
 - Fortalecer continuamente el modelo de riesgo basado en datos.
-- Incorporar capacidades de inteligencia artificial para automatizar procesos operativos y de atención al cliente.
+- Incorporar capacidades de inteligencia artificial* para automatizar procesos operativos y de atención al cliente.
 - Facilitar la incorporación de nuevos productos financieros sin requerir cambios estructurales significativos, gracias a una arquitectura modular y escalable.
 
 ---
@@ -105,7 +105,7 @@ La evolución del modelo contempla aprovechar la información generada durante t
 - Generar indicadores para la toma de decisiones del negocio.
 - Alimentar el ecosistema de datos del Grupo Santo Domingo con información crediticia generada por Fliipa.
 
-Cada interacción del cliente contribuirá al fortalecimiento del ecosistema de datos del Grupo Santo Domingo, consolidando a Flipa como una fuente estratégica de información crediticia para el grupo empresarial.
+Cada interacción del cliente contribuirá al fortalecimiento del ecosistema de datos del Grupo Santo Domingo, consolidando a Fliipa como una fuente estratégica de información crediticia para el grupo empresarial.
 
 ---
 
@@ -160,7 +160,7 @@ La visión del producto se considerará cumplida cuando Fliipa logre:
 
 ## Negocio
 
-- Convertirse en un canal relevante de generación de ingresos.
+- Convertirse en un canal de generación de ingresos.
 - Incrementar el valor comercial para D1.
 - Alcanzar la sostenibilidad financiera de la operación.
 - Expandirse hacia nuevos aliados estratégicos.
@@ -193,18 +193,7 @@ La visión del producto se considerará cumplida cuando Fliipa logre:
 
 ---
 
-# Relación con otros documentos
 
-La visión del producto se complementa con:
-
-- [Alcance del Producto](alcance.md).
-- [Objetivos del Producto](objetivo.md).
-- [Roadmap](roadmap.md).
-- [Modelo de Negocio](../negocio/README.md).
-- Arquitectura Funcional.
-- Arquitectura Técnica.
-
----
 
 # Documentos relacionados
 
