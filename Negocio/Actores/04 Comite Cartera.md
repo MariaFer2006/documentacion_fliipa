@@ -9,7 +9,7 @@
 | Iván Aponte | Product Manager | Analiza el comportamiento de la cartera y propone estrategias de recuperación. |
 | Alejandra Suárez | Account and Portfolio Specialist | Realiza seguimiento al portafolio y participa en la toma de decisiones sobre la gestión de cartera. |
 
-> **Nota (Check-in de Producto, 15 jul 2026):** se eliminó el perfil "Senior Credit Strategy Analyst", que figuraba como pendiente de definir sin descripción disponible. La composición definitiva del Comité de Cartera está pendiente y se definirá próximamente **con la participación de Colpatria**; este documento debe actualizarse cuando esa definición quede cerrada.
+> **Nota :** se eliminó el perfil "Senior Credit Strategy Analyst", que figuraba como pendiente de definir sin descripción disponible. La composición definitiva del Comité de Cartera está pendiente y se definirá próximamente **con la participación de Colpatria**; este documento debe actualizarse cuando esa definición quede cerrada.
 
 ## Funciones principales del Comité de Cartera
 
