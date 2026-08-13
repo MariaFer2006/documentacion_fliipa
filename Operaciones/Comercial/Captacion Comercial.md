@@ -22,7 +22,7 @@ El producto es un **cupo rotativo preaprobado** para comprar en D1 y pagar en *1
 
 ## Journey
 
-![Journey de Captación Comercial](imagenes/captacion-comercial-journey.png)
+![Journey de Captación Comercial](Procesos/imagenes/captacion-comercial-journey.png)
 
 **Figura 1. Journey de Captación Comercial** (fuente: *Modelo Comercial B2B.pptx*, diapositiva 10).
 
