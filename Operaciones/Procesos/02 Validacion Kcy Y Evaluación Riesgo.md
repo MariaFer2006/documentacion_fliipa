@@ -1,4 +1,4 @@
-# 3. Validación de identidad (KYC)
+# 2. Validación de identidad (KYC)
 
 
 ## Objetivo
