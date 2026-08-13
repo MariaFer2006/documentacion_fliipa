@@ -10,7 +10,7 @@ Muchas micro y pequeñas empresas en Colombia tienen dificultades para acceder a
 
 Fliipa ofrece una alternativa formal basada en datos reales del negocio, especialmente en su relación comercial con D1. Esto permite evaluar riesgo con un enfoque más cercano a la realidad operativa del cliente: un cupo preaprobado y rotativo, que se paga en *1 cuota\** y se aprueba en un máximo de *24 horas\**, sin necesidad de codeudor.
 
-> \* **Dato sujeto a cambios frecuentes** : el plazo de aprobación y el número de cuotas están marcados aquí porque son parámetros operativos del piloto que pueden ajustarse conforme evolucione el producto. Antes de citar estas cifras en otro documento o en material de cara al cliente, confirmar la versión vigente con el dueño del proceso.
+> \* **Dato sujeto a cambios frecuentes** 
 
 ## Modelo de negocio
 
@@ -18,7 +18,7 @@ El negocio busca generar ingresos a partir del crédito, pero también tiene un 
 
 Ver el detalle de cada actor en [Actores](../Actores/README.md).
 
-> **Nota :** este documento fusiona lo que antes eran tres archivos separados —"Problema de negocio", "Propuesta de valor" y "Modelo de negocio"— dada su brevedad y su relación directa (problema → cómo lo resuelve el producto → cómo se sostiene el negocio).
+
 
 ## Fuentes consultadas
 

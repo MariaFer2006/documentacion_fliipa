@@ -44,11 +44,11 @@ Cada paso incluye el **proceso** (qué ocurre técnica u operativamente) y un **
 
 **Tiempo estimado:** Instantáneo (creación automática del caso al recibir el contacto).
 
-**Placeholder\*:** el journey rotula este canal como "llamada **outbound**", lo cual sugiere que, además de que el cliente llame, el servicio también puede iniciar llamadas salientes hacia el cliente (por ejemplo, seguimiento proactivo). No está confirmado en qué escenarios se origina una llamada outbound ni cómo se relaciona con los seguimientos proactivos ya descritos en otros procesos (p. ej. seguimiento de primera compra en Captación Comercial, o gestión telefónica en Cobranza).
+**Placeholder\*:** el journey rotula este canal como "llamada **outbound**", lo cual sugiere que, además de que el cliente llame, el servicio también puede iniciar llamadas salientes hacia el cliente (por ejemplo, seguimiento proactivo). No está confirmado en qué escenarios se origina una llamada outbound ni cómo se relaciona con los seguimientos proactivos ya descritos en otros procesos (p. ej. seguimiento de primera compra en Captación Comercial, o gestión telefónica en Cobranza). El proceso de Cobranza ya tipifica este componente como "Resolution Call — Outbound", separado de "Inbound", lo que confirma que el canal existe operativamente y que lo pendiente es su coordinación entre áreas, no su definición.
 
 ---
 
-### 2. Clasificación y atención mediante IA
+### 2. Clasificación y atención mediante IA *
 
 **Actor:** Inteligencia Artificial.
 
@@ -66,8 +66,8 @@ Cada paso incluye el **proceso** (qué ocurre técnica u operativamente) y un **
 **Resultado:** Caso resuelto por IA, o escalado con contexto completo.
 
 **Tiempo estimado:** Segundos (procesamiento automático de clasificación y generación de respuesta).
-
-**Placeholder\*:** no está definido el criterio exacto ni el umbral de confianza que usa la IA para decidir si "resuelve" o no un caso, ni el conjunto de tipos de solicitud que tiene permitido resolver de forma autónoma.
+*
+**Placeholder\*:** no está definido el criterio exacto ni el umbral de confianza que usa la IA para decidir si "resuelve" o no un caso, ni el conjunto de tipos de solicitud que tiene permitido resolver de forma autónoma. La taxonomía de motivos de contacto ya usada en Cobranza (consultas de estado de cuenta, información del crédito, beneficios del producto) es un punto de partida razonable para acotar ese conjunto.
 
 ---
 
@@ -85,7 +85,7 @@ Cada paso incluye el **proceso** (qué ocurre técnica u operativamente) y un **
 
 **Tiempo estimado:** Depende de la disponibilidad del agente (asíncrono; no es instantáneo como la atención de IA).
 
-**Placeholder\*:** no está definido el mecanismo específico de validación de identidad que debe usar el agente para los casos críticos (¿el mismo proveedor biométrico Olimpia del onboarding, u otro método?), ni el SLA de primera respuesta del agente humano tras el escalamiento.
+**Placeholder\*:** no está definido el mecanismo específico de validación de identidad que debe usar el agente para los casos críticos (¿el mismo proveedor biométrico Olimpia del onboarding, u otro método?), ni el SLA de primera respuesta del agente humano tras el escalamiento. Tampoco está confirmado si el "portal administrativo" de Servicio al Cliente es el mismo sistema que el "CRM" mencionado en el proceso de Cobranza, o si son sistemas distintos que requieren integración.
 
 ---
 
@@ -103,7 +103,7 @@ Cada paso incluye el **proceso** (qué ocurre técnica u operativamente) y un **
 
 **Tiempo estimado:** Segundos a minutos (clasificación manual por el agente).
 
-**Placeholder\*:** los SLA específicos del flujo Legal/PQR (tiempos exactos de respuesta según tipo de solicitud) no están definidos en el journey; deben confirmarse con el área Legal/PQR de la organización.
+**Placeholder\*:** los SLA específicos del flujo Legal/PQR (tiempos exactos de respuesta según tipo de solicitud) no están definidos en el journey; deben confirmarse con el área Legal/PQR de la organización. Tampoco está definido el punto de entrada exacto cuando un caso se escala hacia Cobranza: el proceso de cartera tiene una cadena propia (Analista de Cartera → Líder de Cartera → Comercial → Representante Jurídico → Comité Legal) y debe precisarse en qué punto de esa cadena entra un caso proveniente de Servicio al Cliente. De igual forma, "uso indebido del cupo" debe definirse con precisión frente a las categorías ya tipificadas en Cobranza (que hoy distinguen entre quejas de uso del cupo y casos de fraude), para que ambos procesos usen el mismo criterio de clasificación.
 
 ---
 
@@ -117,7 +117,7 @@ Cada paso incluye el **proceso** (qué ocurre técnica u operativamente) y un **
 
 **Tiempo estimado:** Variable según el tipo de caso (estándar: minutos a horas; especializado o Legal/PQR: horas a días, sujeto a SLA).
 
-**Placeholder\*:** no está definido el mecanismo exacto de captura de NPS/CSAT (¿encuesta automática por el mismo canal de contacto?, ¿inmediatamente al cierre o en un momento posterior?).
+**Placeholder\*:** no está definido el mecanismo exacto de captura de NPS/CSAT (¿encuesta automática por el mismo canal de contacto?, ¿inmediatamente al cierre o en un momento posterior?). Este componente no tiene precedente en los demás procesos ya documentados (Comercial, Cobranza), por lo que debe definirse sin un estándar previo del cual partir.
 
 ---
 
@@ -142,6 +142,8 @@ Cada paso incluye el **proceso** (qué ocurre técnica u operativamente) y un **
 - Los casos Legal/PQR deben seguir el flujo especializado y cumplir los SLA establecidos.
 - Todos los casos finalizados deben registrarse en el sistema administrativo.
 - Al cierre del caso se registran las métricas de satisfacción (NPS/CSAT).
+- Los criterios de tipificación de motivo de contacto de Servicio al Cliente deben homologarse con la tipificación ya vigente en Cobranza, para evitar que un mismo tipo de caso se registre con nombres distintos en cada área.
+- Servicio al Cliente, Comercial y Cobranza deben compartir indicadores (KPIs) de contacto con el cliente, para evitar duplicidad de gestiones y vacíos de seguimiento entre áreas.
 
 ---
 
@@ -183,6 +185,8 @@ Cada paso incluye el **proceso** (qué ocurre técnica u operativamente) y un **
 - Los casos críticos (suplantación, desconocimiento de compra, uso indebido de cupo) tienen un tratamiento diferenciado que exige validación de identidad antes de cualquier aprobación.
 - El proceso se articula con otras áreas ya documentadas: Riesgo (documento 3, KYC), Cobranza (documento 8) y Tecnología, además del flujo Legal/PQR.
 - La mención a "llamada outbound" sugiere una posible componente proactiva del servicio al cliente (la empresa llama al cliente), que debe articularse con los seguimientos proactivos ya descritos en Captación Comercial (documento 1) y Cobranza (documento 8) para evitar duplicidad de contactos.
+- El proceso de Cobranza ya identificó como riesgo la "falta de apoyo comercial - SAC", es decir, que el cliente desconozca a Fliipa o que Fliipa no logre contactar al cliente, y propuso como control el uso de KPIs compartidos entre Comercial y Cobranza. Servicio al Cliente es un tercer punto de contacto directo con el cliente y debería incorporarse a ese mismo esquema de indicadores compartidos.
+- Antes de operar en producción debe confirmarse si "portal administrativo" (Servicio al Cliente) y "CRM" (Cobranza) corresponden al mismo sistema; de no ser así, se requiere definir su integración o sincronización de casos.
 
 ---
 
@@ -193,8 +197,12 @@ Cada paso incluye el **proceso** (qué ocurre técnica u operativamente) y un **
 > - Confirmar en qué escenarios se origina una llamada "outbound" desde el servicio al cliente y cómo se coordina con los seguimientos proactivos de Captación Comercial y Cobranza. *(placeholder — paso 1)*
 > - Confirmar el criterio/umbral que usa la IA para determinar si puede resolver un caso de forma autónoma, y el conjunto de tipos de solicitud permitidos. *(placeholder — paso 2)*
 > - Confirmar el mecanismo específico de validación de identidad para casos críticos y el SLA de primera respuesta del agente humano. *(placeholder — paso 3)*
+> - Confirmar si "portal administrativo" y "CRM" son el mismo sistema o requieren integración. *(placeholder — paso 3)*
 > - Confirmar los SLA específicos del flujo Legal/PQR según el tipo de solicitud. *(placeholder — paso 4)*
+> - Definir con precisión qué constituye "uso indebido del cupo" y homologarlo con las categorías ya tipificadas en Cobranza. *(placeholder — paso 4)*
+> - Especificar el punto de entrada exacto en la cadena de escalamiento de Cobranza cuando Servicio al Cliente traslada un caso a esa área. *(placeholder — paso 4)*
 > - Confirmar el mecanismo y momento de captura de las métricas NPS/CSAT. *(placeholder — paso 5)*
+> - Evaluar si Servicio al Cliente debe incorporarse al esquema de KPIs compartidos entre Comercial y Cobranza. *(placeholder — consideraciones)*
 
 ---
 
@@ -202,3 +210,8 @@ Cada paso incluye el **proceso** (qué ocurre técnica u operativamente) y un **
 
 - *Journeys Colpatria B2B* (junio de 2026), página 9.
 - Documento de Alcance del Producto.
+- Modelo y gestión de cobranza (Proceso Collections B2B, sumz.co).
+- Modelo de Cobranza B2B (Proceso Collections B2B, sumz.co).
+- Tipificación de motivos de contacto (Proceso Collections B2B, sumz.co).
+- Investigación B2B — Recaudo Fliipa + D1 (Proceso Collections B2B, sumz.co).
+- Modelo Comercial B2B (Proceso Collections B2B, sumz.co).
