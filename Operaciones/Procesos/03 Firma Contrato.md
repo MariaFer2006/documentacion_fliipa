@@ -1,4 +1,4 @@
-# 4. Firma de contrato y activación
+# 3. Firma de contrato y activación
 
 *Versión corregida — incorpora los ajustes acordados en el check-in de Producto del 23 de julio de 2026 (ver "Fuentes consultadas").*
 
@@ -30,7 +30,7 @@ En el journey, las cajas moradas ("Lee el contrato", "Se genera contrato firmado
 
 Una vez el crédito ha sido aprobado durante la evaluación de riesgo, el Core Bancario habilita la operación para iniciar el proceso de firma electrónica. El cliente recibe una invitación para continuar con la firma, autentica su identidad mediante su Documento de Identificación y el PIN de seguridad creado durante el onboarding, y accede a una pantalla de bienvenida con la información general del crédito aprobado, incluyendo el cupo aprobado, el plan de pagos, la fecha de pago, la tasa de interés y la disponibilidad del cupo para su uso en tiendas D1. Después de aceptar las condiciones, el cliente visualiza el detalle completo del crédito (cupo, plan de pagos, valor, fecha, tasa e inicio de uso), revisa el contrato y confirma la firma mediante un código de verificación enviado a su correo electrónico.
 
-Cuando la firma se completa correctamente, el sistema genera el contrato firmado y envía una copia al correo electrónico del cliente. Posteriormente, se genera la compra del bono con D1, D1 emite el bono y lo entrega al equipo de operaciones, quien lo asigna al cliente. Una vez completada la asignación, el sistema notifica al cliente que ya puede visualizar el código de barras del bono desde su cuenta. Finalmente, un actor distinto al Core Bancario —Core de Crédito/Originación— aprueba el crédito, lo que da inicio al funcionamiento de la calculadora y permite continuar con la recepción y uso del bono.
+Cuando la firma se completa correctamente, el sistema genera el contrato firmado y envía una copia al correo electrónico del cliente. Posteriormente, se genera la compra del bono con D1, D1 emite el bono y lo entrega al equipo de operaciones, quien lo asigna al cliente. Una vez completada la asignación, el sistema notifica al cliente que ya puede visualizar el código del bono desde su cuenta. Finalmente, un actor distinto al Core Bancario —Core de Crédito/Originación— aprueba el crédito, lo que da inicio al funcionamiento de la calculadora y permite continuar con la recepción y uso del bono.
 
 Como parte del estándar de trazabilidad definido para el ciclo del crédito, el sistema notifica por Slack al equipo de operaciones los eventos relevantes de este proceso: firma exitosa, fallas reiteradas en la verificación y cualquier caso en que el crédito firmado no sea finalmente aprobado por el Core de Crédito/Originación.
 
@@ -46,7 +46,7 @@ Cada paso incluye la descripción del proceso (qué ocurre a nivel técnico u op
 
 **Proceso:** Tras la aprobación del crédito en el proceso de KYC/riesgo (documento 3), el Core Bancario habilita la operación correspondiente para que el caso pueda continuar hacia la etapa de formalización. A partir de este momento el sistema puede solicitar al cliente la firma del contrato.
 
-**Resultado:** Crédito habilitado para iniciar la firma.
+**Resultado:** Crédito es habilitado para iniciar la firma.
 
 **Tiempo estimado:** Instantáneo (disparado automáticamente al recibir la aprobación de KYC/riesgo).
 
@@ -60,7 +60,7 @@ Cada paso incluye la descripción del proceso (qué ocurre a nivel técnico u op
 
 **Proceso:** El sistema contacta al cliente mediante correo electrónico, mensaje (WhatsApp y SMS) o llamada, informando que el crédito fue aprobado y que puede continuar con la firma electrónica.
 
-**Resultado:** Cliente contactado con la invitación a continuar el proceso de firma.
+**Resultado:** Cliente es contactado para continuar el proceso de firma.
 
 **Tiempo estimado:** Instantáneo del lado del sistema; la recepción depende del canal y es asíncrona.
 
@@ -107,8 +107,8 @@ Cada paso incluye la descripción del proceso (qué ocurre a nivel técnico u op
 **Proceso:** El sistema da la bienvenida al cliente en su cuenta y muestra en pantalla las condiciones del crédito aprobado:
 
 1. Cupo aprobado.
-2. Plan de pagos (número de cuotas, valor de cada cuota y día de pago mensual).
-3. Fecha de pago de la primera cuota.
+2. Plan de pagos (cuota, valor de la cuota y día de pago).
+3. Fecha de pago de la cuota.
 4. Tasa de interés (E.A.), aclarando que la cuota ya incluye intereses y cargos administrativos.
 5. Disponibilidad inmediata del cupo en la cuenta del cliente, utilizable en cualquier tienda D1.
 
@@ -143,7 +143,7 @@ Cada paso incluye la descripción del proceso (qué ocurre a nivel técnico u op
 **Proceso:** El sistema comunica al cliente el detalle operativo completo del crédito:
 
 - Cupo aprobado.
-- Plan de pagos.
+- Plan de pago.
 - Valor a pagar.
 - Fecha de pago.
 - Tasa de interés.
@@ -206,7 +206,7 @@ Cada paso incluye la descripción del proceso (qué ocurre a nivel técnico u op
 **Decisión:** ¿El código ingresado es válido?
 
 - **Exitoso:** el proceso continúa hacia la generación del documento firmado.
-- **Fallido:** el cliente es dirigido a contactar el servicio al cliente, y el sistema envía una alerta al canal de Slack de operaciones —con enlace directo al caso en el panel de administración— para dar trazabilidad al caso.
+- **Fallido:** el cliente es dirigido a contactar el servicio al cliente, y el sistema envía una alerta al canal de Slack de operaciones con enlace directo al caso en el panel de administración para dar trazabilidad al caso.
 
 **Resultado:** Titularidad del correo confirmada para efectos de la firma.
 
@@ -220,7 +220,7 @@ Cada paso incluye la descripción del proceso (qué ocurre a nivel técnico u op
 
 **Actor:** Web (sistema) / Cliente.
 
-**Proceso:** En caso de que el código sea incorrecto o haya expirado, el cliente debe contactarse con el servicio de atención al cliente. El asesor evalúa el caso específico y decide la solución más adecuada (que puede ser el reenvío del código u otra gestión, según la causa del error) — no se asume un reenvío automático en todos los casos.
+**Proceso:** En caso de que el código sea incorrecto o haya expirado, el cliente debe contactarse con el servicio de atención al cliente. El asesor evalúa el caso específico y decide la solución más adecuada (que puede ser el reenvío del código u otra gestión, según la causa del error) no se asume un reenvío automático en todos los casos.
 
 **Resultado:** Cliente atendido por el canal de soporte para poder continuar con la firma.
 
@@ -248,7 +248,7 @@ Cada paso incluye la descripción del proceso (qué ocurre a nivel técnico u op
 
 **Actor:** Cliente.
 
-**Proceso:** El cliente recibe en pantalla la confirmación de que la firma del contrato fue exitosa. El sistema envía adicionalmente una alerta al canal de Slack de operaciones confirmando la firma exitosa —con enlace directo al caso en el panel de administración—, en línea con el estándar de trazabilidad del ciclo del crédito.
+**Proceso:** El cliente recibe en pantalla la confirmación de que la firma del contrato fue exitosa. El sistema envía adicionalmente una alerta al canal de Slack de operaciones confirmando la firma exitosa con enlace directo al caso en el panel de administración, en línea con el estándar de trazabilidad del ciclo del crédito.
 
 **Resultado:** Firma confirmada.
 
@@ -278,7 +278,7 @@ Cada paso incluye la descripción del proceso (qué ocurre a nivel técnico u op
 
 **Actor:** Web (sistema) + Operario Sumz.
 
-**Proceso:** El operario de Sumz recibe el código de parte de D1 y lo ingresa manualmente en el panel de administración del cliente específico. Luego el sistema envía de forma automática el correo notificando al cliente y muestra el código en el panel de administración.
+**Proceso:** El operario de Sumz recibe el código de parte de D1 y lo ingresa manualmente en el panel de administración del cliente específico. Luego el sistema envía de forma automática el correo notificando al cliente.
 
 **Resultado:** Bono D1 asignado.
 
@@ -306,7 +306,7 @@ Cada paso incluye la descripción del proceso (qué ocurre a nivel técnico u op
 
 **Actor:** Cliente.
 
-**Proceso:** El cliente ingresa a su cuenta y visualiza el código numérico correspondiente al bono, el cual podrá canjear en cualquier tienda D1 (consistente con el paso 6 del portal del cliente descrito en *Modelo Comercial B2B*: "Usa su cupo — código numérico para canjear en cualquier tienda D1").
+**Proceso:** El cliente ingresa a su cuenta y visualiza el código correspondiente al bono, el cual podrá canjear en cualquier tienda D1 (consistente con el paso 6 del portal del cliente descrito en *Modelo Comercial B2B*: "Usa su cupo — código numérico para canjear en cualquier tienda D1").
 
 **Resultado:** Código del bono visible y disponible para su uso.
 

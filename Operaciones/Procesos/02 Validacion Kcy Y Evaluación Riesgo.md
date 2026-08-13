@@ -1,4 +1,4 @@
-# 3. Validación de identidad (KYC)
+# 2. Validación de identidad (KYC)
 
 
 ## Objetivo
@@ -21,9 +21,9 @@ En el journey, las dos cajas moradas ("Evalúa criterios de KYC automáticamente
 
 ## Descripción general
 
-Una vez el cliente finaliza el proceso de onboarding digital, la solicitud ingresa automáticamente al proceso de Validación de Identidad (KYC). El motor de riesgo se activa de forma automática sin esperar respuesta de Druo, permitiendo una evaluación inmediata. En esta etapa el sistema recibe el caso en el Admin, consulta y almacena información de fuentes externas —Experian (Historia de Crédito y servicio Reconocer)— y el historial transaccional de D1, y ejecuta de forma automática las reglas de negocio de Colpatria* establecidas para evaluar la elegibilidad del cliente. El resultado de la validación biométrica obtenida durante el onboarding, realizada por el proveedor externo (Olimpia)*, también queda registrado en la base de datos del producto.
+Una vez el cliente finaliza el proceso de onboarding digital, la solicitud ingresa automáticamente al proceso de Validación de Identidad (KYC). El motor de riesgo se activa de forma automática sin esperar respuesta de Druo, permitiendo una evaluación inmediata. En esta etapa el sistema recibe el caso en el Admin, consulta y almacena información de fuentes externas Experian (Historia de Crédito y servicio Reconocer)— y el historial transaccional de D1, y ejecuta de forma automática las reglas de negocio de Colpatria* establecidas para evaluar la elegibilidad del cliente. El resultado de la validación biométrica obtenida durante el onboarding, realizada por el proveedor externo (Olimpia)*, también queda registrado en la base de datos del producto.
 
-Si el cliente cumple con todos los criterios definidos, el sistema valida la cuenta bancaria registrada contra los productos financieros reportados en Experian y aprueba o ajusta* el cupo de crédito antes de continuar con la firma del contrato. En caso de que alguna validación falle —ya sea el cumplimiento de requisitos o la validez de la cuenta—, la solicitud pasa a un estado de **"posible rechazo"**: el sistema emite una alerta interna por Slack y el equipo de operaciones revisa el caso antes de confirmar el rechazo definitivo desde el Admin. Solo una vez confirmado el rechazo por operaciones, el cliente recibe la notificación por correo electrónico. Este proceso de estudio de crédito es automático, con un punto de control manual estratégico para los posibles rechazos, y elimina el estudio manual que anteriormente realizaba un analista para la totalidad de los casos.
+Si el cliente cumple con todos los criterios definidos, el sistema valida la cuenta bancaria registrada contra los productos financieros reportados en Experian y aprueba o ajusta* el cupo de crédito antes de continuar con la firma del contrato. En caso de que alguna validación falle ya sea el cumplimiento de requisitos o la validez de la cuenta, la solicitud pasa a un estado de **"posible rechazo"**: el sistema emite una alerta interna por Slack y el equipo de operaciones revisa el caso antes de confirmar el rechazo definitivo desde el Admin. Solo una vez confirmado el rechazo por operaciones, el cliente recibe la notificación por correo electrónico. Este proceso de estudio de crédito es automático, con un punto de control manual estratégico para los posibles rechazos, y elimina el estudio manual que anteriormente realizaba un analista para la totalidad de los casos.
 
 La cuenta bancaria ingresada por el cliente también se registra en Druo para habilitar futuros débitos; sin embargo, el motor de riesgo toma su decisión con base en la información contrastada contra Experian, no contra el resultado de open banking (a diferencia del modelo B2C).
 
@@ -39,7 +39,7 @@ La cuenta bancaria ingresada por el cliente también se registra en Druo para ha
 
 **Información utilizada:** Solicitud finalizada durante el onboarding digital.
 
-**Proceso:** Al cerrarse exitosamente el onboarding, el sistema dispara el motor de riesgo de forma inmediata, sin esperar respuesta de Druo, y adicionalmente lanza una alerta al canal de Slack de operaciones —cubriendo también llegada de nuevos clientes, aprobaciones, rechazos y alertas de fraude—, sin que el cliente deba realizar ninguna acción adicional.
+**Proceso:** Al cerrarse exitosamente el onboarding, el sistema dispara el motor de riesgo de forma inmediata, sin esperar respuesta de Druo, y adicionalmente lanza una alerta al canal de Slack de operaciones, cubriendo la llegada de nuevos clientes, aprobaciones, rechazos y alertas de fraude, sin que el cliente deba realizar ninguna acción adicional.
 
 **Resultado:** El sistema recibe la solicitud y abre automáticamente el caso dentro del Admin. A partir de este momento inicia el proceso de KYC.
 
@@ -55,7 +55,7 @@ La cuenta bancaria ingresada por el cliente también se registra en Druo para ha
 
 **Información utilizada:** Información del cliente registrada durante el onboarding.
 
-**Proceso:** El sistema ejecuta, en el caso abierto en el Admin, las consultas correspondientes a Experian —incluyendo el historial de crédito para persona natural y jurídica, y el servicio Reconocer para contrastar los datos de contacto— y el histórico transaccional de D1 del cliente. Cada resultado se almacena como parte del expediente del caso. Adicionalmente, el resultado de la validación biométrica obtenida durante el onboarding con el proveedor externo (Olimpia)* se registra en el Admin como un insumo más del expediente, sin volver a ejecutarse en esta etapa.
+**Proceso:** El sistema ejecuta, en el caso abierto en el Admin, las consultas correspondientes a Experian incluyendo el historial de crédito para personas, y el servicio Reconocer para contrastar los datos de contacto y el histórico transaccional de D1 del cliente. Cada resultado se almacena como parte del expediente del caso. Adicionalmente, el resultado de la validación biométrica obtenida durante el onboarding con el proveedor externo (Olimpia)* se registra en el Admin como un insumo más del expediente, sin volver a ejecutarse en esta etapa.
 
 La cuenta bancaria informada por el cliente se registra también en Druo para habilitar futuros débitos; este registro es paralelo al expediente de KYC y no sustituye la validación contra Experian del Paso 5.
 
@@ -180,22 +180,20 @@ La cuenta bancaria informada por el cliente se registra también en Druo para ha
 > **Placeholder\*:** no está definido si el rechazo por incumplimiento de requisitos (Paso 4) y el rechazo por cuenta bancaria inválida (Paso 6) requieren distinto nivel de severidad de alerta dentro del mismo canal de Slack.
 
 ---
-
 ### 10. Notificación al cliente
 
 **Actor:** Sistema.
 
 **Sistemas involucrados:** Sendgrid.
 
-**Proceso:** Una vez el equipo de operaciones confirma el rechazo en el Paso 9, el sistema dispara automáticamente un correo electrónico al cliente informando que la solicitud no fue aprobada. Con esta acción finaliza el proceso de Validación de Identidad (KYC).
+**Proceso:** Una vez que el equipo de operaciones confirma el rechazo en el Paso 9, el sistema envía automáticamente una notificación al cliente informando que la solicitud de crédito no fue aprobada. La comunicación no incluye información sobre las razones o causales asociados a la decisión.
 
-**Resultado:** Notificación de rechazo enviada al cliente por correo electrónico.
+**Resultado:** Notificación de rechazo enviada al cliente.
 
 **Tiempo estimado:** Instantáneo del lado del sistema tras la confirmación operativa; recepción asíncrona según el proveedor de correo.
 
-> **Placeholder\*:** no está definido el contenido/copy exacto del correo de rechazo, ni si existe algún canal adicional (SMS/WhatsApp vía Zenvia) para esta notificación.
+> **Placeholder*:** no está definido el contenido/copy exacto de la notificación de rechazo, ni si existe algún canal adicional al correo para esta notificación.
 
----
 
 ## Reglas de negocio
 

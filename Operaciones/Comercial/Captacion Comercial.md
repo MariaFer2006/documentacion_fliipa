@@ -22,7 +22,7 @@ El producto es un **cupo rotativo preaprobado** para comprar en D1 y pagar en *1
 
 ## Journey
 
-![Journey de Captación Comercial](imagenes/captacion-comercial-journey.png)
+![Journey de Captación Comercial](Procesos/imagenes/captacion-comercial-journey.png)
 
 **Figura 1. Journey de Captación Comercial** (fuente: *Modelo Comercial B2B.pptx*, diapositiva 10).
 
@@ -32,9 +32,9 @@ El journey se organiza en tres carriles (swimlanes): **Asesor**, **Cliente** y *
 
 ## Descripción general
 
-El proceso inicia con la base de clientes preaprobados definida para el piloto. El asesor contacta a cada cliente de forma **simultánea** por tres canales —email, WhatsApp y llamada— y el sistema monitorea los tres a la espera de una respuesta. Si el cliente no responde o manifiesta desinterés, el caso se reagenda y se reintenta el contacto enviando recordatorios del cupo preaprobado.
+El proceso inicia con la base de clientes preaprobados definida para el piloto. El asesor contacta a cada cliente de forma **simultánea** por tres canales —email, WhatsApp y llamada y el sistema monitorea los tres a la espera de una respuesta. Si el cliente no responde o manifiesta desinterés, el caso se reagenda y se reintenta el contacto enviando recordatorios del cupo preaprobado.
 
-Cuando el cliente responde por cualquiera de los canales mostrando interés, el asesor lo acompaña en tiempo real (chat o llamada) hasta dejarlo listo para iniciar el proceso, momento en el cual se le envía el enlace de solicitud por WhatsApp al número confirmado. El cliente completa la solicitud (NIT, datos del negocio y del representante legal) mientras el asesor verifica que el proceso se complete correctamente.
+Cuando el cliente responde por cualquiera de los canales mostrando interés, el asesor lo acompaña en tiempo real (chat o llamada) hasta dejarlo listo para iniciar el proceso, momento en el cual se le envía el enlace de solicitud por WhatsApp al número confirmado. El cliente completa la solicitud (con el documento de identificación) mientras el asesor verifica que el proceso se complete correctamente.
 
 Una vez finalizada la solicitud, el caso pasa a **Sistema & Riesgo** para la verificación de identidad y el análisis de crédito (KYC + riesgo). El asesor notifica al cliente, en un plazo de hasta *24 horas\**, si su cupo fue aprobado o rechazado. Los casos aprobados continúan hacia la firma del contrato y la activación del cupo en D1; posteriormente, si el cliente no ha realizado su primera compra en 7 días, el asesor hace un seguimiento adicional para impulsar el uso del cupo.
 

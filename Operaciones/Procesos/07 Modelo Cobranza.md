@@ -1,4 +1,4 @@
-# Modelo y Proceso de Cobranza B2B
+# 7. Modelo y Proceso de Cobranza B2B
 
 Bogotá · 2026 · Documento confidencial
 

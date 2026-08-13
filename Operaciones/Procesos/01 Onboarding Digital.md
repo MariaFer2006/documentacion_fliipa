@@ -1,4 +1,4 @@
-# 2. Onboarding digital
+# 1. Onboarding digital
 
 ## Objetivo
 
@@ -6,7 +6,7 @@ Registrar al cliente empresarial mediante un proceso completamente digital, iden
 
 > **Actualización (Check-in 16 jul 2026):** el estudio de crédito inicial queda completamente automatizado a través del motor de riesgo; no interviene un asesor humano en esta etapa. El flujo final del onboarding queda enfocado en dejar la solicitud lista para KYC + motor de riesgo.
 >
-> **Actualización (ago 2026):** se elimina la validación del número telefónico mediante código OTP (paso anterior "Envío y validación del código OTP"). La confirmación de identidad en el onboarding queda a cargo del código de verificación enviado por correo electrónico y del PIN de seguridad; el número de teléfono del representante legal se conserva como dato de contacto pero deja de requerir un código de un solo uso para validarse.
+**Actualización (ago 2026):** se elimina el uso del código OTP para la firma del contrato. Se mantienen los códigos de verificación enviados por WhatsApp y correo electrónico como mecanismos de validación definidos en el flujo. La validación específica del número telefónico dentro del onboarding queda pendiente de confirmar con el dueño del proceso.
 
 ---
 
@@ -61,9 +61,9 @@ El proceso inicia cuando el cliente recibe una invitación personalizada por cor
 
 **Actor:** Cliente.
 
-**Sistemas involucrados:** Plataforma web (landing page).
+**Sistemas involucrados:** Portal De Usuario.
 
-**Información utilizada:** NIT o número de cédula de ciudadanía.
+**Información utilizada:** Documento de Identificación.
 
 **Proceso:** El cliente ingresa su documento en la landing page. El backend consulta contra las bases de datos existentes para identificar si el cliente ya tiene información previa (persona natural o jurídica) y determinar el tipo de flujo a seguir.
 
@@ -81,16 +81,16 @@ El proceso inicia cuando el cliente recibe una invitación personalizada por cor
 
 **Sistemas involucrados:** Información transaccional de D1.
 
-**Información utilizada:** NIT o cédula registrada; cupo preaprobado por Colpatria.
+**Información utilizada:** Documento de Identidad registrado; cupo preaprobado por Colpatria.
 
 **Proceso:** El cupo preaprobado **no se calcula en este momento**: corresponde a un valor ya calculado previamente a partir del historial de consumos en D1 y almacenado en base de datos. En este paso el sistema únicamente consulta y recupera ese valor.
 
 **Decisión:** ¿La validación del cupo fue exitosa?
 
 - **Exitoso:** el flujo continúa hacia el registro de ubicación.
-- **Fallido:** el cliente vuelve a la pantalla de ingreso del NIT o identificación para intentarlo de nuevo.
+- **Fallido:** el cliente vuelve a la pantalla de ingreso para intentarlo de nuevo.
 
-**Resultado:** Cupo preaprobado recuperado de base de datos. Esta evaluación corresponde únicamente a una preaprobación y no representa la aprobación definitiva del crédito.
+**Resultado:** Cupo preaprobado recuperado de la base de datos. Esta evaluación corresponde únicamente a una preaprobación y no representa la aprobación definitiva del crédito.
 
 **Tiempo estimado:** ~5 segundos (consulta directa, no cálculo en línea).
 
@@ -157,7 +157,7 @@ El proceso inicia cuando el cliente recibe una invitación personalizada por cor
 
 **Información utilizada:** Nombre, cédula de ciudadanía y número de teléfono del representante legal (campos desglosados de forma independiente).
 
-**Proceso:** El cliente diligencia en pantalla los tres datos del representante legal por separado (nombre / cédula / teléfono). El teléfono queda registrado como dato de contacto; ya no se somete a una validación mediante código de un solo uso (OTP).
+**Proceso:** El cliente diligencia en pantalla los tres datos del representante legal por separado (nombre / cédula / teléfono). El teléfono queda registrado como dato de contacto. El mecanismo específico de validación del número telefónico dentro del onboarding queda pendiente de confirmar.
 
 **Resultado:** Queda registrada la información del representante legal necesaria para continuar con la confirmación de datos.
 
@@ -175,7 +175,7 @@ El proceso inicia cuando el cliente recibe una invitación personalizada por cor
 
 **Tiempo estimado:** ~10 segundos.
 
-> **Actualización (ago 2026):** se eliminó el paso "Envío y validación del código OTP" que antes seguía a esta confirmación. El teléfono del representante legal ya no se valida con un código de un solo uso; el siguiente paso del flujo es la validación del correo electrónico.
+> **Actualización (ago 2026):** se confirmó que el código OTP para la firma del contrato será eliminado. Los mecanismos de verificación mediante códigos enviados por WhatsApp y correo electrónico se mantienen. La definición específica de la validación del número telefónico dentro del onboarding queda pendiente de confirmar.
 
 ---
 
@@ -245,7 +245,7 @@ El proceso inicia cuando el cliente recibe una invitación personalizada por cor
 
 **Actor:** Cliente y proveedor externo (Olimpia).
 
-**Proceso:** El cliente completa el proceso biométrico directamente en la plataforma de Olimpia, fuera de la web de Colpatria B2B. El detalle técnico de esta integración aún está en definición.
+**Proceso:** El cliente completa el proceso biométrico directamente en la plataforma de Olimpia. El detalle técnico de esta integración aún está en definición.
 
 **Resultado:** El resultado puede ser Aprobado (exitoso), En revisión o Rechazado.
 
@@ -339,9 +339,9 @@ El proceso inicia cuando el cliente recibe una invitación personalizada por cor
 
 **Proceso:** El sistema envía automáticamente toda la información recopilada al motor de riesgo para el análisis de crédito, el cual queda **completamente automatizado** (ya no se envía una solicitud manual a un asesor). En su lugar, se genera una **notificación automática de funnel** para que el equipo interno monitoree el flujo, sin que esto sea un paso manual del proceso de aprobación.
 
-**Resultado:** El sistema informa al cliente que debe esperar respuesta en un plazo de hasta 1 día.
+**Resultado:** El sistema informa al cliente que debe esperar respuesta en un plazo de 24 horas.
 
-**Tiempo estimado:** Instantáneo (envío automático); la respuesta del análisis toma hasta 1 día y ocurre fuera del journey activo del cliente.
+**Tiempo estimado:** Instantáneo (envío automático); la respuesta del análisis toma 24 horas.
 
 ---
 
@@ -360,7 +360,7 @@ El proceso inicia cuando el cliente recibe una invitación personalizada por cor
 - Cada cliente inicia el proceso mediante un enlace a la landing page enviado por Sendgrid y Zenvia.
 - El cupo preaprobado se consulta a partir de información transaccional de D1 **ya calculada y almacenada previamente**; si la identificación falla, el cliente debe reintentar el ingreso de su NIT o identificación.
 - La aceptación de términos y condiciones es obligatoria, tanto en el flujo NIT como en el flujo CC; si no se acepta, el sistema simplemente no permite avanzar.
-- El número telefónico del representante legal se registra como dato de contacto y **ya no requiere validación mediante código OTP**.
+- - El cliente debe validar un código de verificación enviado a su correo electrónico antes de crear el PIN de seguridad; puede solicitar el reenvío si no lo recibe.
 - El cliente debe confirmar en pantalla los datos del representante legal (paso 8.1) antes de continuar hacia la validación del correo electrónico.
 - El cliente debe validar un código de verificación enviado a su correo electrónico antes de crear el PIN de seguridad; puede solicitar el reenvío si no lo recibe.
 - El cliente debe crear un PIN de cuatro dígitos, sin reglas adicionales de validación de combinaciones inseguras por ahora.
@@ -383,7 +383,7 @@ El proceso inicia cuando el cliente recibe una invitación personalizada por cor
 - Departamento, ciudad y dirección.
 - Nombre del representante legal.
 - Cédula de ciudadanía del representante legal.
-- Teléfono del representante legal (dato de contacto, sin validación OTP).
+- Teléfono de contacto (dato de contacto, sin validación OTP).
 - Código de verificación (correo electrónico).
 - PIN de seguridad.
 - Cuenta bancaria.
@@ -438,16 +438,6 @@ El proceso inicia cuando el cliente recibe una invitación personalizada por cor
 
 ---
 
-## Notas
-
-- Los tiempos de aprobación, número de cuotas y demás parámetros operativos pueden modificarse durante la evolución del producto.
-- Queda pendiente el ajuste técnico de cambiar la URL de la página en el paso de registro del documento de identificación.
-- Queda pendiente agregar un copy que indique al cliente revisar su correo tras la confirmación de cuenta.
-- Debe confirmarse con el dueño del proceso si todo rechazo automático de biometría pasa por revisión manual del analista de riesgo.
-- Pendiente documentar en detalle el proceso de KYC y motor de riesgo, incluyendo los servicios específicos de Experian utilizados (acción asignada a María Fernanda Herazo en el check-in del 16 de julio de 2026).
-- **Pendiente (ago 2026):** actualizar las Figuras 2 y 3 del journey (`imagenes/page-02.png`, `imagenes/page-03.png`) para reflejar la eliminación del paso "Envío y validación del código OTP"; las imágenes actuales aún muestran ese paso.
-
----
 
 ## Fuentes consultadas
 

@@ -1,4 +1,4 @@
-# 5. Calculadora y cobro del crédito
+# 4. Calculadora y cobro del crédito
 
 ## Objetivo
 
@@ -22,11 +22,11 @@ El journey se organiza en tres carriles (swimlanes): **Cliente**, **Calculadora*
 
 ## Descripción general
 
-Una vez el cliente recibe y accede a su bono D1 (asignado en el paso 16 del proceso de Firma de Contrato, documento 4) y lo utiliza para realizar una compra, un **worker periódico**\* detecta ese uso en D1 y dispara el inicio de los cálculos de cobro. La calculadora genera automáticamente el plan de pagos (cuotas, fechas, tasa y saldo inicial), información que el cliente puede consultar desde la plataforma web.
+Una vez el cliente recibe y accede a su bono D1 (asignado en el paso 16 del proceso de Firma de Contrato, documento 4) y lo utiliza para realizar una compra, un **worker periódico**\* detecta ese uso en D1 y dispara el inicio de los cálculos de cobro. La calculadora genera automáticamente el plan de pagos (cuota, fecha y tasa de intereses), información que el cliente puede consultar desde el portal de usuarios.
 
-El cliente decide entonces si desea realizar un prepago mediante PSE desde la web, o esperar el cobro automático que se ejecuta con Drúo al cierre del ciclo. Una vez recibido el pago, el sistema lo registra, aplica la amortización correspondiente y actualiza el saldo. Si el crédito queda al día, se liquida y el cupo se libera para un nuevo ciclo; si el cliente se encuentra en mora, el caso continúa automáticamente hacia el proceso de Cobranza (documento 8).
+El cliente decide entonces si desea realizar un prepago mediante PSE desde el *Portal de Usuarios*, o esperar el cobro automático que se ejecuta con Drúo al cierre del ciclo. Una vez recibido el pago, el sistema lo registra, aplica la amortización correspondiente y actualiza el saldo. Si el crédito queda al día, se liquida y el cupo se libera para un nuevo ciclo; si el cliente se encuentra en mora, el caso continúa automáticamente hacia el proceso de Cobranza (documento 7).
 
-En consistencia con el estándar de trazabilidad definido para el ciclo del crédito (documento 4), el sistema notifica por Slack al equipo de operaciones los eventos relevantes de este proceso —falla del débito automático con Drúo, error durante la actualización del saldo, y todo caso en que el crédito quede en mora—, incluyendo en cada alerta un **enlace directo al caso en el panel de administración**.
+En consistencia con el estándar de trazabilidad definido para el ciclo del crédito (documento 3), el sistema notifica por Slack al equipo de operaciones los eventos relevantes de este proceso, la falla del débito automático con Drúo, error durante la actualización del saldo, y todo caso en que el crédito quede en mora, incluyendo en cada alerta un **enlace directo al caso en el panel de administración**.
 
 ---
 
@@ -38,7 +38,7 @@ Cada paso incluye el **proceso** (qué ocurre técnica u operativamente) y un **
 
 **Actor:** Cliente.
 
-**Proceso:** El cliente recibe y accede a su bono D1 por medio de la plataforma web (bono asignado en el paso 16 del documento 4, Firma de contrato y activación). Posteriormente utiliza el bono para realizar una compra en una tienda D1 (documento 6, Dispersión de fondos).
+**Proceso:** El cliente recibe y accede a su bono D1 por medio de la portal de usuarios. Posteriormente utiliza el bono para realizar una compra en una tienda D1 (documento 6, Dispersión de fondos).
 
 **Resultado:** Bono utilizado en una compra en D1.
 
@@ -64,7 +64,7 @@ Cada paso incluye el **proceso** (qué ocurre técnica u operativamente) y un **
 
 **Actor:** Calculadora (sistema).
 
-**Proceso:** La calculadora financiera genera el plan de pagos correspondiente a la obligación: cuotas, fechas de vencimiento, tasa de interés y saldo inicial, aplicando las reglas de cálculo de intereses y amortización definidas para el producto\*.
+**Proceso:** La calculadora financiera genera el plan de pagos correspondiente a la obligación: cuota, fecha de vencimiento, tasa de interés, aplicando las reglas de cálculo de intereses y amortización definidas para el producto\*.
 
 **Resultado:** Plan de pagos generado y disponible para consulta del cliente.
 
@@ -78,7 +78,7 @@ Cada paso incluye el **proceso** (qué ocurre técnica u operativamente) y un **
 
 **Actor:** Cliente.
 
-**Proceso:** El cliente ingresa a la plataforma web y visualiza el saldo pendiente y la fecha de pago de su crédito, además del valor de las cuotas y el estado general de la obligación.
+**Proceso:** El cliente ingresa a la plataforma web y visualiza el saldo pendiente y la fecha de pago de su crédito, además del valor de la cuota y el estado general de la obligación.
 
 **Resultado:** Cliente informado del estado de su crédito.
 
@@ -94,7 +94,7 @@ Cada paso incluye el **proceso** (qué ocurre técnica u operativamente) y un **
 
 **Decisión:** ¿Desea realizar prepago?
 
-- **Sí:** el pago se registra en PSE desde la web.
+- **Sí:** el pago se registra en PSE desde el portal de Usuarios.
 - **No:** el cliente espera el cobro automático en la fecha de corte/cierre del ciclo.
 
 **Resultado:** Método de pago seleccionado (prepago o espera de débito automático).
@@ -131,7 +131,7 @@ Cada paso incluye el **proceso** (qué ocurre técnica u operativamente) y un **
 
 > **Nota (reunión Weekly Planning · 27 jul 2026):** se confirmó que la integración con Drúo permite ejecutar el débito de forma automática y que **no se requiere una respuesta en tiempo real** por parte de Drúo para completar el proceso. Adicionalmente, se aclaró que las demoras que se observan en algunas operaciones bancarias (por ejemplo, la validación de saldo disponible o de la cuenta del cliente) se deben al flujo de la transacción a través de la **red ACH (Cámara de Compensación Automatizada)**, que gestiona las transferencias entre distintas entidades bancarias y no siempre responde de forma instantánea. Esto explica por qué el débito automático con Drúo debe tratarse como un proceso asíncrono en este journey, y no como una confirmación inmediata.
 
-**Nuevo (trazabilidad):** si el débito automático con Drúo **falla** (fondos insuficientes, cuenta inválida u otro error), el sistema envía una alerta al canal de Slack de operaciones —con enlace directo al caso en el panel de administración— para dar seguimiento antes de que el caso escale a mora.
+**Nuevo (trazabilidad):** si el débito automático con Drúo **falla** (fondos insuficientes, cuenta inválida u otro error), el sistema envía una alerta al canal de Slack de operaciones con enlace directo al caso en el panel de administración para dar seguimiento antes de que el caso escale a mora.
 
 **Placeholder\*:** no está definida la frecuencia exacta de ejecución del débito automático (¿un único intento en la fecha de corte, o varios intentos como en el proceso de Cobranza, documento 8, días 0 y 1-5?). Debe alinearse con las reglas ya definidas en el documento de Cobranza para evitar duplicidad o inconsistencia entre ambos procesos. Tampoco está definido si toda falla del débito debe alertar por Slack de inmediato o solo tras un número determinado de intentos fallidos (mismo criterio pendiente en doc. 4, paso 11). *(La reunión del 27 jul 2026 confirmó el carácter asíncrono/no tiempo-real de la integración con Drúo, pero no definió el número de reintentos ni el umbral de alertas; estos puntos siguen pendientes de validación con el dueño del proceso.)*
 
@@ -141,7 +141,7 @@ Cada paso incluye el **proceso** (qué ocurre técnica u operativamente) y un **
 
 **Actor:** Calculadora (sistema).
 
-**Proceso:** Una vez recibido el pago —por PSE o por débito automático—, el sistema lo registra, aplica la amortización correspondiente sobre el saldo y actualiza el estado de la obligación.
+**Proceso:** Una vez recibido el pago por PSE o por débito automático, el sistema lo registra, aplica la amortización correspondiente sobre el saldo y actualiza el estado de la obligación.
 
 **Resultado:** Saldo del crédito actualizado.
 
@@ -186,7 +186,7 @@ Cada paso incluye el **proceso** (qué ocurre técnica u operativamente) y un **
 
 **Actor:** Cliente / Calculadora (sistema).
 
-**Proceso:** Si el cliente incumple la fecha de pago, el crédito queda marcado en estado de mora y el sistema clasifica automáticamente la obligación como cartera en mora, transfiriendo el caso al proceso de Cobranza (documento 8).
+**Proceso:** Si el cliente incumple la fecha de pago, el crédito queda marcado en estado de mora y el sistema clasifica automáticamente la obligación como cartera en mora, transfiriendo el caso al proceso de Cobranza (documento 7).
 
 **Resultado:** Caso enviado al proceso de cobranza.
 

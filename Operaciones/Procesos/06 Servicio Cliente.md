@@ -1,4 +1,4 @@
-# 7. Servicio al cliente
+# 6. Servicio al cliente
 
 ## Objetivo
 
