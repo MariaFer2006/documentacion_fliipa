@@ -6,7 +6,7 @@ Registrar al cliente empresarial mediante un proceso completamente digital, iden
 
 > **Actualización (Check-in 16 jul 2026):** el estudio de crédito inicial queda completamente automatizado a través del motor de riesgo; no interviene un asesor humano en esta etapa. El flujo final del onboarding queda enfocado en dejar la solicitud lista para KYC + motor de riesgo.
 >
-> **Actualización (ago 2026):** se elimina la validación del número telefónico mediante código OTP (paso anterior "Envío y validación del código OTP"). La confirmación de identidad en el onboarding queda a cargo del código de verificación enviado por correo electrónico y del PIN de seguridad; el número de teléfono del representante legal se conserva como dato de contacto pero deja de requerir un código de un solo uso para validarse.
+**Actualización (ago 2026):** se elimina el uso del código OTP para la firma del contrato. Se mantienen los códigos de verificación enviados por WhatsApp y correo electrónico como mecanismos de validación definidos en el flujo. La validación específica del número telefónico dentro del onboarding queda pendiente de confirmar con el dueño del proceso.
 
 ---
 
@@ -157,7 +157,7 @@ El proceso inicia cuando el cliente recibe una invitación personalizada por cor
 
 **Información utilizada:** Nombre, cédula de ciudadanía y número de teléfono del representante legal (campos desglosados de forma independiente).
 
-**Proceso:** El cliente diligencia en pantalla los tres datos del representante legal por separado (nombre / cédula / teléfono). El teléfono queda registrado como dato de contacto; ya no se somete a una validación mediante código de un solo uso (OTP).
+**Proceso:** El cliente diligencia en pantalla los tres datos del representante legal por separado (nombre / cédula / teléfono). El teléfono queda registrado como dato de contacto. El mecanismo específico de validación del número telefónico dentro del onboarding queda pendiente de confirmar.
 
 **Resultado:** Queda registrada la información del representante legal necesaria para continuar con la confirmación de datos.
 
@@ -175,7 +175,7 @@ El proceso inicia cuando el cliente recibe una invitación personalizada por cor
 
 **Tiempo estimado:** ~10 segundos.
 
-> **Actualización (ago 2026):** se eliminó el paso "Envío y validación del código OTP" que antes seguía a esta confirmación. El teléfono del representante legal ya no se valida con un código de un solo uso; el siguiente paso del flujo es la validación del correo electrónico.
+> **Actualización (ago 2026):** se confirmó que el código OTP para la firma del contrato será eliminado. Los mecanismos de verificación mediante códigos enviados por WhatsApp y correo electrónico se mantienen. La definición específica de la validación del número telefónico dentro del onboarding queda pendiente de confirmar.
 
 ---
 
@@ -360,7 +360,7 @@ El proceso inicia cuando el cliente recibe una invitación personalizada por cor
 - Cada cliente inicia el proceso mediante un enlace a la landing page enviado por Sendgrid y Zenvia.
 - El cupo preaprobado se consulta a partir de información transaccional de D1 **ya calculada y almacenada previamente**; si la identificación falla, el cliente debe reintentar el ingreso de su NIT o identificación.
 - La aceptación de términos y condiciones es obligatoria, tanto en el flujo NIT como en el flujo CC; si no se acepta, el sistema simplemente no permite avanzar.
-- El número telefónico del representante legal se registra como dato de contacto y **ya no requiere validación mediante código OTP**.
+- - El cliente debe validar un código de verificación enviado a su correo electrónico antes de crear el PIN de seguridad; puede solicitar el reenvío si no lo recibe.
 - El cliente debe confirmar en pantalla los datos del representante legal (paso 8.1) antes de continuar hacia la validación del correo electrónico.
 - El cliente debe validar un código de verificación enviado a su correo electrónico antes de crear el PIN de seguridad; puede solicitar el reenvío si no lo recibe.
 - El cliente debe crear un PIN de cuatro dígitos, sin reglas adicionales de validación de combinaciones inseguras por ahora.
@@ -383,7 +383,7 @@ El proceso inicia cuando el cliente recibe una invitación personalizada por cor
 - Departamento, ciudad y dirección.
 - Nombre del representante legal.
 - Cédula de ciudadanía del representante legal.
-- Teléfono del representante legal (dato de contacto, sin validación OTP).
+- Teléfono de contacto (dato de contacto, sin validación OTP).
 - Código de verificación (correo electrónico).
 - PIN de seguridad.
 - Cuenta bancaria.
