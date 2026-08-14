@@ -137,13 +137,11 @@ Una vez finalizada la solicitud, el caso pasa a **Sistema & Riesgo** para la ver
 
 **Actor:** Cliente.
 
-**Información utilizada:** Docuemento de Identificación, datos del negocio y del representante legal.
+**Información utilizada:** Documento de identificación, datos del negocio y del representante legal.
 
-**Proceso:** El cliente diligencia el formulario de solicitud con el Documento de Identidad, los datos del negocio y del representante legal.
+**Proceso:** El cliente diligencia el formulario de solicitud con el documento de identificación, los datos del negocio y del representante legal.
 
 **Resultado:** Solicitud diligenciada, pendiente de verificación.
-
-> **Nota de continuidad:** este paso se desarrolla en detalle en el journey de **Onboarding digital** (documento 2).
 
 ---
 
@@ -225,7 +223,7 @@ Una vez finalizada la solicitud, el caso pasa a **Sistema & Riesgo** para la ver
 - El link de solicitud se envía únicamente al número de WhatsApp confirmado durante el contacto.
 - El asesor debe verificar que el cliente complete correctamente el proceso de solicitud.
 - La notificación de aprobación o rechazo debe entregarse en un plazo máximo de *24 horas\** después de la validación de KYC + riesgo.
-- El cupo confirmado tiene una vigencia máxima de *24 horas\**, sujeta a que el análisis de riesgo sea satisfactorio.
+- La notificación de aprobación o rechazo debe entregarse en un plazo máximo de *24 horas\** después de la validación de KYC + riesgo.
 - Si el cliente aprobado no realiza su primera compra en 7 días, el asesor debe contactarlo nuevamente.
 
 > \* **Dato sujeto a cambios frecuentes** (Check-in de Producto, 15 jul 2026): el plazo de aprobación y la vigencia del cupo son parámetros operativos del piloto que pueden ajustarse conforme evolucione el producto. Confirmar la versión vigente con el dueño del proceso antes de citarlos en otro documento.
@@ -238,7 +236,7 @@ Una vez finalizada la solicitud, el caso pasa a **Sistema & Riesgo** para la ver
 - Cupo preaprobado por cliente.
 - Speech comercial (llamada) y plantillas de mensaje (email, WhatsApp).
 - Número de teléfono confirmado.
-- NIT, datos del negocio y del representante legal (capturados en la solicitud).
+- Documento de identificación, datos del negocio y del representante legal (capturados en la solicitud).
 - Resultado de la validación de KYC + riesgo.
 
 ---
