@@ -1,4 +1,4 @@
-# 1. Captación comercial
+# 1. Proceso Comercial
 
 ## Objetivo
 
@@ -14,7 +14,7 @@ El proceso de captación comercial es la puerta de entrada al ecosistema del cr�
 - **Sumz / Flipa**: la plataforma financiera que origina y gestiona el crédito rotativo B2B, evaluando con datos de consumo real (no solo historial bancario).
 - **El cliente/micronegocio**: pequeño comercio con alta frecuencia de compra en D1, que necesita flujo de caja flexible para surtir su negocio sin descapitalizarse.
 
-El producto es un **cupo rotativo preaprobado** para comprar en D1 y pagar en *1 cuota\**, con aprobación máxima en *24 horas\**. El cliente paga, libera cupo y puede volver a usarlo; el cupo se bloquea ante retrasos de pago y se reporta a centrales de riesgo según los plazos legales.
+El producto es un **cupo rotativo preaprobado** para comprar en D1 y pagar en *1 cuota\**, con aprobación máxima en *24 horas\**. El código sirve para una sola compra. Si el cliente usa menos del cupo total, el saldo restante queda congelado hasta que pague lo que usó.; el cupo se bloquea ante retrasos de pago y se reporta a centrales de riesgo según los plazos legales.
 
 > \* **Dato sujeto a cambios frecuentes** (Check-in de Producto, 15 jul 2026): el plazo de aprobación y el número de cuotas son parámetros operativos del piloto que pueden ajustarse conforme evolucione el producto. Confirmar la versión vigente con el dueño del proceso antes de citarlos en otro documento.
 
@@ -137,15 +137,12 @@ Una vez finalizada la solicitud, el caso pasa a **Sistema & Riesgo** para la ver
 
 **Actor:** Cliente.
 
-**Información utilizada:** NIT, datos del negocio y del representante legal.
+**Información utilizada:** Documento de identificación, datos del negocio y del representante legal.
 
-**Proceso:** El cliente diligencia el formulario de solicitud con el NIT, los datos del negocio y del representante legal.
+**Proceso:** El cliente diligencia el formulario de solicitud con el documento de identificación, los datos del negocio y del representante legal.
 
 **Resultado:** Solicitud diligenciada, pendiente de verificación.
-
-> **Nota de continuidad:** este paso se desarrolla en detalle en el journey de **Onboarding digital** (documento 2).
-
----
+--
 
 ### 9. Verificación y acompañamiento del asesor
 
@@ -176,7 +173,7 @@ Una vez finalizada la solicitud, el caso pasa a **Sistema & Riesgo** para la ver
 
 **Actor:** Asesor.
 
-**Proceso:** El asesor notifica al cliente, en un plazo de hasta *24 horas\** después de que el equipo realice la validación, si su cupo fue aprobado o rechazado. En caso de aprobación, se confirma el cupo activo (máximo *24 h\**), siempre que haya pasado el análisis de riesgo.
+**Proceso:** El asesor notifica al cliente, en un plazo de hasta *24 horas\** después de que el equipo realice la validación, si su cupo fue aprobado o rechazado. En caso de aprobación, se informa al cliente el resultado y las condiciones correspondientes para continuar con la firma del contrato y posterior activación del cupo.
 
 **Resultado:** Cliente informado sobre el resultado de su solicitud.
 
@@ -188,9 +185,9 @@ Una vez finalizada la solicitud, el caso pasa a **Sistema & Riesgo** para la ver
 
 **Actor:** Cliente.
 
-**Proceso:** El cliente acepta las condiciones del crédito y el cupo queda activo en D1.
+**Proceso:** El cliente acepta las condiciones del crédito mediante firma digital.
 
-**Resultado:** Cupo activo en D1.
+**Resultado:** El contrato queda firmado y el cupo queda activo para su uso en D1.
 
 > **Nota de continuidad:** este paso se desarrolla en detalle en el journey de **Firma de Contrato y Activación** (documento 4).
 
@@ -225,7 +222,7 @@ Una vez finalizada la solicitud, el caso pasa a **Sistema & Riesgo** para la ver
 - El link de solicitud se envía únicamente al número de WhatsApp confirmado durante el contacto.
 - El asesor debe verificar que el cliente complete correctamente el proceso de solicitud.
 - La notificación de aprobación o rechazo debe entregarse en un plazo máximo de *24 horas\** después de la validación de KYC + riesgo.
-- El cupo confirmado tiene una vigencia máxima de *24 horas\**, sujeta a que el análisis de riesgo sea satisfactorio.
+- La notificación de aprobación o rechazo debe entregarse en un plazo máximo de *24 horas\** después de la validación de KYC + riesgo.
 - Si el cliente aprobado no realiza su primera compra en 7 días, el asesor debe contactarlo nuevamente.
 
 > \* **Dato sujeto a cambios frecuentes** (Check-in de Producto, 15 jul 2026): el plazo de aprobación y la vigencia del cupo son parámetros operativos del piloto que pueden ajustarse conforme evolucione el producto. Confirmar la versión vigente con el dueño del proceso antes de citarlos en otro documento.
@@ -238,7 +235,7 @@ Una vez finalizada la solicitud, el caso pasa a **Sistema & Riesgo** para la ver
 - Cupo preaprobado por cliente.
 - Speech comercial (llamada) y plantillas de mensaje (email, WhatsApp).
 - Número de teléfono confirmado.
-- NIT, datos del negocio y del representante legal (capturados en la solicitud).
+- Documento de identificación, datos del negocio y del representante legal (capturados en la solicitud).
 - Resultado de la validación de KYC + riesgo.
 
 ---
@@ -295,4 +292,5 @@ Una vez finalizada la solicitud, el caso pasa a **Sistema & Riesgo** para la ver
 - *Modelo Comercial B2B.pptx* (Sumz, junio de 2026), diapositivas 2 a 10 — carpeta *Proceso Collections B2B*.
 - *Arquetipos.docx* — guía de identidad de marca y voz para originación, servicio y cobranza.
 - Documento de Alcance del Producto.
-- Notas de la reunión "Producto: Check-in" (15 jul 2026) y su transcripción asociada — ajuste de 72h/3 cuotas a 24h/1 cuota; reemplazo de "tendero" por "cliente"/"micronegocio".
+- Notas de la reunión "Producto: Check-in" (15 jul 2026) y su transcripción asociada — ajuste de 72h/3 cuotas a 24h/1 cuota; reemplazo de "tendero" por
+- "cliente"/"micronegocio".
