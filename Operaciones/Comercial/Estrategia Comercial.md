@@ -28,8 +28,8 @@ El cupo solo se usa en tiendas D1, con un código numérico único que llega por
 El código sirve para una sola compra. Si el cliente usa menos del cupo total, el saldo restante queda congelado hasta que pague lo que usó.
 El pago es siempre a 1 sola cuota, a 30 días — no hay plazos ni cuotas múltiples.
 Al pagar completo, el cliente puede volver a solicitar un cupo nuevo.
-La solicitud se hace con el NIT o CC.
-Fliipa responde la solicitud en máximo 24 horas.
+La solicitud se hace con el documento de identificación.
+Aprobación máxima en 24 horas.
 
 La estrategia se apoya en tres pilares:
 1) Un mensaje comercial simple y sin tecnicismos, construido sobre el mix de arquetipos "Persona Corriente – Héroe".
@@ -62,7 +62,7 @@ Un cupo rotativo preaprobado para comprar en D1 y pagar en una sola cuota diferi
 
 ### Propuesta de valor para el cliente
 
-| Beneficio | Qué significa para el tendero |
+| Beneficio | Qué significa para el cliente|
 |---|---|
 | Surtido sin descapitalizarse | Puede comprar más seguido en D1 sin usar todo su efectivo de una sola vez. |
 | Cuotas predecibles | Sabe exactamente cuánto va a pagar y cuándo. Sin sorpresas. |
@@ -126,8 +126,7 @@ La captación se activa de forma simultánea por tres canales, con un mismo mens
 | Email | Primer contacto formal. Informa el cupo preaprobado y el link de solicitud. | Informativo |
 | WhatsApp | Canal principal. Envío de enlace, seguimiento y soporte en tiempo real. | Cercano, directo |
 | Llamada | Speech comercial: presentación del beneficio, manejo de objeciones y cierre. | Conversacional |
-
-Una vez el cliente muestra interés, toda la interacción migra a WhatsApp, que es el canal donde vive el tendero y donde se concentra la originación.
+Una vez el cliente muestra interés, toda la interacción migra a WhatsApp, que es el canal principal de comunicación y donde se concentra la originación.
 
 *Fuente: Modelo Comercial B2B.pptx (sumz.co)*
 
@@ -179,7 +178,7 @@ El cliente no visita una oficina: todo el proceso de originación sucede desde s
 | Paso | Acción |
 |---|---|
 | 1. Recibe enlace | Por WhatsApp, al número confirmado durante la llamada. |
-| 2. Ingresa con NIT | Del negocio y datos del representante legal. |
+| 2. Ingresa con documento de identificación | Del cliente y datos del representante legal. |
 | 3. Verifica identidad | Foto de cédula y selfie; KYC automático. |
 | 4. Vincula cuenta | Débito automático mediante Druo. |
 | 5. Firma contrato | Firma digital, desde el celular, en minutos. |
@@ -197,7 +196,7 @@ El piloto B2B se activa en seis etapas, con foco en validar canales antes de esc
 |---|---|
 | 1. Validar base de datos | Confirmar la lista de clientes preaprobados y sus datos de contacto. |
 | 2. Activar canales | Configurar plantillas de WhatsApp, email y el speech de llamada con Fliipa. |
-| 3. Lanzar piloto | Contactar a los primeros 300 cliente y medir la tasa de respuesta por canal. |
+| 3. Lanzar piloto | Contactar a los primeros 300 clientes y medir la tasa de respuesta por canal. |
 | 4. Acompañar originación | Un asesor comercial acompaña a los negocios seleccionados en el KYC y la firma del contrato. |
 | 5. Seguimiento primera compra | El asesor contacta a los clientes aprobados que no han usado el cupo en 7 días. |
 | 6. Analizar y escalar | Se mide el canal más efectivo, el tipo de negocio, la tasa de conversión y de uso. |
