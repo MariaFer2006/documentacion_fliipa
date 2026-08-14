@@ -52,7 +52,7 @@ Cada historia se documenta como una ficha individual: identificador, descripció
 | **Relaciones** | Casos de uso: CU-001, CU-002. Historias relacionadas: HU-002, HU-003, HU-019. |
 | **Referencias** | [Procesos](../negocio/procesos/01-captacion-comercial.md); `b2b/fliipa-back/src/controllers/checkouts/create-checkout.ts` |
 | **Autor / Fecha / Versión** | María Fernanda Herazo |
-| **Comentarios** | **Confirmado en código:** `create-checkout.ts` valida el documento y tipo de documento, rechaza la creación cuando ya existe un cliente asociado al documento y reutiliza checkouts existentes en estado `REQUEST_STARTED`. |
+| **Comentarios**  | **Confirmado en código:** `create-checkout.ts` valida el Documento de Identidad y su tipo, rechaza la creación cuando ya existe un cliente asociado al Documento de Identidad y reutiliza checkouts existentes en estado `REQUEST_STARTED`. |
 
 #### HU-002: Consultar si tengo cupo preaprobado con mi número de documento
 
