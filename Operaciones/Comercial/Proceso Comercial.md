@@ -1,4 +1,4 @@
-# 1. Captación comercial
+# 1. Proceso Comercial
 
 ## Objetivo
 
@@ -137,9 +137,9 @@ Una vez finalizada la solicitud, el caso pasa a **Sistema & Riesgo** para la ver
 
 **Actor:** Cliente.
 
-**Información utilizada:** NIT, datos del negocio y del representante legal.
+**Información utilizada:** Docuemento de Identificación, datos del negocio y del representante legal.
 
-**Proceso:** El cliente diligencia el formulario de solicitud con el NIT, los datos del negocio y del representante legal.
+**Proceso:** El cliente diligencia el formulario de solicitud con el Documento de Identidad, los datos del negocio y del representante legal.
 
 **Resultado:** Solicitud diligenciada, pendiente de verificación.
 
@@ -295,4 +295,5 @@ Una vez finalizada la solicitud, el caso pasa a **Sistema & Riesgo** para la ver
 - *Modelo Comercial B2B.pptx* (Sumz, junio de 2026), diapositivas 2 a 10 — carpeta *Proceso Collections B2B*.
 - *Arquetipos.docx* — guía de identidad de marca y voz para originación, servicio y cobranza.
 - Documento de Alcance del Producto.
-- Notas de la reunión "Producto: Check-in" (15 jul 2026) y su transcripción asociada — ajuste de 72h/3 cuotas a 24h/1 cuota; reemplazo de "tendero" por "cliente"/"micronegocio".
+- Notas de la reunión "Producto: Check-in" (15 jul 2026) y su transcripción asociada — ajuste de 72h/3 cuotas a 24h/1 cuota; reemplazo de "tendero" por
+- "cliente"/"micronegocio".
