@@ -20,15 +20,22 @@ Agosto 2026 · Documento confidencial
 
 ## Resumen ejecutivo
 
-Este documento consolida la estrategia comercial del piloto B2B de Fliipa dentro de las tiendas D1, operado bajo la marca "Socios D1". El objetivo es convertir la base de tenderos preaprobados en clientes activos del crédito rotativo, a través de una captación multicanal (email, WhatsApp y llamada), una experiencia de originación 100% digital y un tono de marca coherente en cada punto de contacto.
+Fliipa es una fintech B2B de crédito para empresas — específicamente, el piloto actual opera bajo la marca "Socios D1", dirigido a clientes preaprobados que compran recurrentemente en tiendas D1.
+
+El cliente de Fliipa es la empresa (pyme/microempresa).
+Fliipa otorga un cupo de crédito preaprobado (ej. $500.000 - $1.000.000).
+El cupo solo se usa en tiendas D1, con un código numérico único que llega por correo tras la aprobación.
+El código sirve para una sola compra. Si el cliente usa menos del cupo total, el saldo restante queda congelado hasta que pague lo que usó.
+El pago es siempre a 1 sola cuota, a 30 días — no hay plazos ni cuotas múltiples.
+Al pagar completo, el cliente puede volver a solicitar un cupo nuevo.
+La solicitud se hace con el NIT o CC.
+Fliipa responde la solicitud en máximo 24 horas.
 
 La estrategia se apoya en tres pilares:
+1) Un mensaje comercial simple y sin tecnicismos, construido sobre el mix de arquetipos "Persona Corriente – Héroe".
+2) Un proceso de originación ágil, con aprobación en máximo 24 horas y firma digital desde WhatsApp.
+3) Una hoja de ruta de piloto que permite medir tasa de respuesta por canal y tasa de conversión antes de escalar.
 
-1. Un mensaje comercial simple y sin tecnicismos, construido sobre el mix de arquetipos "Persona Corriente – Héroe".
-2. Un proceso de originación ágil, con aprobación en máximo 72 horas y firma digital desde WhatsApp.
-3. Una hoja de ruta de piloto que permite medir tasa de respuesta por canal y tasa de conversión antes de escalar.
-
-*Fuente: Modelo Comercial B2B.pptx (sumz.co)*
 
 ---
 
@@ -37,7 +44,7 @@ La estrategia se apoya en tres pilares:
 El negocio comercial se sostiene sobre tres actores que conforman un ecosistema de crédito B2B de bajo riesgo:
 
 - **Fliipa:** plataforma financiera que origina y gestiona el crédito rotativo B2B. Evalúa con datos de consumo real, no solo con historial bancario.
-- **D1:** la cadena de descuento más grande de Colombia, con más de 3.000 tiendas y millones de clientes tenderos que compran semanalmente.
+- **D1:** la cadena de descuento más grande de Colombia, con más de 3.000 tiendas y millones de clientes que compran semanalmente.
 - **Cliente:** el pequeño comercio con alta frecuencia de compra en D1, que necesita flujo de caja flexible para surtir su negocio sin descapitalizarse.
 
 *Fuente: Modelo Comercial B2B.pptx (sumz.co)*
@@ -48,8 +55,8 @@ Un cupo rotativo preaprobado para comprar en D1 y pagar en una sola cuota diferi
 
 - Cupo preaprobado por cliente, calculado con base en su comportamiento de compra en D1.
 - Pago diferido en una cuota (30 días), sin necesidad de desembolsar efectivo de inmediato.
-- Aprobación máxima en 24–72 horas.
-- El cupo se bloquea ante retrasos de pago y se reporta a centrales de riesgo según los plazos legales — este punto se comunica con transparencia, nunca como amenaza.
+- Aprobación máxima en 24 horas.
+- El cupo se bloquea ante retrasos de pago y se reporta a centrales de riesgo según los plazos legales  este punto se comunica con transparencia, nunca como amenaza.
 
 *Fuente: Modelo Comercial B2B.pptx y Speech_Ofrecimiento_Fliipa.docx*
 
@@ -69,25 +76,35 @@ Un cupo rotativo preaprobado para comprar en D1 y pagar en una sola cuota diferi
 ---
 
 ## Identidad y tono de la marca comercial
+Fliipa no se posiciona como una entidad financiera tradicional, sino como un aliado cercano del microempresario. Acompaña al cliente en el día a día de su negocio, habla su mismo lenguaje y busca construir una relación de confianza a largo plazo, más allá de una transacción puntual de crédito.
+Esta identidad se construye a partir de la combinación de dos arquetipos:
+Persona Corriente: representa la cercanía, la igualdad y el trato justo. Fliipa se presenta como un aliado estratégico que entiende lo que significa sostener un negocio día a día y construye una relación cercana, transparente y de confianza. Su voz es amigable y cálida.
 
-Toda comunicación comercial —email, WhatsApp, llamada o visita— se construye sobre un mismo mix de arquetipos: "Persona Corriente" y "Héroe". Este mix, llamado internamente "Héroe Corriente", define cómo se habla, cómo se actúa y cómo se toman decisiones frente al tendero.
 
-**Persona Corriente**
-Busca pertenencia, igualdad y trato justo. Permite que el cliente se sienta seguro y comprendido. Se presenta como un "pana" o "socio" que habla sin complicaciones. Voz cálida, cercana, sin jerarquías ni distancia bancaria.
+Héroe: representa el éxito, la superación y el crecimiento del cliente. Fliipa no busca “rescatar” al microempresario, sino brindarle las herramientas, como el crédito, para que pueda resolver sus necesidades de liquidez y hacer crecer su negocio. Su voz es directa, honesta y motivadora.
 
-**Héroe**
-Aporta la determinación para avanzar y superar dificultades. La marca no rescata: entrega herramientas para que el cliente sea el héroe de su propia historia — el crédito es la palanca para vencer la iliquidez. Voz directa, honesta y motivadora.
 
-> **Promesa de marca**
-> "Somos como tú, pero tenemos la fuerza para ayudarte a llegar más lejos."
+La combinación de ambos arquetipos, denominada “Héroe Corriente”, se traduce en una promesa concreta: Fliipa habla como un aliado cercano que entiende el negocio del cliente y actúa con la determinación necesaria para impulsar su crecimiento.
+Esto se refleja en todo el ciclo del producto: desde comunicaciones comerciales cercanas y sin tecnicismos, hasta el acompañamiento humano por chat o llamada durante la originación y el servicio al cliente. Además, la evaluación del crédito considera el comportamiento real del negocio, buscando ofrecer oportunidades que los criterios bancarios tradicionales podrían limitar.
 
-Cuatro valores rigen cada interacción comercial: **Cercanía** (damos la cara, visitamos el negocio), **Simplicidad** (hablamos claro, sin jerga financiera), **Lealtad** (confiamos en el esfuerzo del cliente y somos consistentes) e **Impacto** (pensamos en la continuidad del negocio a largo plazo, no en una transacción puntual).
 
-*Fuente: Arquetipos.docx (guía de marca Héroe Corriente, sumz.co)*
+##  VALORES Y CULTURA
+
+Los valores de Fliipa son:
+
+**Cercanía · Simplicidad · Lealtad · Impacto**
+
+| Valor | Qué significa |
+|---|---|
+| **Cercanía** | Visitamos el negocio, conocemos al cliente y damos la cara. Somos un socio presente, no una entidad lejana. |
+| **Simplicidad** | Hablamos claro y sin jerga. Si el cliente no entiende el crédito, el problema es nuestro, no de él. |
+| **Lealtad** | Confiamos en el esfuerzo del cliente y lo acompañamos incluso en las dificultades. |
+| **Impacto** | Pensamos a largo plazo: buscamos que el negocio del cliente supere la barrera de los 5 años. |
+
 
 ### Reglas de lenguaje comercial
 
-Para mantener un tono conversacional y cercano, el equipo comercial evita tecnicismos financieros y sustituye el lenguaje bancario por expresiones que el tendero reconoce como propias de su negocio:
+Para mantener un tono conversacional y cercano, el equipo comercial evita tecnicismos financieros y sustituye el lenguaje bancario por expresiones que el cliente reconoce como propias de su negocio:
 
 | Evitar | Usar |
 |---|---|
@@ -180,13 +197,14 @@ El piloto B2B se activa en seis etapas, con foco en validar canales antes de esc
 |---|---|
 | 1. Validar base de datos | Confirmar la lista de clientes preaprobados y sus datos de contacto. |
 | 2. Activar canales | Configurar plantillas de WhatsApp, email y el speech de llamada con Fliipa. |
-| 3. Lanzar piloto | Contactar a los primeros 300 tenderos y medir la tasa de respuesta por canal. |
+| 3. Lanzar piloto | Contactar a los primeros 300 cliente y medir la tasa de respuesta por canal. |
 | 4. Acompañar originación | Un asesor comercial acompaña a los negocios seleccionados en el KYC y la firma del contrato. |
 | 5. Seguimiento primera compra | El asesor contacta a los clientes aprobados que no han usado el cupo en 7 días. |
 | 6. Analizar y escalar | Se mide el canal más efectivo, el tipo de negocio, la tasa de conversión y de uso. |
 
 *Fuente: Modelo Comercial B2B.pptx (sumz.co)*
-
+## Paleta de colores
+![Paleta de colores Fliipa](imagenes/paleta_colores_fliipa.png)
 ---
 
 ## Anexo: preguntas frecuentes del producto
