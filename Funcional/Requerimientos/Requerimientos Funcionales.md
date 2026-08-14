@@ -67,9 +67,9 @@ Cubre los 11 procesos de negocio definidos en [Alcance del Producto](../../produ
 | ID | Nombre | Descripción | Actor(es) | Prioridad | Estado | Fuente |
 |----|--------|--------------|-----------|-----------|--------|--------|
 | RF-006 | Validación por código de verificación | Enviar y validar códigos de verificación por teléfono y correo durante el onboarding, con reintentos y tiempo de bloqueo configurables. No cubre la firma de contrato, que se realiza mediante un proveedor externo de firma digital (ver RF-013). | Cliente empresarial, sistema | Alta | Implementado (ver hallazgo de seguridad en [RNF-001](02-requerimientos-no-funcionales.md#seguridad)) | `backends/b2b/src/controllers/otp/*.ts`, `backends/b2b/src/config/constants.ts` |
-| RF-007 | Carga de documentos de soporte | Permitir cargar documento de identidad y certificación bancaria, restringiendo los tipos de archivo aceptados a `id_document` y `bank_certificate`. | Cliente empresarial | Alta | Implementado | `clients/upload-document.ts` |
-| RF-008 | Validación biométrica (KYC) | Ejecutar la validación biométrica del representante legal y derivar a revisión manual los casos ambiguos ("en revisión"). | Cliente empresarial, analista de riesgo | Alta | Parcialmente implementado, con hallazgo: existe captura de selfie y foto de cédula (frente/reverso) en el checkout, revisable manualmente desde el panel admin. No se encontró ningún proveedor de biometría automatizado (ni Olimpia, citado en negocio/técnico, ni ningún otro) que ejecute la validación o derive casos ambiguos automáticamente; hoy toda la revisión es manual. | `apps/checkout/app/checkout/[id]/steps/SelfieStep.tsx`, `IdPhotoStep.tsx`, `apps/admin/src/app/product/clients/[id]/components/client-photos-tab.tsx` |
-| RF-009 | Registro y validación del representante legal | Permitir registrar y validar al representante legal asociado al checkout (documento, teléfono, correo). | Cliente empresarial | Alta | Implementado | `clients/add-legal-representative.ts`, `clients/validate-legal-representative.ts` |
+| RF-007 | Carga de documentos de soporte | Permitir cargar documento de identidad y certificación bancaria, restringiendo los tipos de archivo aceptados. | Cliente empresarial | Alta | Implementado | `clients/upload-document.ts` |
+| RF-008 | Validación biométrica (KYC) | Ejecutar la validación biométrica del cliente y derivar a revisión manual los casos ambiguos ("en revisión"). | Cliente empresarial, analista de riesgo | Alta | Parcialmente implementado, con hallazgo: existe captura de selfie y foto de cédula (frente/reverso) en el checkout, revisable manualmente desde el panel admin. No se encontró ningún proveedor de biometría automatizado (ni Olimpia, citado en negocio/técnico, ni ningún otro) que ejecute la validación o derive casos ambiguos automáticamente; hoy toda la revisión es manual. | `apps/checkout/app/checkout/[id]/steps/SelfieStep.tsx`, `IdPhotoStep.tsx`, `apps/admin/src/app/product/clients/[id]/components/client-photos-tab.tsx` |
+| RF-009 | Registro y validación del Cliente | Permitir registrar y validar al Cliente asociado al checkout (documento, teléfono, correo). | Cliente empresarial | Alta | Implementado | `clients/add-legal-representative.ts`, `clients/validate-legal-representative.ts` |
 
 ### Evaluación de riesgo
 
@@ -83,7 +83,7 @@ Cubre los 11 procesos de negocio definidos en [Alcance del Producto](../../produ
 
 | ID | Nombre | Descripción | Actor(es) | Prioridad | Estado | Fuente |
 |----|--------|--------------|-----------|-----------|--------|--------|
-| RF-013 | Firma digital con proveedor externo | Firmar el contrato mediante el mecanismo de firma digital de un proveedor externo, sin flujo de código de verificación (OTP) asociado. | Cliente empresarial | Alta | Pendiente de confirmar con el equipo técnico el proveedor de firma digital vigente y su evidencia en el código; el flujo de `send-signature-otp.ts` documentado en versiones previas queda obsoleto según retroalimentación de negocio (ver HU-009). | `clients/sign-contract.ts`, `send-contract/send-contract.controller.ts` |
+| RF-013 | Firma digital con proveedor externo | Firmar el contrato mediante el mecanismo de firma digital de un proveedor externo. | Cliente empresarial | Alta | Pendiente de confirmar con el equipo técnico el proveedor de firma digital vigente y su evidencia en el código; el flujo de `send-signature-otp.ts` documentado en versiones previas queda obsoleto según retroalimentación de negocio (ver HU-009). | `clients/sign-contract.ts`, `send-contract/send-contract.controller.ts` |
 | RF-014 | Generación de contrato  | Generar el contrato en PDF a partir de una plantilla, y enviarlos por correo al cliente una vez firmados. | Cliente empresarial, sistema | Alta | Implementado | `clients/sign-contract.ts`, `send-contract/send-contract.controller.ts`, `backends/b2b/src/assets/contracts` |
 | RF-015 | Activación del cupo y bono D1 | Activar el cupo y emitir el bono D1 una vez firmado el contrato, con fondeo a través de la fiducia del core bancario. | Sistema (automático) | Alta | No verificable, con precisión sobre el hallazgo: sí existe un mecanismo genérico de transición de estado de línea de crédito (`credit-line-status-update`, puede pasar a `active`) y webhooks de Druo, pero **no hay ningún concepto de "fiducia" en el código** (búsqueda exhaustiva sin resultados); la mecánica de fondeo vía fiducia del core bancario parece vivir fuera de este repositorio. | `services/core/credit-line-status-update/src/services/update-credit-line-status.service.ts` |
 
@@ -92,15 +92,15 @@ Cubre los 11 procesos de negocio definidos en [Alcance del Producto](../../produ
 | ID | Nombre | Descripción | Actor(es) | Prioridad | Estado | Fuente |
 |----|--------|--------------|-----------|-----------|--------|--------|
 | RF-016 | Consulta de estado y plan de pagos | Permitir consultar el estado del crédito, el saldo disponible y el plan de pagos vigente. | Cliente empresarial | Alta | Implementado | `credit-line/get-credit-status.ts`, `credit-line/simulate-payment-plan.ts` |
-| RF-017 | Restricción de acceso por estado de crédito | Permitir el acceso al portal del cliente únicamente si la línea de crédito está en estado `approved` o `active`. | Sistema (automático) | Alta | Implementado | `apps/redemption/actions/auth.ts` |
-| RF-018 | Ajuste administrativo de cupo y corte | Permitir al administrador ajustar el cupo (`lineCap`) y la fecha de corte (`cutoffDay`) de una línea de crédito, con las validaciones correspondientes. | Administrador del producto | Media | Implementado, con hallazgo: el rango válido de `cutoffDay` (0-31) no coincide con el exigido en redemption (1-31); se recomienda unificar. | `backends/admin/src/controllers/credit-lines.controller.ts`, `apps/redemption/lib/is-complete-redemption-credit-settings.ts` |
+| RF-017 | Restricción de acceso por estado de crédito | Permitir el acceso al portal del cliente únicamente si la línea de crédito está en estado activa. | Sistema (automático) | Alta | Implementado | `apps/redemption/actions/auth.ts` |
+| RF-018 | Ajuste administrativo de cupo y corte | Permitir al administrador ajustar el cupo y la fecha de corte de una línea de crédito, con las validaciones correspondientes. | Administrador del producto | Media | Implementado, con hallazgo: el rango válido de `cutoffDay` (0-31) no coincide con el exigido en redemption (1-31); se recomienda unificar. | `backends/admin/src/controllers/credit-lines.controller.ts`, `apps/redemption/lib/is-complete-redemption-credit-settings.ts` |
 
 ### Uso del crédito
 
 | ID | Nombre | Descripción | Actor(es) | Prioridad | Estado | Fuente |
 |----|--------|--------------|-----------|-----------|--------|--------|
-| RF-019 | Canje mediante código QR | Generar un código QR con tiempo de vida (TTL) para el canje del cupo en tienda D1. | Cliente empresarial | Alta | Implementado | `qr/get-or-create-qr.ts`, `qr/validate-qr.ts` |
-| RF-020 | Canje mediante código de compra | Permitir revelar un código de compra como mecanismo alterno de canje del cupo. | Cliente empresarial | Alta | Implementado, con hallazgo: coexisten dos mecanismos de canje (QR y código de compra) sin que la documentación de negocio aclare cuál es el vigente. | `clients/get-client-coupon.ts`, `apps/redemption/actions/reveal-purchase-code.ts` |
+| RF-019 | Canje mediante un codigo | Generar un código con tiempo de vida (TTL) para el canje del cupo en tienda D1. | Cliente empresarial | Alta | Implementado | `qr/get-or-create-qr.ts`, `qr/validate-qr.ts` |
+| RF-020 | Canje mediante código de compra | Permitir revelar un código de compra como mecanismo alterno de canje del cupo. | Cliente empresarial | Alta | Implementado, con hallazgo: coexisten dos mecanismos de canje (código de compra) sin que la documentación de negocio aclare cuál es el vigente. | `clients/get-client-coupon.ts`, `apps/redemption/actions/reveal-purchase-code.ts` |
 | RF-021 | Bloqueo y renovación del cupo | Bloquear el cupo remanente durante la compra y evaluar la renovación del cupo según el comportamiento de pago tras el uso. | Sistema (automático) | Alta | No verificable directamente en el código de `backends/b2b` disponible. | — |
 
 ### Gestión de pagos
@@ -108,7 +108,7 @@ Cubre los 11 procesos de negocio definidos en [Alcance del Producto](../../produ
 | ID | Nombre | Descripción | Actor(es) | Prioridad | Estado | Fuente |
 |----|--------|--------------|-----------|-----------|--------|--------|
 | RF-022 | Cobro automático y prepago | Soportar el cobro automático de la cuota mediante Druo y el prepago voluntario por PSE. | Cliente empresarial, sistema | Alta | Parcialmente verificable: integración configurada con Druo; la ejecución del prepago por PSE no se encontró en el código disponible. | `backends/b2b/src/config/constants.ts` (`druo`), modelo `BankAccount` (`druoConnectionStatus`) |
-| RF-023 | Reversión de desembolso | Eliminar (soft-delete) un desembolso y restaurar automáticamente el cupo cuando el desembolso estaba activo. | Administrador del producto, sistema | Media | Implementado | `backends/admin/src/services/disbursements.service.ts` (`softDeleteDisbursement`) |
+| RF-023 | Reversión de desembolso | Eliminar un desembolso y restaurar automáticamente el cupo cuando el desembolso estaba activo. | Administrador del producto, sistema | Media | Implementado | `backends/admin/src/services/disbursements.service.ts` (`softDeleteDisbursement`) |
 | RF-024 | Simulación de plan de pago | Permitir simular el plan de pago diario de un desembolso considerando tasa corriente, tasa de mora y umbral de días, con descarga en CSV. | Administrador del producto | Media | Implementado | `backends/admin/src/controllers/calculator.controller.ts`, `apps/admin/src/components/payment-plan-simulator.tsx` |
 
 ### Cobranza
@@ -123,7 +123,7 @@ Cubre los 11 procesos de negocio definidos en [Alcance del Producto](../../produ
 
 | ID | Nombre | Descripción | Actor(es) | Prioridad | Estado | Fuente |
 |----|--------|--------------|-----------|-----------|--------|--------|
-| RF-028 | Atención de primer nivel por IA | Permitir la atención de primer nivel mediante un asistente virtual y el escalamiento a un agente humano con el contexto completo de la conversación. | Cliente empresarial, asistente virtual (IA), agente humano | Alta | No verificable: no se encontró un módulo de asistente de IA para servicio al cliente en el repositorio; puede residir en una herramienta externa. | — |
+| RF-028 | Atención de primer nivel por IA*| Permitir la atención de primer nivel mediante un asistente virtual y el escalamiento a un agente humano con el contexto completo de la conversación. | Cliente empresarial, asistente virtual (IA), agente humano | Alta | No verificable: no se encontró un módulo de asistente de IA para servicio al cliente en el repositorio; puede residir en una herramienta externa. | — |
 | RF-029 | Validación de identidad en casos críticos | Requerir validación de identidad y aprobación manual explícita para casos críticos (suplantación, uso indebido del cupo, desconocimiento de compra). | Agente de servicio al cliente | Alta | No verificable directamente en el código disponible. | — |
 
 ### Portal administrativo
@@ -139,7 +139,7 @@ Cubre los 11 procesos de negocio definidos en [Alcance del Producto](../../produ
 
 | ID | Nombre | Descripción | Actor(es) | Prioridad | Estado | Fuente |
 |----|--------|--------------|-----------|-----------|--------|--------|
-| RF-034 | Análisis financiero con IA | Herramienta de análisis de estados financieros con IA presente en el flujo de checkout (ruta `/financial-analysis`). | Cliente empresarial (potencial) | Por definir | Sin requerimiento de negocio ni controlador backend confirmado; se recomienda validar con producto si está activa, en piloto o debe retirarse. | `apps/checkout/actions/financial-analysis` |
+| RF-034 | Análisis financiero con IA * | Herramienta de análisis de estados financieros con IA presente en el flujo de checkout (ruta `/financial-analysis`). | Cliente empresarial (potencial) | Por definir | Sin requerimiento de negocio ni controlador backend confirmado; se recomienda validar con producto si está activa, en piloto o debe retirarse. | `apps/checkout/actions/financial-analysis` |
 | RF-035 | Utilidades de datos de demostración | Endpoints y comportamientos especiales de restauración de datos de demostración, expuestos junto a funcionalidad de producto real. | Sistema (automático) | Por definir | Se recomienda moverlas fuera del código de producción o protegerlas explícitamente por ambiente. | `clients/restore-demo-client.ts`, `checkouts/update-checkout.ts` |
 
 ## Fuentes consultadas
