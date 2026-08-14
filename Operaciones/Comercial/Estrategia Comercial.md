@@ -18,18 +18,7 @@ Agosto 2026 · Documento confidencial
 
 ---
 
-## Resumen ejecutivo
 
-Fliipa es una fintech B2B de crédito para empresas — específicamente, el piloto actual opera bajo la marca "Socios D1", dirigido a clientes preaprobados que compran recurrentemente en tiendas D1.
-
-El cliente de Fliipa es la empresa (pyme/microempresa).
-Fliipa otorga un cupo de crédito preaprobado (ej. $500.000 - $1.000.000).
-El cupo solo se usa en tiendas D1, con un código numérico único que llega por correo tras la aprobación.
-El código sirve para una sola compra. Si el cliente usa menos del cupo total, el saldo restante queda congelado hasta que pague lo que usó.
-El pago es siempre a 1 sola cuota, a 30 días — no hay plazos ni cuotas múltiples.
-Al pagar completo, el cliente puede volver a solicitar un cupo nuevo.
-La solicitud se hace con el documento de identificación.
-Aprobación máxima en 24 horas.
 
 La estrategia se apoya en tres pilares:
 1) Un mensaje comercial simple y sin tecnicismos, construido sobre el mix de arquetipos "Persona Corriente – Héroe".
@@ -119,7 +108,7 @@ Para mantener un tono conversacional y cercano, el equipo comercial evita tecnic
 
 ## Captación comercial
 
-La captación se activa de forma simultánea por tres canales, con un mismo mensaje central: el cliente responde por el canal que le resulte más natural.
+La captación se activa por tres canales, con un mismo mensaje central: el cliente responde por el canal que le resulte más natural.
 
 | Canal | Rol | Tono |
 |---|---|---|
@@ -215,7 +204,7 @@ El piloto B2B se activa en seis etapas, con foco en validar canales antes de esc
 | ¿Quién puede acceder al crédito? | Pequeños comercios y empresas con relación comercial activa en D1 y comportamiento de compra evaluado positivamente por el modelo de riesgo. |
 | ¿Cómo se define el monto del cupo? | Con base en el comportamiento de compra, la recurrencia, la capacidad de pago y variables internas de riesgo — no depende únicamente del historial bancario. |
 | ¿El cupo puede cambiar? | Sí, puede ajustarse según el comportamiento de pago y el uso del crédito. |
-| ¿Puedo usar el cupo parcialmente? | No; el cupo aprobado se destina a una única compra. Al pagarla, el cupo se habilita nuevamente. |
+| ¿Puedo usar el cupo parcialmente? | Si; se puede utilizar parcialmente pero el resto del cupo queda congelado hasta que pague la totalidad del crédito vigente . |
 
 ### Pagos, mora y transparencia
 
@@ -225,7 +214,7 @@ El piloto B2B se activa en seis etapas, con foco en validar canales antes de esc
 | ¿Envían recordatorios de pago? | Sí, se envían comunicaciones previas al vencimiento por WhatsApp y los canales autorizados. |
 | ¿Reportan a centrales de riesgo? | Sí; si la obligación no se normaliza en los plazos legales, se reporta a Datacrédito y demás centrales de información financiera. |
 | ¿Puedo negociar si tengo un atraso? | Sí; según el estado de mora y el comportamiento previo, pueden evaluarse alivios o acuerdos de pago. |
-| ¿Quién es Fliipa? | La empresa aliada de D1 que administra y gestiona el crédito bajo un modelo estructurado de riesgo y cobranza, operando bajo la marca Socios D1. |
+| ¿Quién es Fliipa? | La empresa aliada de D1 que administra y gestiona el crédito bajo un modelo estructurado de riesgo y cobranza, operando bajo la marca fliipa. |
 
 *Fuente: Speech_Ofrecimiento_Fliipa.docx (Preguntas Frecuentes — Producto, sumz.co)*
 
