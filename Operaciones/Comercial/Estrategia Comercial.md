@@ -18,18 +18,7 @@ Agosto 2026 · Documento confidencial
 
 ---
 
-## Resumen ejecutivo
 
-Fliipa es una fintech B2B de crédito para empresas — específicamente, el piloto actual opera bajo la marca "Socios D1", dirigido a clientes preaprobados que compran recurrentemente en tiendas D1.
-
-El cliente de Fliipa es la empresa (pyme/microempresa).
-Fliipa otorga un cupo de crédito preaprobado (ej. $500.000 - $1.000.000).
-El cupo solo se usa en tiendas D1, con un código numérico único que llega por correo tras la aprobación.
-El código sirve para una sola compra. Si el cliente usa menos del cupo total, el saldo restante queda congelado hasta que pague lo que usó.
-El pago es siempre a 1 sola cuota, a 30 días — no hay plazos ni cuotas múltiples.
-Al pagar completo, el cliente puede volver a solicitar un cupo nuevo.
-La solicitud se hace con el documento de identificación.
-Aprobación máxima en 24 horas.
 
 La estrategia se apoya en tres pilares:
 1) Un mensaje comercial simple y sin tecnicismos, construido sobre el mix de arquetipos "Persona Corriente – Héroe".
