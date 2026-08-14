@@ -142,8 +142,7 @@ Una vez finalizada la solicitud, el caso pasa a **Sistema & Riesgo** para la ver
 **Proceso:** El cliente diligencia el formulario de solicitud con el documento de identificación, los datos del negocio y del representante legal.
 
 **Resultado:** Solicitud diligenciada, pendiente de verificación.
-
----
+--
 
 ### 9. Verificación y acompañamiento del asesor
 
