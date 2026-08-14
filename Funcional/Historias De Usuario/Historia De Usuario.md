@@ -128,7 +128,7 @@ Cada historia se documenta como una ficha individual: identificador, descripció
 | **Criterios de aceptación** | El cliente carga la certificación bancaria y los extractos de los últimos 3 meses desde el dispositivo que tenga disponible, y el sistema confirma la recepción de cada soporte. |
 | **Relaciones** | Casos de uso: CU-005. Historia relacionada: HU-006. |
 | **Referencias** | `b2b/fliipa-back/src/controllers/clients/upload-document.ts` |
-| **Autor / Fecha / Versión** | María Fernanda Herazo (con asistencia de Claude) / 2026-08-13 / 1.6 |
+| **Autor / Fecha / Versión** | María Fernanda Herazo  |
 | **Comentarios** | **Historia separada de la HU-004 original (v1.5)**. El controlador `upload-document.ts` solo acepta los tipos de documento `id_document` y `bank_certificate`; no hay lógica que trate "los extractos de los últimos 3 meses" como un conjunto separado. Se recomienda confirmar con el equipo técnico si esto corresponde a un solo archivo o a varios archivos independientes. Se elimina la restricción a "desde el celular" por la misma razón indicada en HU-006. |
 
 #### HU-008: Conocer el resultado en máximo 24 horas
@@ -219,7 +219,7 @@ Cada historia se documenta como una ficha individual: identificador, descripció
 | **Criterios de aceptación** | Un crédito es candidato a débito automático cuando: (1) superó la fecha de pago definida, (2) presenta saldo pendiente por pagar, (3) tiene una cuenta bancaria conectada y vigente en Druo, y (4) no está en un proceso de alivio o negociación activo que lo excluya. El sistema ejecuta el débito automáticamente vía Druo cuando se cumplen estas condiciones, y registra el resultado del intento (exitoso o fallido) mediante el webhook de eventos. |
 | **Relaciones** | Casos de uso: CU-011. Requerimiento: RF-022. Historia relacionada: HU-013. |
 | **Referencias** | `b2b/fliipa-back/src/services/druo/debit-bank-account.druo.ts`, `connect-bank-account.druo.ts`; `b2b/services/webhooks/src/controllers/webhooks/druo-events.webhook.ts` |
-| **Autor / Fecha / Versión** | María Fernanda Herazo (con asistencia de Claude) / 2026-08-13 / 1.6 |
+| **Autor / Fecha / Versión** | María Fernanda Herazo |
 | **Comentarios** | **Historia separada de la HU-009 original (v1.5)**. El débito automático vía Druo sí está implementado (conexión de cuenta, débito, webhook de eventos). Se corrige el enfoque de la historia: el cliente no realiza ninguna acción (de hecho, está incumplido), por lo que no debe redactarse como "Como cliente" ni "Como cliente empresarial", sino como una historia de sistema ("Como Fliipa..."); los criterios de aceptación corresponden a las condiciones que hacen a un crédito candidato al débito automático, no a una acción del usuario. |
 
 #### HU-015: Recibir alivios ante dificultades de pago
@@ -245,7 +245,7 @@ Cada historia se documenta como una ficha individual: identificador, descripció
 | **Criterios de aceptación** | El asistente virtual con IA recibe y responde el primer contacto del cliente por WhatsApp, dentro de las dudas frecuentes definidas en su alcance. |
 | **Relaciones** | Casos de uso: CU-014. Requerimiento: RF-028. Historia relacionada: HU-017. |
 | **Referencias** | [Reglas Negocio](../negocio/reglas-negocio/09-servicio-cliente.md); `b2b/services/communications/src/controllers/whatsapp/whatsapp.controller.ts` |
-| **Autor / Fecha / Versión** | María Fernanda Herazo (con asistencia de Claude) / 2026-08-13 / 1.6 |
+| **Autor / Fecha / Versión** | María Fernanda Herazo |
 | **Comentarios** | **Historia separada de la HU-011 original (v1.5)**, que combinaba el flujo de atención por IA con el flujo de escalamiento a un agente humano; deben documentarse por separado para no interferir con los procesos ya definidos de servicio al cliente y de la operación. No se encontró en el código revisado ningún módulo de asistente conversacional de IA ni lógica de escalamiento; los controladores del microservicio `communications` están limitados a envío de OTP, firma y contrato por WhatsApp/correo. Probablemente vive en una herramienta externa no incluida en este repositorio. |
 
 #### HU-017: Escalar a agente humano cuando la IA no resuelve el caso
@@ -258,7 +258,7 @@ Cada historia se documenta como una ficha individual: identificador, descripció
 | **Criterios de aceptación** | Cuando el asistente virtual no resuelve el caso del cliente, el sistema escala el caso a un agente humano junto con el contexto completo de la conversación. |
 | **Relaciones** | Casos de uso: CU-014. Requerimiento: RF-029. Historias relacionadas: HU-016, HU-028. |
 | **Referencias** | [Reglas Negocio](../negocio/reglas-negocio/09-servicio-cliente.md) |
-| **Autor / Fecha / Versión** | María Fernanda Herazo (con asistencia de Claude) / 2026-08-13 / 1.6 |
+| **Autor / Fecha / Versión** | María Fernanda Herazo |
 | **Comentarios** | **Historia separada de la HU-011 original (v1.5)**. No se encontró lógica de escalamiento en el código revisado; corresponde al mismo hallazgo documentado en HU-016 y en HU-028 (antes HU-022). |
 
 #### HU-018: Recuperar PIN o desbloquear la cuenta
@@ -303,18 +303,18 @@ Cada historia se documenta como una ficha individual: identificador, descripció
 | **Autor / Fecha / Versión** | María Fernanda Herazo |
 | **Comentarios** | Sin cambios: es un proceso operativo/humano, no se esperaba ni se encontró respaldo directo en código. |
 
-#### HU-021: Identificar clientes sin uso del cupo tras la activación
+#### HU-021: Identificar clients sin uso del cupo tras la activación
 
 | Campo | Detalle |
 |:---:|:---:|
 | **Actor** | Asesor comercial |
-| **Historia** | Como asesor comercial, quiero identificar a los clientes que no han realizado su primera compra 7 días después de la activación de su cupo, para hacer seguimiento y resolver las causas de no uso. |
+| **Historia** | Como asesor comercial, quiero identificar y gestionar a los clientes que no han realizado su primera compra después de la activación de su cupo, para conocer las causas de no uso y facilitar el inicio de su crédito. |
 | **Prioridad** | Media |
-| **Criterios de aceptación** | El asesor contacta al cliente identificado y registra en la gestión el motivo por el cual no ha usado su cupo aprobado hasta el momento. El asesor resuelve las inquietudes o problemas que le impiden al cliente realizar su compra e iniciar el uso de su crédito. |
+| **Criterios de aceptación** | Se contacta al cliente que no ha realizado su primera compra. Se registra en la gestión el motivo por el cual no ha utilizado su cupo aprobado hasta el momento. Se solucionan las inquietudes o problemas identificados que impidan al cliente realizar su primera compra y comenzar a utilizar su crédito. |
 | **Relaciones** | — |
 | **Referencias** | [Procesos](../negocio/procesos/01-captacion-comercial.md) |
-| **Autor / Fecha / Versión** | María Fernanda Herazo (con asistencia de Claude) |
-| **Comentarios** | **Corrección v1.6**: se corrige el título, que antes ("seguimiento a primera compra") sugería que se estaba revisando la primera compra, cuando en realidad la historia trata de monitorear a quienes **no** la han realizado. Se corrige también el criterio de aceptación: "El asesor recibe o consulta la lista de clientes activados sin uso del cupo a los 7 días" describía el proceso de la historia, no una condición que confirme que la historia se cumple; se reemplaza por criterios centrados en el resultado de la gestión (motivo registrado y/o inquietud resuelta). Confirmado: no se encontró ningún reporte automatizado de este seguimiento en el código revisado. |
+| **Autor / Fecha / Versión** | María Fernanda Herazo |
+| **Comentarios** | **Corrección v1.6:** se ajusta la historia para enfocarla en los clientes que **no han realizado su primera compra**, evitando interpretarla como un seguimiento de una compra ya realizada. Los criterios de aceptación se centran en los resultados de la gestión: contacto con el cliente, registro del motivo de no uso y solución de las inquietudes o problemas que impidan iniciar el uso del crédito. La identificación de clientes sin uso del cupo a los 7 días corresponde al mecanismo operativo para activar esta gestión y no constituye por sí misma un criterio de aceptación. |
 
 ### Analista de riesgo
 
@@ -356,7 +356,7 @@ Cada historia se documenta como una ficha individual: identificador, descripció
 | **Criterios de aceptación** | El analista consulta la cartera agrupada en pago anticipado y buckets 1 a 5, con los datos necesarios para priorizar su gestión. |
 | **Relaciones** | Casos de uso: CU-012. |
 | **Referencias** | [Reglas Negocio](../negocio/reglas-negocio/02-mora-buckets.md) |
-| **Autor / Fecha / Versión** | María Fernanda Herazo (con asistencia de Claude) |
+| **Autor / Fecha / Versión** | María Fernanda Herazo|
 | **Comentarios** | El motor de reglas (`rules-engine`) que sí existe está enfocado en preaprobación, no en cobranza. Esta historia no está respaldada por el código fuente entregado; se recomienda validar si vive en un sistema externo de cobranza. Se mantiene la nota sobre la discrepancia de plazos de escalamiento documentada en RNF-017. |
 
 #### HU-025: Registrar cada interacción de cobranza
@@ -369,7 +369,7 @@ Cada historia se documenta como una ficha individual: identificador, descripció
 | **Criterios de aceptación** | El analista registra canal, tipo de contacto, resultado y monto comprometido de cada interacción, quedando disponible en el resumen de atención del cliente. |
 | **Relaciones** | Casos de uso: CU-012. Requerimientos: RF-025, RF-026. Historia relacionada: HU-030. |
 | **Referencias** | `b2b/fliipa-back/src/controllers/clients/collection-notes.ts` |
-| **Autor / Fecha / Versión** | María Fernanda Herazo (con asistencia de Claude) |
+| **Autor / Fecha / Versión** | María Fernanda Herazo  |
 | **Comentarios** | **Confirmado**: el módulo está completamente implementado — creación, edición, eliminación y listado de notas de cobranza, más un resumen de atención (`getCollectionNotesAttentionSummary`). Ver HU-030 (nueva en v1.6) para el registro de contacto general, más allá de cobranza. |
 
 #### HU-026: Tablero semanal de priorización del Comité de Cartera
@@ -382,7 +382,7 @@ Cada historia se documenta como una ficha individual: identificador, descripció
 | **Criterios de aceptación** | El comité visualiza semanalmente los casos priorizados según días de mora, flujo de caja, cuota vencida, historial y monto adeudado. |
 | **Relaciones** | Casos de uso: CU-012, CU-013. |
 | **Referencias** | [Reglas Negocio](../negocio/reglas-negocio/04-gestion-escalamiento.md) |
-| **Autor / Fecha / Versión** | María Fernanda Herazo (con asistencia de Claude) |
+| **Autor / Fecha / Versión** | María Fernanda Herazo  |
 | **Comentarios** | Confirmado: no se encontró ningún tablero de priorización automatizado en el código revisado. Depende de la misma ausencia de lógica de mora/buckets señalada en HU-024. |
 
 #### HU-027: Recibir casos de escalamiento jurídico automáticamente
@@ -410,7 +410,7 @@ Cada historia se documenta como una ficha individual: identificador, descripció
 | **Criterios de aceptación** | Cuando la IA escala un caso, el agente humano ve el historial completo de la conversación antes de responder. |
 | **Relaciones** | Casos de uso: CU-014. Requerimiento: RF-028. Historia relacionada: HU-017. |
 | **Referencias** | [Reglas Negocio](../negocio/reglas-negocio/09-servicio-cliente.md) |
-| **Autor / Fecha / Versión** | María Fernanda Herazo (con asistencia de Claude) |
+| **Autor / Fecha / Versión** | María Fernanda Herazo |
 | **Comentarios** | Se confirma la separación entre el flujo de atención por IA (HU-016) y el de escalamiento/gestión humana (esta historia y HU-017): son procesos distintos y deben documentarse por separado. Confirmado (ver HU-016/HU-017): no existe módulo de IA conversacional ni de escalamiento en el código de `communications` ni en ningún otro servicio revisado. |
 
 #### HU-029: Validar identidad en casos críticos
@@ -436,7 +436,7 @@ Cada historia se documenta como una ficha individual: identificador, descripció
 | **Criterios de aceptación** | Cada contacto con el cliente (por WhatsApp, correo, llamada, asistente virtual o agente humano) queda registrado con canal, motivo, resultado y fecha, disponible en el historial general de atención del cliente, independientemente de si el contacto está o no relacionado con cobranza. |
 | **Relaciones** | Historias relacionadas: HU-006, HU-007, HU-016, HU-017, HU-025, HU-028, HU-029. |
 | **Referencias** | Pendiente de verificar en código; ya existe un registro de notas de cobranza (`collection-notes.ts`, ver HU-025), pero no un registro general de contacto que cubra todos los flujos. |
-| **Autor / Fecha / Versión** | María Fernanda Herazo (con asistencia de Claude) / 2026-08-13 / 1.6 |
+| **Autor / Fecha / Versión** | María Fernanda Herazo  |
 | **Comentarios** | **Historia agregada en la v1.6**: aunque ya existe el registro de notas de gestión de cobranza (HU-025), también se debe guardar un registro de todo contacto con el cliente en general (KYC, biometría, atención por IA, atención humana, etc.), no solo el de cobranza. |
 
 ### Administrador del producto (portal administrativo)
@@ -464,7 +464,7 @@ Cada historia se documenta como una ficha individual: identificador, descripció
 | **Criterios de aceptación** | El administrador puede ajustar dentro de los rangos válidos, quedando la acción registrada en auditoría. |
 | **Relaciones** | Casos de uso: CU-015. Requerimiento: RF-018. |
 | **Referencias** | `backends/admin/src/controllers/credit-lines.controller.ts` — confirmado en `credits-platform-main`. |
-| **Autor / Fecha / Versión** | María Fernanda Herazo (con asistencia de Claude) |
+| **Autor / Fecha / Versión** | María Fernanda Herazo |
 | **Comentarios** | Implementada. Se confirma también el hallazgo de RF-018: el admin acepta `cutoffDay` en rango 0–31, mientras que redemption exige 1–31 — discrepancia real entre ambos módulos. |
 
 #### HU-033: Simular plan de pago con distintas tasas
@@ -477,7 +477,7 @@ Cada historia se documenta como una ficha individual: identificador, descripció
 | **Criterios de aceptación** | El administrador ingresa tasa corriente, tasa de mora y umbral de días, y obtiene el plan de pago diario descargable en CSV. |
 | **Relaciones** | Casos de uso: CU-016. Requerimiento: RF-024. |
 | **Referencias** | `backends/admin/src/controllers/calculator.controller.ts` (`getCalculatorStatus`, recibe `currentInterestRate`, `overdueInterestRate`, `thresholdDays`); descarga CSV en `apps/admin/src/lib/generate-csv-file.ts` y `apps/admin/src/app/disbursements/consult/CalculatorDownloaderButton.tsx` — confirmado en `credits-platform-main`. |
-| **Autor / Fecha / Versión** | María Fernanda Herazo (con asistencia de Claude) |
+| **Autor / Fecha / Versión** | María Fernanda Herazo  |
 | **Comentarios** | Implementada, exactamente con los campos descritos en la historia (tasa corriente, tasa de mora, umbral de días) y con descarga CSV real. |
 
 #### HU-034: Administrar la lista negra (blacklist)
@@ -503,7 +503,7 @@ Cada historia se documenta como una ficha individual: identificador, descripció
 | **Criterios de aceptación** | El administrador consulta, desde el panel administrativo, el listado completo de clientes en blacklist, incluyendo el motivo de ingreso registrado en HU-034. |
 | **Relaciones** | Casos de uso: CU-017. Historia relacionada: HU-034. |
 | **Referencias** | Pendiente de verificar en código si existe un endpoint o pantalla de listado de blacklist (más allá de agregar/retirar clientes de forma individual). |
-| **Autor / Fecha / Versión** | María Fernanda Herazo (con asistencia de Claude) / 2026-08-13 / 1.6 |
+| **Autor / Fecha / Versión** | María Fernanda Herazo |
 | **Comentarios** | **Historia agregada en la v1.6**: no se encontró en el código revisado ninguna pantalla o endpoint dedicado a consultar el listado completo de blacklist; solo se identificaron los controladores para agregar y retirar clientes individualmente. |
 
 #### HU-036: Monitorear salud del sistema en tiempo real
@@ -516,12 +516,20 @@ Cada historia se documenta como una ficha individual: identificador, descripció
 | **Criterios de aceptación** | El administrador de sistema consulta latencia y disponibilidad del core bancario y de Cloud SQL desde el panel. |
 | **Relaciones** | Casos de uso: CU-018. Requerimiento: RF-033. |
 | **Referencias** | `backends/admin/src/controllers/system-core-health.controller.ts`, `system-cloud-sql.controller.ts` — confirmados en `credits-platform-main`. |
-| **Autor / Fecha / Versión** | María Fernanda Herazo (con asistencia de Claude) |
+| **Autor / Fecha / Versión** | María Fernanda Herazo |
 | **Comentarios** | Implementada, con un hallazgo adicional (ver RF-033): el monitoreo de terceros solo cubre GitHub, npm y GCP; no cubre Experian, Druo, el proveedor de biometría, Zenvia/Sendgrid ni el core bancario, a pesar de que la historia y el alcance del producto los describen como críticos para el negocio. |
 
 ## Conclusión de la revisión
 
-La revisión funcional de esta versión (v1.6) incorporó 24 observaciones de negocio sobre la v1.5, referidas al documento fuente de retroalimentación. Los cambios más relevantes fueron: (a) la inserción de una historia previa a la consulta de cupo, que obligó a renumerar todo el documento; (b) la separación de historias no atómicas en pasos independientes (biometría/soportes bancarios, prepago/débito automático, atención por IA/atención humana); (c) la corrección de historias cuyo criterio de aceptación en realidad era una precondición o una descripción del proceso, en lugar de una condición verificable de cumplimiento; (d) la eliminación de restricciones injustificadas a un flujo "solo celular"; y (e) la incorporación de historias faltantes (reintento de OTP, clientes sin oferta de crédito, registro general de contacto, consulta de blacklist, motivo de ingreso a blacklist). Se mantienen vigentes los hallazgos técnicos de versiones anteriores (OTP comodín, canal SMS simulado, ausencia de módulos de biometría/alivios/mora-buckets/IA conversacional en el repositorio, y ausencia de enforcement de blacklist), que deben priorizarse junto con negocio y el equipo técnico antes de llevar estas historias a desarrollo.
+La revisión funcional de la versión v1.6 incorporó 24 observaciones de negocio identificadas sobre la v1.5, tomando como referencia el documento fuente de retroalimentación. Los principales cambios fueron:
+
+Incorporación de una historia previa a la consulta de cupo, lo que implicó la renumeración de las historias posteriores.
+Separación de historias no atómicas en historias independientes, particularmente en los flujos de biometría y soportes bancarios, prepago y débito automático, y atención mediante IA y atención humana.
+Corrección de criterios de aceptación que correspondían a precondiciones, pasos del proceso o mecanismos operativos, en lugar de condiciones verificables para determinar el cumplimiento de la historia.
+Eliminación de restricciones no justificadas que limitaban el flujo exclusivamente al uso del celular.
+Incorporación de historias faltantes, entre ellas el reintento de OTP, la gestión de clientes sin oferta de crédito, el registro general de contactos, la consulta de blacklist y el registro del motivo de ingreso a blacklist.
+
+Se mantienen vigentes los hallazgos técnicos identificados en versiones anteriores, entre ellos el uso de un OTP comodín, el canal SMS simulado, la ausencia en el repositorio de módulos correspondientes a biometría, alivios, mora por buckets e IA conversacional, así como la falta de enforcement de la blacklist. Estos aspectos deberán ser revisados y priorizados conjuntamente por negocio y el equipo técnico antes de llevar las historias a desarrollo.
 
 ### Tabla de correspondencia de numeración (v1.5 → v1.6)
 
