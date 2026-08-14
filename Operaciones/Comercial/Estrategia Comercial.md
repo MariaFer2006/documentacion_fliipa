@@ -56,7 +56,7 @@ Un cupo rotativo preaprobado para comprar en D1 y pagar en una sola cuota diferi
 - Cupo preaprobado por cliente, calculado con base en su comportamiento de compra en D1.
 - Pago diferido en una cuota (30 días), sin necesidad de desembolsar efectivo de inmediato.
 - Aprobación máxima en 24 horas.
-- El cupo se bloquea ante retrasos de pago y se reporta a centrales de riesgo según los plazos legales  este punto se comunica con transparencia, nunca como amenaza.
+-El cupo se bloquea ante retrasos de pago y se reporta a centrales de riesgo según los plazos legales.
 
 *Fuente: Modelo Comercial B2B.pptx y Speech_Ofrecimiento_Fliipa.docx*
 
