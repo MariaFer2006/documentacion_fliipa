@@ -8,8 +8,10 @@
 | **Prioridad** | Media |
 | **Criterios de aceptación** | Los casos que alcanzan el bucket de escalamiento jurídico se enrutan automáticamente al analista jurídico. |
 | **Relaciones** | — |
-| **Referencias** | [Actores](../negocio/Actores/03-actores-comerciales-cobranza.md) |
+| **Referencias** | [Actores] (../../../Negocio/Actores/03%20Actores%20Comerciales%20Cobranza.md); |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
 | **Versión** | V.17 |
 | **Comentarios** | Sin respaldo en código (consistente con la ausencia general de lógica de buckets de mora, ver HU-024). Depende de resolver primero la discrepancia de plazos de escalamiento (RNF-017). |
+[Procesos](../../../Negocio/Actores/03%20Actores%20Comerciales%20Cobranza.md);
+
