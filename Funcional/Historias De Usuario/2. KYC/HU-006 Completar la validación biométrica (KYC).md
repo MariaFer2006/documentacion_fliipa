@@ -1,4 +1,4 @@
-#### HU-006: Completar la validación biométrica (KYC)
+#### HU-006: Completar la validación biométrica con el proveedor externo
 
 | Campo | Detalle |
 |:---:|:---:|
