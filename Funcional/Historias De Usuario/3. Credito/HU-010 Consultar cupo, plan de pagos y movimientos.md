@@ -8,5 +8,7 @@
 | **Criterios de aceptación** | El cliente accede al portal de usuarios y visualiza cupo disponible, plan de pagos y movimientos, solo si su línea de crédito está en estado Aprobado o Activa. |
 | **Relaciones** | Casos de uso: CU-009. Requerimientos: RF-016, RF-017. Historia relacionada: HU-011. |
 | **Referencias** | `b2b/fliipa-back/src/controllers/credit-line/get-credit-status.ts`, `credit-line/get-disbursements.ts`; `b2b/fliipa-redemption/actions/auth.ts` |
-| **Autor / Fecha / Versión** | María Fernanda Herazo |
+ **Autor** | María Fernanda Herazo |
+| **Fecha** | 18/08/2026 |
+| **Versión** | V.17 |
 | **Comentarios** | Los endpoints de estado de crédito y desembolsos existen y delegan en un cliente del core bancario (`coreApiClient`). La restricción exacta a estados `approved`/`active` no se verificó línea por línea; se recomienda confirmarla en la capa de autenticación de `fliipa-redemption/actions/auth.ts`. |

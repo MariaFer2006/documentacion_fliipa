@@ -7,5 +7,8 @@
 | **Prioridad** | Alta |
 | **Criterios de aceptación** | Sobre el resultado de Reconocer (HU-038): si **coincide**, se indica y se **resalta** la fila que hace match, mostrando contra qué registro coincidió (cliente o representante). Si el dato de Fliipa **no aparece** en centrales, se indica. Si en Fliipa no hay dato para comparar, se muestra “sin dato en registro”. Si la sección no trae información de centrales, se muestra sin datos. La información se organiza en acordeones (correos, celulares, direcciones, etc.). |
 | **Relaciones** | Depende de HU-038. Distinta de la regla automática de contacto en HU-043. |
+ **Autor** | María Fernanda Herazo |
+| **Fecha** | 18/08/2026 |
+| **Versión** | V.17 |
 | **Estado en plataforma** | **Hecho.** |
 | **Comentarios** | Asistencia visual al analista; no es la decisión automática del motor KYC. |

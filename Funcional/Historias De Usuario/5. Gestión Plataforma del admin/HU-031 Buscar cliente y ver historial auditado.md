@@ -8,5 +8,7 @@
 | **Criterios de aceptación** | El administrador busca por documento y consulta hasta 500 registros de auditoría del cliente (línea de crédito, desembolsos, pagos). |
 | **Relaciones** | Casos de uso: CU-015. Requerimientos: RF-030, RF-031. |
 | **Referencias** | `backends/admin/src/controllers/clients.controller.ts` (`getClientAuditedOperations`) — confirmado en `credits-platform-main`. |
-| **Autor / Fecha / Versión** | María Fernanda Herazo |
+ **Autor** | María Fernanda Herazo |
+| **Fecha** | 18/08/2026 |
+| **Versión** | V.17 |
 | **Comentarios** | Implementada. El controlador `getClientAuditedOperations` en `backends/admin` sí existe y expone el historial auditado por cliente. |
