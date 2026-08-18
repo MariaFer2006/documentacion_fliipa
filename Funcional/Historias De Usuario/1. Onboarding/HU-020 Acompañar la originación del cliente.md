@@ -7,8 +7,9 @@
 | **Prioridad** | Alta |
 | **Criterios de aceptación** | El asesor realiza seguimiento remoto al cliente durante el proceso de onboarding, atiende sus dudas e inquietudes y brinda orientación cuando sea necesario. El seguimiento se realiza mediante los canales definidos para la gestión comercial, sin requerir visitas presenciales. |
 | **Relaciones** | Casos de uso: CU-001. |
-| **Referencias** | [Actores](../negocio/Actores/03-actores-comerciales-cobranza.md) |
+| **Referencias** | [Actores](../../../Negocio/Actores/03%20Actores%20Comerciales%20Cobranza.md) |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
 | **Versión** | V.17 |
 | **Comentarios** | Sin cambios: es un proceso operativo/humano, no se esperaba ni se encontró respaldo directo en código. |
+
