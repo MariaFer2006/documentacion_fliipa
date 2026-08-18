@@ -15,10 +15,10 @@
 | Versión | Fecha | Autor | Descripción |
 |---------|-------|-------|-------------|
 | 0.1 | 2026-07-06 | Equipo Flipa | Borrador vacío (pendiente de completar). |
-| 1.0 | 2026-07-09 | María Fernanda Herazo (con asistencia de Claude) | Primera versión completa del flujo operacional del crédito. |
-| 1.1 | 2026-07-09 | María Fernanda Herazo (con asistencia de Claude) | Actualización de KYC y alivios; corrección de Actores y Reglas Negocio. |
-| 1.2 | 2026-07-09 | María Fernanda Herazo (con asistencia de Claude) | Anexo con las 10 páginas de los Journeys Colpatria B2B (junio 2026). |
-| 2.0 | 2026-07-13 | María Fernanda Herazo (con asistencia de Claude) | Reorganización: un archivo por etapa, con diagramas Mermaid y tablas en lugar de texto narrativo. |
+| 1.0 | 2026-07-09 | María Fernanda Herazo  | Primera versión completa del flujo operacional del crédito. |
+| 1.1 | 2026-07-09 | María Fernanda Herazo | Actualización de KYC y alivios; corrección de Actores y Reglas Negocio. |
+| 1.2 | 2026-07-09 | María Fernanda Herazo  | Anexo con las 10 páginas de los Journeys Colpatria B2B (junio 2026). |
+| 2.0 | 2026-07-13 | María Fernanda Herazo | Reorganización: un archivo por etapa, con diagramas Mermaid y tablas en lugar de texto narrativo. |
 | 2.1 | 2026-07-15 | María Fernanda Herazo | Referencias visuales incorporadas directamente en los procesos y eliminación del anexo independiente de journeys. |
 
 ---
