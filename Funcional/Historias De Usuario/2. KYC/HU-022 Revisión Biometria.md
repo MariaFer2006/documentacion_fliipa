@@ -7,7 +7,7 @@
 | **Prioridad** | Alta |
 | **Criterios de aceptación** | El analista visualiza los casos "en revisión" y registra la decisión (continuar o rechazar). |
 | **Relaciones** | Casos de uso: CU-005. Historia relacionada: HU-006 (capítulo [Onboarding](onboarding.md)). |
-| **Referencias** | [Reglas Negocio](../../../Negocio/Reglas%20Negocio/07-kyc-evaluacion-riesgo.md); |
+| **Referencias** | [Procesos](../../../Operaciones/Procesos/07%20Modelo%20Cobranza.md); |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
 | **Versión** | V.17 |

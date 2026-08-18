@@ -5,7 +5,7 @@
 | **Prioridad** | Alta |
 | **Criterios de aceptación** | El analista consulta la cartera agrupada en pago anticipado y buckets 1 a 5, con los datos necesarios para priorizar su gestión. |
 | **Relaciones** | Casos de uso: CU-012. |
-| **Referencias** | [Reglas Negocio](../negocio/reglas-negocio/02-mora-buckets.md) |
+| **Referencias** | [Procesos](../../../Operaciones/Procesos/07%20Modelo%20Cobranza.md);|
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
 | **Versión** | V.17 |
