@@ -1,4 +1,4 @@
-### PROPUESTA HU-041 — Cambiar el estado del crédito (incluye pre-rechazado)
+###  HU-041 — Cambiar el estado del crédito (incluye pre-rechazado)
 
 | Campo | Detalle |
 | --- | --- |
