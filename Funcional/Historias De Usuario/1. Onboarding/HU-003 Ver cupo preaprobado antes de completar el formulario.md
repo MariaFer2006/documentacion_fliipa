@@ -10,5 +10,5 @@
 | **Referencias** | [Procesos — 01 Onboarding Digital](../../../Operaciones/Procesos/01%20Onboarding%20Digital.md); `b2b/fliipa-back/src/controllers/checkouts/create-checkout.ts` |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
-| **Versión** | V.17 |
+| **Versión** | V.1.7 |
 | **Comentarios** | **Confirmado en plataforma:** la preaprobación y el cupo sugerido están operativos en el motor de riesgo. La plataforma permite cargar los clientes preaprobados mediante archivo, consultar/procesar la información de preaprobación y obtener el cupo sugerido utilizado en el flujo. Por tanto, esta funcionalidad no corresponde únicamente a un diseño documental, sino que cuenta con soporte operativo en el motor de riesgo. |

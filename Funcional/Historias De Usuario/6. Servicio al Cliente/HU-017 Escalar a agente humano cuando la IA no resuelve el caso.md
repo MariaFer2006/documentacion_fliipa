@@ -11,5 +11,5 @@
 | **Referencias** |[Atención al cliente](../../../Operaciones/Procesos/06%20Servicio%20Cliente.md); |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
-| **Versión** | V.17 |
+| **Versión** | V.1.7 |
 | **Comentarios** | **Historia separada de la HU-011 original (v1.5)**. No se encontró lógica de escalamiento en el código revisado; corresponde al mismo hallazgo documentado en HU-016 y en HU-028 (antes HU-022). |

@@ -10,5 +10,5 @@
 | **Referencias** | `b2b/fliipa-back/src/controllers/clients/collection-notes.ts` |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
-| **Versión** | V.17 |
+| **Versión** | V.1.7 |
 | **Comentarios** | **Confirmado**: el módulo está completamente implementado — creación, edición, eliminación y listado de notas de cobranza, más un resumen de atención (`getCollectionNotesAttentionSummary`). Ver HU-030 (nueva en v1.6) para el registro de contacto general, más allá de cobranza. |

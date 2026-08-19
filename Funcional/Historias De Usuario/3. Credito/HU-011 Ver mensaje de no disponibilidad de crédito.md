@@ -11,5 +11,5 @@
 | **Referencias** | Relacionado con la lógica de ingreso y consulta del estado del crédito en `fliipa-redemption`. |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
-| **Versión** | V.17 |
+| **Versión** | V.1.7 |
 | **Comentarios** | **Confirmado en plataforma:** existe un mensaje claro para los casos en los que el cliente no puede continuar, principalmente cuando el estado del crédito no permite avanzar o no existe un match/oferta disponible. **Corrección v1.6:** estar incluido en una lista negra (blacklist) no debe documentarse como condición que dispara este mensaje en el ingreso actual, ya que no corresponde al comportamiento observado en el flujo vigente. |

@@ -10,6 +10,6 @@
 | **Relaciones** | HU-023; HU-039 (vista de coincidencias). **No** reemplaza HU-042–044. |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
-| **Versión** | V.17 |
+| **Versión** | V.1.7 |
 | **Estado en plataforma** | **Hecho.** |
 | **Comentarios** | Solo traer/ver data de centrales. El “¿coincide con Fliipa?” es HU-039. |

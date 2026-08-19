@@ -11,5 +11,5 @@
 | **Referencias** | [Procesos](../../../Operaciones/Procesos/07%20Modelo%20Cobranza.md); |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
-| **Versión** | V.17 |
+| **Versión** | V.1.7 |
 | **Comentarios** | No se encontró ningún módulo de alivios, condonación ni "bucket de mora" en el código revisado (se buscó "bucket", "mora", "condona*", "alivio*" en todo el repositorio; sin coincidencias relevantes — únicamente coincidencias de "bucket" de almacenamiento GCP, sin relación con cartera). Esta funcionalidad parece no estar implementada en el código fuente entregado, o vive en un sistema externo/manual. Se recomienda confirmar con negocio. |

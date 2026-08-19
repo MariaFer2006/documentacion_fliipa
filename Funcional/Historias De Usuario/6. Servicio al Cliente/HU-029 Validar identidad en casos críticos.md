@@ -10,5 +10,5 @@
 | **Referencias** |[Atención al cliente](../../../Operaciones/Procesos/06%20Servicio%20Cliente.md); |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
-| **Versión** | V.17 |
+| **Versión** | V.1.7 |
 | **Comentarios** | Sin código de respaldo encontrado; es consistente con la ausencia general de un módulo de servicio al cliente/IA en el repositorio. |

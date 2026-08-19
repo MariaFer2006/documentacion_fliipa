@@ -9,6 +9,6 @@
 | **Relaciones** | Depende de HU-038. Distinta de la regla automática de contacto en HU-043. |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
-| **Versión** | V.17 |
+| **Versión** | V.1.7 |
 | **Estado en plataforma** | **Hecho.** |
 | **Comentarios** | Asistencia visual al analista; no es la decisión automática del motor KYC. |

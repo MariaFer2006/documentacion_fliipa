@@ -11,5 +11,5 @@
 **Referencias** | [Procesos — 01 Onboarding Digital](../../../Operaciones/Procesos/01%20Onboarding%20Digital.md); `b2b/fliipa-back/src/controllers/checkouts/create-checkout.ts`
 | **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
-| **Versión** | v1.7 |
+| **Versión** | v.1.7 |
 | **Comentarios** | **Confirmado en plataforma:** al entrar con el enlace, el sistema valida el Documento de Identidad y, si ya existe una solicitud empezada en estado `REQUEST_STARTED`, la reutiliza; si no existe, crea una nueva. Que el cliente ya esté registrado no implica rechazar el ingreso. Para el equipo técnico: `create-checkout` reutiliza checkouts en estado `REQUEST_STARTED`; no existe un rechazo por el simple hecho de que ya exista un cliente asociado al documento. |

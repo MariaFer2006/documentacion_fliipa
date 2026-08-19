@@ -11,5 +11,5 @@
 | **Referencias** | `b2b/fliipa-back/src/controllers/otp/send-otp.ts`, `otp/validate-otp.ts` |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
-| **Versión** | V.17 |
+| **Versión** | V.1.7 |
 | **Comentarios** | **Confirmado en plataforma:** el cliente puede solicitar nuevamente el código OTP y existe un tiempo de espera entre envíos. Si el número de teléfono o correo fue ingresado incorrectamente, el cliente puede regresar al paso anterior, corregir el dato y solicitar un nuevo código sin reiniciar la solicitud desde cero. |

@@ -10,5 +10,5 @@
 | **Referencias** | `b2b/fliipa-back/src/services/druo/debit-bank-account.druo.ts`, `connect-bank-account.druo.ts`; `b2b/fliipa-back/src/controllers/webhooks/druo-events.webhook.ts` |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
-| **Versión** | V.17 |
+| **Versión** | V.1.7 |
 | **Comentarios** | **Corrección v1.6:** actualmente está implementada la conexión de la cuenta bancaria mediante Druo y existen mecanismos para recibir avisos/eventos relacionados con dicha conexión. Sin embargo, el **débito automático de una cuota vencida de punta a punta todavía no está implementado como funcionalidad de producto**. Por tanto, esta historia no debe marcarse como implementada. La existencia de `debit-bank-account.druo.ts` no es suficiente para afirmar que el flujo completo de cobro automático de cartera vencida está operativo. |

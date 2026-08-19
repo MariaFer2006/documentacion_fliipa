@@ -10,5 +10,5 @@
 | **Referencias** | [Procesos](../../../Operaciones/Procesos/07%20Modelo%20Cobranza.md); |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
-| **Versión** | V.17 |
+| **Versión** | V.1.7 |
 | **Comentarios** | Confirmado: no se encontró ningún tablero de priorización automatizado en el código revisado. Depende de la misma ausencia de lógica de mora/buckets señalada en HU-024. |

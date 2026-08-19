@@ -11,5 +11,5 @@
 | **Referencias** |  `b2b/fliipa-back/src/controllers/checkouts/create-checkout.ts` |
 | **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
-| **Versión** | v1.7 |
+| **Versión** | v.1.7 |
 | **Comentarios** | **Corrección v1.7:** se elimina el término “simultáneamente”, ya que los contactos por los diferentes canales no se realizan en el mismo instante de tiempo. La historia se ajusta para describir una estrategia de contacto multicanal sin asumir simultaneidad ni un orden específico entre los canales. |

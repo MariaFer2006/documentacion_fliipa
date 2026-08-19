@@ -10,6 +10,6 @@
 | **Referencias** | Pendiente de verificar en código la existencia de un endpoint y una pantalla para consultar y gestionar el listado completo de blacklist. |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
-| **Versión** | V.17 |
+| **Versión** | V.1.7 |
 | **Estado en plataforma** | **Pendiente de implementar.** |
 | **Comentarios** | **Historia agregada en la v1.6.** Actualmente no existe en el panel administrativo una blacklist consultable ni una funcionalidad para gestionar manualmente los ingresos y salidas de clientes. La blacklist existe únicamente a nivel de servicio técnico, con operaciones individuales de agregar y retirar clientes. Queda pendiente implementar la consulta y gestión manual de la blacklist en el admin, en alineación con HU-034. |

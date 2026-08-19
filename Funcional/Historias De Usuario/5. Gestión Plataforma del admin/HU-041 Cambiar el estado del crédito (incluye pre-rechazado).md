@@ -9,6 +9,6 @@
 | **Relaciones** | HU-008 (resultado de la solicitud); HU-044 (decisión **automática** del KYC — distinta de esta). |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
-| **Versión** | V.17 |
+| **Versión** | V.1.7 |
 | **Estado en plataforma** | **Hecho** (cambio **manual**). |
 | **Comentarios** | El automático post-KYC es HU-044. |
