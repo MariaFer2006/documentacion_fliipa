@@ -6,7 +6,7 @@
 | **Historia** | Como administrador, quiero ajustar el cupo o la fecha de corte de una línea de crédito, para corregir casos excepcionales autorizados por negocio. |
 | **Prioridad** | Media |
 | **Criterios de aceptación** | El administrador puede ajustar el cupo y el día de corte de una línea de crédito. El día de corte debe estar dentro del rango válido de **1 a 31**. La acción queda registrada en auditoría. |
-| **Relaciones** | Casos de uso: CU-015. Requerimiento:[RF-018](../../Requerimientos/Requerimientos%20Funcionales.md). |
+| **Relaciones** | Casos de uso: [CU-015](../../Casos%20de%20Uso/6.%20Gesti%C3%B3n%20Plataforma%20del%20admin/CU-015%20Buscar%20cliente%2C%20ver%20historial%20y%20ajustar%20cupo%20o%20fecha%20de%20corte.md). Requerimiento:[RF-018](../../Requerimientos/Requerimientos%20Funcionales.md). |
 | **Referencias** | `backends/admin/src/controllers/credit-lines.controller.ts` — confirmado en `credits-platform-main`. |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
