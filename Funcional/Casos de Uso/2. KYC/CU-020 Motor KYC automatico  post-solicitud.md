@@ -2,8 +2,6 @@
 
 ![Diagrama de caso de uso CU-020](imagenes/diagrama_CU-020.svg)
 
-> **Nota:** HU-042, HU-043 y HU-044 no traían un número de CU asignado en el documento fuente; se agrupan aquí bajo el consecutivo **CU-020** por representar un mismo flujo de sistema (el "motor KYC post-solicitud").
-
 | Campo | Detalle |
 |:---:|:---:|
 | **Actores** | Sistema (Fliipa); Operaciones (cierre y reevaluación manual) |
