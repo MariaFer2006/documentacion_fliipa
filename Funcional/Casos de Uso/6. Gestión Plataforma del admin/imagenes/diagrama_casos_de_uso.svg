@@ -1,0 +1,82 @@
+<svg viewBox="0 0 950 740" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="950" height="740" fill="white"/>
+<rect x="180" y="90" width="620" height="610" fill="white" stroke="black" stroke-width="1.5"/>
+<line x1="90" y1="242.5" x2="370.0" y2="180.0" stroke="black" stroke-width="1.2"/>
+<line x1="90" y1="242.5" x2="370.0" y2="276.0" stroke="black" stroke-width="1.2"/>
+<line x1="90" y1="242.5" x2="370.0" y2="372.0" stroke="black" stroke-width="1.2"/>
+<line x1="90" y1="547.5" x2="370.0" y2="468.0" stroke="black" stroke-width="1.2"/>
+<line x1="860" y1="242.5" x2="610.0" y2="564.0" stroke="black" stroke-width="1.2"/>
+<line x1="860" y1="547.5" x2="610.0" y2="660.0" stroke="black" stroke-width="1.2"/>
+<text x="490.0" y="118" font-size="16" font-weight="bold" text-anchor="middle">Gestión de Plataforma (Admin)</text>
+<ellipse cx="490.0" cy="180.0" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="490.0" y="169.33333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-015: Buscar cliente,</text>
+<text x="490.0" y="183.83333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">ver historial y ajustar</text>
+<text x="490.0" y="198.33333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">cupo o fecha de corte</text>
+
+<ellipse cx="490.0" cy="276.0" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="490.0" y="272.5833333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-016: Simular plan de</text>
+<text x="490.0" y="287.0833333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">pago con distintas tasas</text>
+
+<ellipse cx="490.0" cy="372.0" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="490.0" y="368.5833333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-017: Administrar y</text>
+<text x="490.0" y="383.0833333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">consultar blacklist</text>
+
+<ellipse cx="490.0" cy="468.0" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="490.0" y="457.3333333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-018: Monitorear salud</text>
+<text x="490.0" y="471.8333333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">del sistema en tiempo</text>
+<text x="490.0" y="486.3333333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">real</text>
+
+<ellipse cx="490.0" cy="564.0" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="490.0" y="560.5833333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-024: Ver y reconectar</text>
+<text x="490.0" y="575.0833333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">cuenta Druo</text>
+
+<ellipse cx="490.0" cy="660.0" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="490.0" y="649.3333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-025: Cambiar el</text>
+<text x="490.0" y="663.8333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">estado del crédito</text>
+<text x="490.0" y="678.3333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">manualmente</text>
+
+
+    <g>
+      <circle cx="90" cy="212.5" r="10.0" fill="white" stroke="black" stroke-width="1.5"/>
+      <line x1="90" y1="222.5" x2="90" y2="257.5" stroke="black" stroke-width="1.5"/>
+      <line x1="75.0" y1="232.5" x2="105.0" y2="232.5" stroke="black" stroke-width="1.5"/>
+      <line x1="90" y1="257.5" x2="78.0" y2="277.5" stroke="black" stroke-width="1.5"/>
+      <line x1="90" y1="257.5" x2="102.0" y2="277.5" stroke="black" stroke-width="1.5"/>
+    </g>
+    <text x="90" y="295.5" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">Administrador</text>
+<text x="90" y="309.5" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">del producto</text>
+
+
+    <g>
+      <circle cx="90" cy="517.5" r="10.0" fill="white" stroke="black" stroke-width="1.5"/>
+      <line x1="90" y1="527.5" x2="90" y2="562.5" stroke="black" stroke-width="1.5"/>
+      <line x1="75.0" y1="537.5" x2="105.0" y2="537.5" stroke="black" stroke-width="1.5"/>
+      <line x1="90" y1="562.5" x2="78.0" y2="582.5" stroke="black" stroke-width="1.5"/>
+      <line x1="90" y1="562.5" x2="102.0" y2="582.5" stroke="black" stroke-width="1.5"/>
+    </g>
+    <text x="90" y="600.5" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">Administrador con rol</text>
+<text x="90" y="614.5" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">de sistema (SYS_ADMIN)</text>
+
+
+    <g>
+      <circle cx="860" cy="212.5" r="10.0" fill="white" stroke="black" stroke-width="1.5"/>
+      <line x1="860" y1="222.5" x2="860" y2="257.5" stroke="black" stroke-width="1.5"/>
+      <line x1="845.0" y1="232.5" x2="875.0" y2="232.5" stroke="black" stroke-width="1.5"/>
+      <line x1="860" y1="257.5" x2="848.0" y2="277.5" stroke="black" stroke-width="1.5"/>
+      <line x1="860" y1="257.5" x2="872.0" y2="277.5" stroke="black" stroke-width="1.5"/>
+    </g>
+    <text x="860" y="295.5" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">Administrador /</text>
+<text x="860" y="309.5" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">operaciones</text>
+
+
+    <g>
+      <circle cx="860" cy="517.5" r="10.0" fill="white" stroke="black" stroke-width="1.5"/>
+      <line x1="860" y1="527.5" x2="860" y2="562.5" stroke="black" stroke-width="1.5"/>
+      <line x1="845.0" y1="537.5" x2="875.0" y2="537.5" stroke="black" stroke-width="1.5"/>
+      <line x1="860" y1="562.5" x2="848.0" y2="582.5" stroke="black" stroke-width="1.5"/>
+      <line x1="860" y1="562.5" x2="872.0" y2="582.5" stroke="black" stroke-width="1.5"/>
+    </g>
+    <text x="860" y="600.5" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">Administrador /</text>
+<text x="860" y="614.5" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">analista de riesgo</text>
+
+</svg>

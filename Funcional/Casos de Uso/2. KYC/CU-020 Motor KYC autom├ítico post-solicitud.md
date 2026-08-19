@@ -1,0 +1,18 @@
+### CU-020: Motor KYC automático post-solicitud
+
+![Diagrama de caso de uso CU-020](imagenes/diagrama_CU-020.svg)
+
+> **Nota:** HU-042, HU-043 y HU-044 no traían un número de CU asignado en el documento fuente; se agrupan aquí bajo el consecutivo **CU-020** por representar un mismo flujo de sistema (el "motor KYC post-solicitud").
+
+| Campo | Detalle |
+|:---:|:---:|
+| **Actores** | Sistema (Fliipa); Operaciones (cierre y reevaluación manual) |
+| **Descripción** | Cuando una solicitud queda en estado `REQUESTED`, el sistema dispara automáticamente una evaluación KYC que corre cuatro reglas duras, guarda el resultado de cada una y aplica la decisión final (aprobado o pre-rechazado) al crédito, avisando al cliente solo cuando la decisión es definitiva. |
+| **Precondiciones** | El onboarding del cliente terminó y el crédito quedó en estado `REQUESTED` (o Operaciones solicitó reevaluar / volvió a poner el crédito en `REQUESTED`). |
+| **Flujo principal** | 1. El crédito pasa a estado `REQUESTED`. 2. El sistema dispara una única corrida KYC (sin reintentos automáticos en loop). 3. El motor evalúa las cuatro reglas duras: representante/identidad, Colpatria, Reconocer (contacto), y cuenta bancaria vs. centrales. 4. El motor guarda el resultado (outcome) de cada regla, con causal y comparación lado a lado cuando aplica. 5. Si las cuatro reglas pasan (un warning de Reconocer se sigue considerando aprobatorio), el sistema marca el crédito como **approved** y envía correo de aceptación al cliente. 6. Si falla una regla o cae el servicio de centrales, el sistema marca el crédito como **pre_rejected**, lo envía a la cola de operaciones con alerta, sin enviar correo de rechazo en ese momento. 7. Operaciones revisa la cola y cierra el caso a `rejected` o hace *override* a `approved` (en ese caso sí se envía correo). |
+| **Flujos alternativos / excepciones** | A1. El disparo automático de la corrida falla: queda registrado para Operaciones y **no** se asume aprobación. A2. Operaciones solicita "Reevaluar KYC" o vuelve a poner el crédito en `REQUESTED`: se dispara una nueva corrida. A3. Cae el servicio de centrales durante la evaluación: la falla se distingue de un "no cumple" y no se trata como aprobado. |
+| **Postcondiciones** | El crédito queda en estado `approved`, `pre_rejected` o, tras el cierre manual de Operaciones, en `rejected`/`approved` definitivo, con el resultado de cada regla KYC registrado y trazable. |
+| **Reglas de negocio** | El motor **nunca** deja un crédito en `rejected` automático: si no aprueba, pasa a `pre_rejected` (cola de operaciones). El cliente no recibe causas internas de rechazo; solo se le notifica cuando la decisión es final. |
+| **Historias de usuario relacionadas** | HU-042 (Iniciar la evaluación KYC al quedar la solicitud en REQUESTED), HU-043 (Evaluar las reglas KYC y guardar el resultado de cada una), HU-044 (Decidir approved/pre_rejected y avisar cuando corresponda) |
+| **Estado en plataforma** | **En desarrollo.** El onboarding ya deja el crédito en `REQUESTED` y las cuatro reglas ya corren en el motor con comparación onboarding vs. centrales; falta completar el disparo automático de la corrida, la persistencia del expediente por cliente y la decisión/correo automáticos de cierre. |
+| **Referencias** | Fuente: fichas HU-042, HU-043 y HU-044 — *Historias de Usuario — Fliipa*, carpeta "2. KYC" (repositorio `documentacion_fliipa`, María Fernanda Herazo). |

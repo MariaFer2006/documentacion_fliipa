@@ -1,0 +1,43 @@
+<svg viewBox="0 0 950 452" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="950" height="452" fill="white"/>
+<rect x="180" y="90" width="620" height="322" fill="white" stroke="black" stroke-width="1.5"/>
+<line x1="90" y1="251.0" x2="370.0" y2="180.0" stroke="black" stroke-width="1.2"/>
+<line x1="90" y1="251.0" x2="370.0" y2="276.0" stroke="black" stroke-width="1.2"/>
+<line x1="90" y1="251.0" x2="370.0" y2="372.0" stroke="black" stroke-width="1.2"/>
+<line x1="860" y1="251.0" x2="610.0" y2="180.0" stroke="black" stroke-width="1.2"/>
+<text x="490.0" y="118" font-size="16" font-weight="bold" text-anchor="middle">Onboarding</text>
+<ellipse cx="490.0" cy="180.0" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="490.0" y="176.58333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-001: Iniciar contacto</text>
+<text x="490.0" y="191.08333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">y solicitud de crédito</text>
+
+<ellipse cx="490.0" cy="276.0" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="490.0" y="272.5833333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-002: Consultar y ver</text>
+<text x="490.0" y="287.0833333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">cupo preaprobado</text>
+
+<ellipse cx="490.0" cy="372.0" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="490.0" y="368.5833333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-003: Confirmar</text>
+<text x="490.0" y="383.0833333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">identidad mediante OTP</text>
+
+
+    <g>
+      <circle cx="90" cy="221.0" r="10.0" fill="white" stroke="black" stroke-width="1.5"/>
+      <line x1="90" y1="231.0" x2="90" y2="266.0" stroke="black" stroke-width="1.5"/>
+      <line x1="75.0" y1="241.0" x2="105.0" y2="241.0" stroke="black" stroke-width="1.5"/>
+      <line x1="90" y1="266.0" x2="78.0" y2="286.0" stroke="black" stroke-width="1.5"/>
+      <line x1="90" y1="266.0" x2="102.0" y2="286.0" stroke="black" stroke-width="1.5"/>
+    </g>
+    <text x="90" y="304.0" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">Cliente</text>
+<text x="90" y="318.0" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">empresarial</text>
+
+
+    <g>
+      <circle cx="860" cy="221.0" r="10.0" fill="white" stroke="black" stroke-width="1.5"/>
+      <line x1="860" y1="231.0" x2="860" y2="266.0" stroke="black" stroke-width="1.5"/>
+      <line x1="845.0" y1="241.0" x2="875.0" y2="241.0" stroke="black" stroke-width="1.5"/>
+      <line x1="860" y1="266.0" x2="848.0" y2="286.0" stroke="black" stroke-width="1.5"/>
+      <line x1="860" y1="266.0" x2="872.0" y2="286.0" stroke="black" stroke-width="1.5"/>
+    </g>
+    <text x="860" y="304.0" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">Asesor</text>
+<text x="860" y="318.0" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">comercial</text>
+
+</svg>
