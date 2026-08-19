@@ -6,7 +6,7 @@
 | **Historia** | Como analista de riesgo, quiero revisar manualmente los casos de biometría marcados "en revisión", para decidir si el cliente puede continuar el proceso. |
 | **Prioridad** | Alta |
 | **Criterios de aceptación** | El analista visualiza los casos "en revisión" y registra la decisión (continuar o rechazar). |
-| **Relaciones** | Casos de uso: CU-005. Historia relacionada: HU-006 . |
+| **Relaciones** | Casos de uso: CU-005. Historia relacionada: [HU-006](../2.%20KYC/HU-006%20Completar%20la%20validaci%C3%B3n%20biom%C3%A9trica%20(KYC).md). |
 | **Referencias** | [Procesos](../../../Operaciones/Procesos/07%20Modelo%20Cobranza.md); |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
