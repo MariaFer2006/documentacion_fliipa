@@ -7,7 +7,7 @@
 | **Historia** | Como cliente empresarial, quiero recibir alivios (abono parcial, congelamiento de intereses) cuando tengo dificultades temporales de pago, para no perder mi cupo ni mi historial. |
 | **Prioridad** | Alta |
 | **Criterios de aceptación** | El cliente puede acceder al abono parcial, congelamiento de intereses o condonación, según las condiciones y topes definidos por bucket de mora. |
-| **Relaciones** | Casos de uso: CU-013. |
+| **Relaciones** | Casos de uso: [CU-013](../../Casos%20de%20Uso/4.%20Cobranza/CU-013%20Recibir%20alivios%20ante%20dificultades%20de%20pago.md). |
 | **Referencias** | [Procesos](../../../Operaciones/Procesos/07%20Modelo%20Cobranza.md); |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
