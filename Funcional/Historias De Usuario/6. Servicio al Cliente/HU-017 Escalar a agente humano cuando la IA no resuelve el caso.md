@@ -7,7 +7,7 @@
 | **Historia** | Como cliente empresarial, quiero que mi caso se escale a un agente humano cuando el asistente virtual no logre resolverlo, para no depender únicamente de canales automatizados. |
 | **Prioridad** | Alta |
 | **Criterios de aceptación** | Cuando el asistente virtual no resuelve el caso del cliente, el sistema escala el caso a un agente humano junto con el contexto completo de la conversación. |
-| **Relaciones** | Casos de uso: CU-014. Requerimiento: RF-029. Historias relacionadas: HU-016, HU-028. |
+| **Relaciones** | Casos de uso: CU-014. Requerimiento:[RF-029](../../Requerimientos/Requerimientos%20Funcionales.md). Historias relacionadas: HU-016, HU-028. |
 | **Referencias** |[Atención al cliente](../../../Operaciones/Procesos/06%20Servicio%20Cliente.md); |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
