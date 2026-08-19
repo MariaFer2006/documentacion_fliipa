@@ -13,6 +13,6 @@
 | **Flujos alternativos / excepciones** | A1. El analista no cuenta con información suficiente: puede dejar el caso pendiente hasta obtener más contexto (no verificado en código). |
 | **Postcondiciones** | El caso biométrico deja de estar "en revisión" y queda con una decisión explícita (continuar o rechazar). |
 | **Reglas de negocio** | Todo caso "en revisión" requiere una decisión manual explícita del analista antes de continuar el flujo del cliente. |
-| **Historias de usuario relacionadas** | HU-022 (Resolver manualmente casos de biometría en revisión) |
+| **Historias de usuario relacionadas** | [HU-022](../../Historias%20De%20Usuario/2.%20KYC/HU-022%20Revisi%C3%B3n%20Biometria.md) (Resolver manualmente casos de biometría en revisión) (Resolver manualmente casos de biometría en revisión) |
 | **Estado en plataforma** | No se encontró en el código ningún estado de "en revisión" para biometría, ni cola o pantalla de revisión manual (búsqueda de "en_revision", "manual_review", "under_review" sin coincidencias). Sin respaldo verificable en el código fuente entregado. |
-| **Referencias** | Fuente: ficha HU-022 — *Historias de Usuario — Fliipa*, carpeta "2. KYC" (repositorio `documentacion_fliipa`, María Fernanda Herazo). |
+| **Referencias** | Fuente: ficha [HU-022](../../Historias%20De%20Usuario/2.%20KYC/HU-022%20Revisi%C3%B3n%20Biometria.md) (Resolver manualmente casos de biometría en revisión) — *Historias de Usuario — Fliipa*, carpeta "2. KYC" (repositorio `documentacion_fliipa`, María Fernanda Herazo). |
