@@ -4,7 +4,7 @@
 
 ```mermaid
 flowchart LR
-    PA["Pago anticipado<br/>Asesor comercial / Hunter"] --> B1["Bucket 1 · 1-30 días<br/>Analista de cartera"]
+    PA["Pago anticipado<br/>Asesor comercial "] --> B1["Bucket 1 · 1-30 días<br/>Analista de cartera"]
     B1 --> B2["Bucket 2 · 31-60 días<br/>Analista de cartera + Comité de Cartera"]
     B2 --> B3["Bucket 3 · 61-90 días<br/>Preaviso jurídico (Analista de cartera)"]
     B3 --> B4["Bucket 4 · 91-120 días<br/>Analista jurídico / Abogado"]
