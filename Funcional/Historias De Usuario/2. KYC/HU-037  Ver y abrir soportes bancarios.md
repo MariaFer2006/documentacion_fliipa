@@ -4,7 +4,7 @@
 | **Actor** | Administrador / operaciones |
 | **Historia** | Como administrador, quiero ver y abrir la certificación bancaria y los extractos que subió el cliente, para revisarlos sin salir de la ficha. |
 | **Prioridad** | Alta |
-| **Criterios de aceptación** | Desde la ficha del cliente en el panel, el ops ve si hay certificación y extractos. Puede abrir cada PDF. Si falta alguno, se indica. Solo quienes tengan permiso pueden verlos. |
+| **Criterios de aceptación** | Desde la ficha del cliente en el panel, el ops ve si hay certificación y extractos. Puede abrir cada PDF. Solo quienes tengan permiso pueden verlos. |
 | **Relaciones** | [HU-007](../2.%20KYC/HU-007%20Cargar%20soportes%20bancarios.md). |
 | **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
