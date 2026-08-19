@@ -13,6 +13,6 @@
 | **Flujos alternativos / excepciones** | A1. El caso sale del bucket de escalamiento antes de ser tomado (por ejemplo, por un pago o alivio aplicado, ver CU-013): el enrutamiento automático no debería continuar (comportamiento no verificado en código). |
 | **Postcondiciones** | El caso queda asignado al analista jurídico y se inicia el proceso de cobro legal correspondiente. |
 | **Reglas de negocio** | El enrutamiento al analista jurídico debe ser automático, sin depender de un traspaso manual entre áreas. |
-| **Historias de usuario relacionadas** | HU-027 (Recibir casos de escalamiento jurídico automáticamente) |
+| **Historias de usuario relacionadas** |[HU-027](../../Historias%20De%20Usuario/4.%20Cobranza/HU-027%20Recibir%20casos%20de%20escalamiento%20juridico%20automaticamente.md) (Recibir casos de escalamiento jurídico automáticamente) |
 | **Estado en plataforma** | Sin respaldo en el código revisado, consistente con la ausencia general de lógica de buckets de mora (ver CU-012). Depende de resolver primero la discrepancia de plazos de escalamiento documentada en los requerimientos no funcionales (RNF-017). |
-| **Referencias** | Fuente: ficha HU-027 — *Historias de Usuario — Fliipa*, carpeta "4. Cobranza" (repositorio `documentacion_fliipa`, María Fernanda Herazo). |
+| **Referencias** | Fuente: ficha [HU-027](../../Historias%20De%20Usuario/4.%20Cobranza/HU-027%20Recibir%20casos%20de%20escalamiento%20juridico%20automaticamente.md) (Recibir casos de escalamiento jurídico automáticamente) — *Historias de Usuario — Fliipa*, carpeta "4. Cobranza" (repositorio `documentacion_fliipa`, María Fernanda Herazo). |
