@@ -6,7 +6,7 @@
 | **Historia** | Como cliente empresarial, quiero consultar mi cupo disponible, mi plan de pagos y mis movimientos, para saber cuánto puedo usar y cuánto debo. |
 | **Prioridad** | Alta |
 | **Criterios de aceptación** | El cliente accede al portal de usuarios y visualiza cupo disponible, plan de pagos y movimientos, solo si su línea de crédito está en estado Aprobado o Activa. |
-| **Relaciones** | Casos de uso: CU-009. Requerimientos: RF-016, RF-017. Historia relacionada: HU-011. |
+| **Relaciones** | Casos de uso: CU-009. Requerimientos:[RF-016](../../Requerimientos/Requerimientos%20Funcionales.md),[RF-017](../../Requerimientos/Requerimientos%20Funcionales.md). Historia relacionada: HU-011. |
 | **Referencias** | `b2b/fliipa-back/src/controllers/credit-line/get-credit-status.ts`, `credit-line/get-disbursements.ts`; `b2b/fliipa-redemption/actions/auth.ts` |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
