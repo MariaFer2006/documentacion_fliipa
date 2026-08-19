@@ -8,6 +8,6 @@
 | **Relaciones** | HU-007 (carga del cliente). |
 | **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
-| **Versión** | V.17 |
+| **Versión** | V.1.7 |
 | **Estado en plataforma** | **Hecho.** |
 | **Comentarios** | Separada de HU-007 a propósito: una es subir; esta es consultar en admin. |
