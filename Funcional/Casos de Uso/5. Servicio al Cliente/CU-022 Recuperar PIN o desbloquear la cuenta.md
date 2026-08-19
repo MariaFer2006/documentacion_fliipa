@@ -13,6 +13,6 @@
 | **Flujos alternativos / excepciones** | A1. El cliente no puede verificarse ante soporte: el desbloqueo no procede hasta resolver la verificación de identidad. |
 | **Postcondiciones** | El cliente recupera el acceso a su cuenta con un PIN válido. |
 | **Reglas de negocio** | El desbloqueo y la generación de un nuevo PIN requieren pasar por soporte; no es un autoservicio del cliente. |
-| **Historias de usuario relacionadas** | HU-018 (Recuperar PIN o desbloquear la cuenta) |
+| **Historias de usuario relacionadas** | [HU-018](../../Historias%20De%20Usuario/6.%20Servicio%20al%20Cliente/HU-018%20Recuperar%20PIN%20o%20desbloquear%20la%20cuenta.md) (Recuperar PIN o desbloquear la cuenta) |
 | **Estado en plataforma** | Implementado. Existe el modelo con `loginAttempts`/`lockedAt` (`Client.ts`) y un componente de UI dedicado (`ResetPin.tsx`) dentro del flujo de login de `fliipa-redemption`. |
-| **Referencias** | Fuente: ficha HU-018 — *Historias de Usuario — Fliipa*, carpeta "5. Servicio al Cliente" (repositorio `documentacion_fliipa`, María Fernanda Herazo). |
+| **Referencias** | Fuente: ficha [HU-018](../../Historias%20De%20Usuario/6.%20Servicio%20al%20Cliente/HU-018%20Recuperar%20PIN%20o%20desbloquear%20la%20cuenta.md)  — *Historias de Usuario — Fliipa*, carpeta "5. Servicio al Cliente" (repositorio `documentacion_fliipa`, María Fernanda Herazo). |
