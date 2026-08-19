@@ -11,6 +11,6 @@
 | **Flujos alternativos / excepciones** | A1. El resultado queda "en revisión": el caso pasa a revisión manual del analista de riesgo (ver CU-005). |
 | **Postcondiciones** | La solicitud del cliente queda con un resultado biométrico (aprobado, rechazado o en revisión) registrado. |
 | **Reglas de negocio** | El proceso no debe limitarse a un flujo exclusivamente móvil; el cliente puede usar cualquier dispositivo disponible. |
-| **Historias de usuario relacionadas** | HU-006 (Completar la validación biométrica) |
-| **Estado en plataforma** | No se encontró en el repositorio revisado lógica de biometría ni integración con proveedor externo (se buscó "biometr*" y "Olimpia" en todo `b2b/`, sin resultados). Pendiente confirmar si vive en un microservicio no incluido en este repositorio. |
-| **Referencias** | Fuente: ficha HU-006 — *Historias de Usuario — Fliipa*, carpeta "2. KYC" (repositorio `documentacion_fliipa`, María Fernanda Herazo). |
+| **Historias de usuario relacionadas** | [HU-006](../../Historias%20De%20Usuario/2.%20KYC/HU-006%20Completar%20la%20validaci%C3%B3n%20biom%C3%A9trica%20(KYC).md) (Completar la validación biométrica)(Completar la validación biométrica) |
+| **Estado en plataforma** | No se encontró en el repositorio revisado lógica de biometría ni integración con proveedor externo (se buscó "biometria" y "Olimpia" en todo `b2b/`, sin resultados). Pendiente confirmar si vive en un microservicio no incluido en este repositorio. |
+| **Referencias** | Fuente: ficha [HU-006](../../Historias%20De%20Usuario/2.%20KYC/HU-006%20Completar%20la%20validaci%C3%B3n%20biom%C3%A9trica%20(KYC).md) (Completar la validación biométrica) — *Historias de Usuario — Fliipa*, carpeta "2. KYC" (repositorio `documentacion_fliipa`, María Fernanda Herazo). |
