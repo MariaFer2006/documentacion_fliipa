@@ -6,7 +6,7 @@
 | **Historia** | Como cliente empresarial, quiero prepagar mi cuota antes de la fecha de corte mediante PSE, para no incurrir en mora y mantener un buen comportamiento de crédito. |
 | **Prioridad** | Alta |
 | **Criterios de aceptación** | El cliente puede realizar el pago de su cuota en cualquier momento antes de la fecha de corte mediante PSE, y el sistema refleja el pago en su plan de pagos y en su cupo disponible. |
-| **Relaciones** | Casos de uso: CU-011. Requerimiento: RF-022 [RF-022](../../Requerimientos/Requerimientos%20Funcionales.md). Historia relacionada: HU-014. |
+| **Relaciones** | Casos de uso: CU-011. Requerimiento:  [RF-022](../../Requerimientos/Requerimientos%20Funcionales.md). Historia relacionada: HU-014. |
 | **Referencias** | [Procesos](../../../Operaciones/Procesos/07%20Modelo%20Cobranza.md); no se encontró implementación de pago por PSE en ningún archivo del repositorio (se buscó "PSE" en todo el proyecto sin coincidencias). |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
