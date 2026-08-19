@@ -112,7 +112,7 @@ Cada paso incluye la descripción del proceso (qué ocurre a nivel técnico u op
 4. Tasa de interés (E.A.), aclarando que la cuota ya incluye intereses y cargos administrativos.
 5. Disponibilidad inmediata del cupo en la cuenta del cliente, utilizable en cualquier tienda D1.
 
-**Resultado:** Cliente informado de las condiciones del crédito aprobado, incluyendo tasa de interés y detalle de las cuotas mensuales.
+**Resultado:** Cliente informado de las condiciones del crédito aprobado, incluyendo tasa de interés y detalle de las cuota mensuales.
 
 **Tiempo estimado:** ~20-30 segundos de lectura.*
 
