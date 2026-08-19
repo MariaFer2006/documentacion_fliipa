@@ -11,6 +11,6 @@
 | **Flujos alternativos / excepciones** | A1. El código no es válido o ya fue utilizado: el punto de venta rechaza la aplicación del cupo. |
 | **Postcondiciones** | La compra queda pagada con cargo al cupo del cliente y el movimiento se refleja en su plan de pagos. |
 | **Reglas de negocio** | El código de compra debe validarse en el punto de venta antes de aplicar el cupo. |
-| **Historias de usuario relacionadas** | HU-012 (Usar el cupo en tienda D1) |
+| **Historias de usuario relacionadas** | [HU-012](../../Historias%20De%20Usuario/3.%20Credito/HU-012%20Usar%20el%20cupo%20en%20tienda%20D1.md) (Usar el cupo en tienda D1)|
 | **Estado en plataforma** | Implementado (`get-or-create-qr.ts`, `validate-qr.ts`, `get-client-coupon.ts`). |
-| **Referencias** | Fuente: ficha HU-012 — *Historias de Usuario — Fliipa*, carpeta "3. Credito" (repositorio `documentacion_fliipa`, María Fernanda Herazo). |
+| **Referencias** | Fuente: ficha [HU-012](../../Historias%20De%20Usuario/3.%20Credito/HU-012%20Usar%20el%20cupo%20en%20tienda%20D1.md) (Usar el cupo en tienda D1) — *Historias de Usuario — Fliipa*, carpeta "3. Credito" (repositorio `documentacion_fliipa`, María Fernanda Herazo). |
