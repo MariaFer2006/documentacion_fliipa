@@ -2,7 +2,7 @@
 
 ![Diagrama de caso de uso CU-005](imagenes/diagrama_CU-005.svg)
 
-> **Nota de consistencia (revisión 2026-08-19):** en la versión actual del repositorio, la ficha **HU-007** ("Cargar soportes bancarios") declara textualmente `Casos de uso: CU-005`. Esto no coincide con el contenido de este CU-005 (que trata la revisión manual de biometría por el analista, HU-022) ni con su actor (Analista de riesgo vs. Cliente empresarial en HU-007). Se documenta como hallazgo pendiente de aclarar con el equipo de negocio en lugar de fusionar dos flujos de actores distintos bajo un mismo CU. HU-007 se mantiene documentada en **CU-019**.
+
 
 | Campo | Detalle |
 |:---:|:---:|
