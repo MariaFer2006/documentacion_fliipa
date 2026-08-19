@@ -102,7 +102,7 @@ No forman parte del MVP:
 
 Durante la primera versión:
 
-- El producto estará dirigido a micro y pequeñas empresas, especialmente tenderos y comerciantes.
+- El producto estará dirigido a micro y pequeñas empresas, especialmente clientes.
 - Durante el MVP, el crédito podrá utilizarse únicamente para realizar compras en tiendas D1.
 - La solución contará con un portal administrativo para uso interno y aplicaciones desarrolladas bajo una arquitectura de microfrontends.
 - El producto estará orientado a validar el modelo de negocio antes de escalar la operación.
