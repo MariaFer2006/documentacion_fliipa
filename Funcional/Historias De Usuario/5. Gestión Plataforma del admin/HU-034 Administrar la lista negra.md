@@ -6,7 +6,7 @@
 | **Historia** | Como administrador, quiero agregar o retirar clientes de la lista negra, para bloquear casos de fraude confirmado. |
 | **Prioridad** | Alta |
 | **Criterios de aceptación** | El administrador agrega o retira clientes de la blacklist, validando que el cliente exista y registrando el motivo por el cual el cliente ingresa a la lista negra. |
-| **Relaciones** | Casos de uso: CU-017. Requerimiento: RF-027. Historia relacionada: HU-011  |
+| **Relaciones** | Casos de uso: CU-017. Requerimiento:[RF-027](../../Requerimientos/Requerimientos%20Funcionales.md). Historia relacionada: HU-011  |
 | **Referencias** | `backends/b2b/src/controllers/blacklist/add-client-to-blacklist.ts`, `backends/b2b/src/controllers/blacklist/remove-client-client-from-blacklist.ts` |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
