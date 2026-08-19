@@ -3,7 +3,7 @@
 ![Diagrama de caso de uso CU-001](imagenes/diagrama_CU-001.svg)
 
 | Campo | Detalle |
-|:---:|:---:|
+|---|---|
 | **Actores** | Cliente empresarial (principal); Asesor comercial (secundario) |
 | **Descripción** | Un cliente preaprobado es contactado por el asesor comercial por varios canales y recibe un enlace único para iniciar (o retomar) su proceso de solicitud de crédito, con acompañamiento comercial durante todo el proceso. |
 | **Precondiciones** | El cliente está en la base de clientes preaprobados. El asesor cuenta con las plantillas de contacto para correo, WhatsApp y llamada. |
