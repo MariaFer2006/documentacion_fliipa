@@ -6,7 +6,7 @@
 | **Historia** | Como cliente empresarial, quiero confirmar mi identidad mediante códigos de verificación enviados de forma secuencial por WhatsApp y correo electrónico, para validar mi identidad de forma segura. |
 | **Prioridad** | Alta |
 | **Criterios de aceptación** | El cliente recibe un código OTP por **WhatsApp** y, una vez completada y validada esta etapa, recibe el código OTP por **correo electrónico**. El cliente debe ingresar y validar cada código antes de continuar con el flujo. Si alguna validación falla, el sistema muestra un mensaje genérico y no revela información sensible. |
-| **Relaciones** | Casos de uso: CU-003. Requerimiento: RF-006. Historias relacionadas: [HU-003](../1.%20Onboarding/HU-003%20Ver%20cupo%20preaprobado%20antes%20de%20completar%20el%20formulario.md), [HU-005](../1.%20Onboarding/HU-005%20Reintentar%20o%20corregir%20el%20env%C3%ADo%20del%20OTP.md)
+| **Relaciones** | Casos de uso: CU-003. Requerimiento: [RF-006](../../Requerimientos/Requerimientos%20Funcionales.md). Historias relacionadas: [HU-003](../1.%20Onboarding/HU-003%20Ver%20cupo%20preaprobado%20antes%20de%20completar%20el%20formulario.md), [HU-005](../1.%20Onboarding/HU-005%20Reintentar%20o%20corregir%20el%20env%C3%ADo%20del%20OTP.md)
  |
 | **Referencias** | `b2b/fliipa-back/src/controllers/otp/send-otp.ts`, `otp/validate-otp.ts` |
  **Autor** | María Fernanda Herazo |
