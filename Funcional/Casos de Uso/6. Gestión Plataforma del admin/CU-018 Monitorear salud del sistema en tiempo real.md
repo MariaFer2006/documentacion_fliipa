@@ -11,6 +11,6 @@
 | **Flujos alternativos / excepciones** | A1. Un componente de terceros no cubierto por el monitoreo presenta una falla (Experian, Druo, biometría, Zenvia/Sendgrid o el core bancario): el panel actual no lo detecta (ver hallazgo en Estado en plataforma). |
 | **Postcondiciones** | El administrador cuenta con visibilidad en tiempo real del estado del core bancario y la base de datos. |
 | **Reglas de negocio** | El monitoreo debe cubrir componentes críticos para la continuidad del negocio. |
-| **Historias de usuario relacionadas** | HU-036 (Monitorear salud del sistema en tiempo real) |
+| **Historias de usuario relacionadas** |[HU-036](../../Historias%20De%20Usuario/5.%20Gesti%C3%B3n%20Plataforma%20del%20admin/HU-036%20Monitorear%20salud%20del%20sistema%20en%20tiempo%20real.md) (Monitorear salud del sistema en tiempo real) |
 | **Estado en plataforma** | Implementado (`system-core-health.controller.ts`, `system-cloud-sql.controller.ts`). Hallazgo (RF-033): el monitoreo de terceros solo cubre GitHub, npm y GCP; no cubre Experian, Druo, el proveedor de biometría, Zenvia/Sendgrid ni el core bancario, pese a que el producto los describe como críticos para el negocio. |
-| **Referencias** | Fuente: ficha HU-036 — *Historias de Usuario — Fliipa*, carpeta "6. Gestión Plataforma del admin" (repositorio `documentacion_fliipa`, María Fernanda Herazo). |
+| **Referencias** | Fuente: ficha [HU-036](../../Historias%20De%20Usuario/5.%20Gesti%C3%B3n%20Plataforma%20del%20admin/HU-036%20Monitorear%20salud%20del%20sistema%20en%20tiempo%20real.md) (Monitorear salud del sistema en tiempo real) — *Historias de Usuario — Fliipa*, carpeta "6. Gestión Plataforma del admin" (repositorio `documentacion_fliipa`, María Fernanda Herazo). |
