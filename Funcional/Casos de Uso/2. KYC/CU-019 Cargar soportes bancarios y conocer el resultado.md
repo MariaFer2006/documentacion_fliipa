@@ -2,8 +2,6 @@
 
 ![Diagrama de caso de uso CU-019](imagenes/diagrama_CU-019.svg)
 
-
-
 | Campo | Detalle |
 |:---:|:---:|
 | **Actores** | Cliente empresarial (carga); Administrador / operaciones (consulta) |
@@ -14,5 +12,5 @@
 | **Postcondiciones** | Los soportes bancarios del cliente quedan cargados y disponibles para consulta en el panel, y el cliente conoce el resultado de su solicitud dentro del SLA definido. |
 | **Reglas de negocio** | El SLA de resultado de la solicitud es de máximo 24 horas. Solo usuarios con permiso pueden ver los soportes bancarios en el panel. |
 | **Historias de usuario relacionadas** | HU-007 (Cargar soportes bancarios), HU-008 (Conocer el resultado en máximo 24 horas), HU-037 (Ver y abrir soportes bancarios en el panel) |
-| **Estado en plataforma** | HU-037 (consulta en panel): implementado (hecho). HU-007 (carga de soportes): implementado, según referencia `b2b/fliipa-back/src/controllers/clients/upload-document.ts`; el cliente carga certificación bancaria y extractos como dos PDF, y el sistema procesa el almacenamiento en segundo plano sin bloquear el flujo. HU-008 (SLA de resultado en 24 horas): la evaluación se apoya en el microservicio `evaluations` (Experian, Reconocer), pero no se encontró en el código un job o temporizador que garantice ese SLA de forma automática; parece ser un compromiso operativo, no una regla codificada. La numeración CU-019 (en vez de CU-006, que HU-008 declara) se mantiene por el conflicto de actor descrito en la nota superior, no por falta de contenido en HU-007 u HU-008. |
+| **Estado en plataforma** | HU-037 (consulta en panel): implementado (hecho). HU-007 (carga de soportes): implementado, según referencia `b2b/fliipa-back/src/controllers/clients/upload-document.ts`; el cliente carga certificación bancaria y extractos como dos PDF, y el sistema procesa el almacenamiento en segundo plano sin bloquear el flujo. HU-008 (SLA de resultado en 24 horas): la evaluación se apoya en el microservicio `evaluations` (Experian, Reconocer), pero no se encontró en el código un job o temporizador que garantice ese SLA de forma automática; parece ser un compromiso operativo, no una regla codificada. La numeración CU-019 (en vez de CU-006, que HU-008 declara en su ficha de origen) se mantiene porque CU-006 ya corresponde en este catálogo a un flujo de un actor distinto (Analista de riesgo, no Cliente empresarial); no se mezclaron por falta de contenido en HU-007 u HU-008. |
 | **Referencias** | Fuente: fichas HU-007, HU-008 y HU-037 — *Historias de Usuario — Fliipa*, carpeta "2. KYC" (repositorio `documentacion_fliipa`, María Fernanda Herazo). |
