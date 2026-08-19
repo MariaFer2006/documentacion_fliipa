@@ -2,7 +2,7 @@
 
 ![Diagrama de caso de uso CU-019](imagenes/diagrama_CU-019.svg)
 
-> **Nota (actualizada 2026-08-19):** este caso de uso se creó originalmente porque HU-007 y HU-008 no tenían ficha de contenido en el repositorio. En la versión actual (v1.7), ambas fichas ya están completas, pero declaran textualmente `Casos de uso: CU-005` (HU-007) y `Casos de uso: CU-006` (HU-008) — números que en este catálogo corresponden a flujos de un actor distinto (Analista de riesgo, no Cliente empresarial). Se mantiene esta ficha como **CU-019** para no mezclar actores incompatibles bajo un mismo caso de uso, y se deja constancia de la discrepancia en CU-005 y CU-006 para que el equipo de negocio confirme la numeración correcta.
+
 
 | Campo | Detalle |
 |:---:|:---:|
@@ -14,5 +14,5 @@
 | **Postcondiciones** | Los soportes bancarios del cliente quedan cargados y disponibles para consulta en el panel, y el cliente conoce el resultado de su solicitud dentro del SLA definido. |
 | **Reglas de negocio** | El SLA de resultado de la solicitud es de máximo 24 horas. Solo usuarios con permiso pueden ver los soportes bancarios en el panel. |
 | **Historias de usuario relacionadas** | HU-007 (Cargar soportes bancarios), HU-008 (Conocer el resultado en máximo 24 horas), HU-037 (Ver y abrir soportes bancarios en el panel) |
-| **Estado en plataforma** | HU-037 (consulta en panel): implementado (hecho). HU-007 y HU-008: sus fichas de origen en el repositorio de Historias de Usuario están vacías (sin contenido cargado); esta ficha de caso de uso se construyó a partir de las referencias cruzadas que otras historias (HU-006, HU-011, HU-037) hacen sobre ellas. Se recomienda completar el contenido de HU-007 y HU-008 en el documento fuente. |
-| **Referencias** | Fuente: ficha HU-037 y referencias cruzadas en HU-006, HU-011, HU-030 y README — *Historias de Usuario — Fliipa*, carpetas "1. Onboarding" y "2. KYC" (repositorio `documentacion_fliipa`, María Fernanda Herazo). |
+| **Estado en plataforma** | HU-037 (consulta en panel): implementado (hecho). HU-007 (carga de soportes): implementado, según referencia `b2b/fliipa-back/src/controllers/clients/upload-document.ts`; el cliente carga certificación bancaria y extractos como dos PDF, y el sistema procesa el almacenamiento en segundo plano sin bloquear el flujo. HU-008 (SLA de resultado en 24 horas): la evaluación se apoya en el microservicio `evaluations` (Experian, Reconocer), pero no se encontró en el código un job o temporizador que garantice ese SLA de forma automática; parece ser un compromiso operativo, no una regla codificada. La numeración CU-019 (en vez de CU-006, que HU-008 declara) se mantiene por el conflicto de actor descrito en la nota superior, no por falta de contenido en HU-007 u HU-008. |
+| **Referencias** | Fuente: fichas HU-007, HU-008 y HU-037 — *Historias de Usuario — Fliipa*, carpeta "2. KYC" (repositorio `documentacion_fliipa`, María Fernanda Herazo). |
