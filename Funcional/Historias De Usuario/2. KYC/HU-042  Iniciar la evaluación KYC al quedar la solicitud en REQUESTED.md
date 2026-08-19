@@ -8,6 +8,6 @@
 | **Relaciones** | HU-007; HU-008; HU-041 (cambio manual de estado); HU-043; HU-044. |
 | **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
-| **Versión** | V.17 |
+| **Versión** | V.1.7 |
 | **Estado en plataforma** | **En desarrollo.** El onboarding ya deja el crédito en REQUESTED y el motor de reglas ya existe; se está cableando el disparo automático de la corrida y el expediente de punta a punta. |
 | **Comentarios** | Parte del motor KYC post-solicitud en curso. |
