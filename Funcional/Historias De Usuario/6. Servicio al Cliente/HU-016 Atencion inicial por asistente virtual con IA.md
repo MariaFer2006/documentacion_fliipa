@@ -6,7 +6,7 @@
 | **Historia** | Como cliente empresarial, quiero que un asistente virtual con inteligencia artificial atienda mi primer contacto por WhatsApp, para obtener respuesta inmediata a mis dudas más comunes. |
 | **Prioridad** | Alta |
 | **Criterios de aceptación** | El asistente virtual con IA recibe y responde el primer contacto del cliente por WhatsApp, dentro de las dudas frecuentes definidas en su alcance. |
-| **Relaciones** | Casos de uso: CU-014. Requerimiento: RF-028. Historia relacionada: HU-017. |
+| **Relaciones** | Casos de uso: CU-014. Requerimiento:[RF-028](../../Requerimientos/Requerimientos%20Funcionales.md). Historia relacionada: HU-017. |
 | **Referencias** | [Atención al cliente](../../../Operaciones/Procesos/06%20Servicio%20Cliente.md);`b2b/services/communications/src/controllers/whatsapp/whatsapp.controller.ts` |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
