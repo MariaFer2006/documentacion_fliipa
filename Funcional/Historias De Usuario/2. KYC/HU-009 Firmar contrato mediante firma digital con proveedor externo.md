@@ -7,7 +7,7 @@
 | **Historia** | Como cliente empresarial, quiero firmar mi contrato mediante firma Electronica, para activar mi cupo sin papeleo físico. |
 | **Prioridad** | Alta |
 | **Criterios de aceptación** | El cliente revisa el contrato y lo firma a través del portal Usuario por medio de un OTP enviado por los canales definido para este flujo. El sistema genera el PDF firmado y lo envía por correo al cliente. |
-| **Relaciones** | Casos de uso: CU-007. Requerimientos: [RF-013](../../Requerimientos/Requerimientos%20Funcionales.md),[RF-014](../../Requerimientos/Requerimientos%20Funcionales.md), (pendiente confirmar vigencia dado el cambio de mecanismo). |
+| **Relaciones** | Casos de uso: [CU-007](../../Casos%20de%20Uso/2.%20KYC/CU-007%20Firmar%20contrato%20mediante%20firma%20digital.md). Requerimientos: [RF-013](../../Requerimientos/Requerimientos%20Funcionales.md),[RF-014](../../Requerimientos/Requerimientos%20Funcionales.md), (pendiente confirmar vigencia dado el cambio de mecanismo). |
 | **Referencias** | `b2b/fliipa-back/src/controllers/clients/sign-contract.ts`, `send-contract/send-contract.controller.ts` |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
