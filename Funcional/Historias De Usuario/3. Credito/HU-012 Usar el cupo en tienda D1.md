@@ -3,7 +3,7 @@
 | Campo | Detalle |
 |:---:|:---:|
 | **Actor** | Cliente empresarial |
-| **Historia** | Como cliente empresarial, quiero generar un código de compra para usar mi cupo en la tienda D1, para pagar mi mercancía sin dinero en efectivo. |
+| **Historia** | Como cliente empresarial, quiero visualizar un código de compra para usar mi cupo en la tienda D1, para pagar mi mercancía sin dinero en efectivo. |
 | **Prioridad** | Alta |
 | **Criterios de aceptación** | El cliente obtiene un código de compra y el punto de venta D1 lo valida para aplicar el cupo a la compra. |
 | **Relaciones** | Casos de uso: CU-010. Requerimientos: [RF-019](../../Requerimientos/Requerimientos%20Funcionales.md),[RF-020](../../Requerimientos/Requerimientos%20Funcionales.md),. |
