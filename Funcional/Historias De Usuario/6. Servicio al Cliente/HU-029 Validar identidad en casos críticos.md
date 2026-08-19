@@ -6,7 +6,7 @@
 | **Historia** | Como agente de servicio al cliente, quiero validar la identidad del cliente antes de aprobar un caso crítico (suplantación, uso indebido del cupo), para evitar fraude. |
 | **Prioridad** | Alta |
 | **Criterios de aceptación** | Los casos críticos requieren validación de identidad y aprobación manual explícita del agente antes de cerrarse. |
-| **Relaciones** | Casos de uso: CU-014. Requerimiento: [RF-029](../../Requerimientos/Requerimientos%20Funcionales.md). |
+| **Relaciones** | Casos de uso: [CU-014](../../Casos%20de%20Uso/5.%20Servicio%20al%20Cliente/CU-014%20Atenci%C3%B3n%20al%20cliente%20por%20IA%20y%20escalar%20a%20agente%20humano.md). Requerimiento: [RF-029](../../Requerimientos/Requerimientos%20Funcionales.md). |
 | **Referencias** |[Atención al cliente](../../../Operaciones/Procesos/06%20Servicio%20Cliente.md); |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
