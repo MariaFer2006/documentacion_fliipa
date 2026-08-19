@@ -99,7 +99,7 @@ Cubre los 11 procesos de negocio definidos en [Alcance del Producto](../../produ
 
 | ID | Nombre | Descripción | Actor(es) | Prioridad | Estado | Fuente |
 |----|--------|--------------|-----------|-----------|--------|--------|
-| RF-019 | Canje mediante un codigo | Generar un código con tiempo de vida (TTL) para el canje del cupo en tienda D1. | Cliente empresarial | Alta | Implementado | `qr/get-or-create-qr.ts`, `qr/validate-qr.ts` |
+| RF-019 | Canje mediante un codigo | Generar un código con tiempo de vida (TTL) para el canje del cupo en tienda D1. | Cliente empresarial | Alta | Implementado | ....|
 | RF-020 | Canje mediante código de compra | Permitir revelar un código de compra como mecanismo alterno de canje del cupo. | Cliente empresarial | Alta | Implementado, con hallazgo: coexisten dos mecanismos de canje (código de compra) sin que la documentación de negocio aclare cuál es el vigente. | `clients/get-client-coupon.ts`, `apps/redemption/actions/reveal-purchase-code.ts` |
 | RF-021 | Bloqueo y renovación del cupo | Bloquear el cupo remanente durante la compra y evaluar la renovación del cupo según el comportamiento de pago tras el uso. | Sistema (automático) | Alta | No verificable directamente en el código de `backends/b2b` disponible. | — |
 
