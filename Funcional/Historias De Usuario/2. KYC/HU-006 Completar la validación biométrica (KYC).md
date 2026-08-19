@@ -4,7 +4,7 @@
 |:---:|:---:|
 | **Actor** | Cliente empresarial |
 | **Historia** | Como cliente empresarial, quiero completar la validación biométrica con el proveedor externo, para verificar mi identidad de forma segura sin tener que ir a una oficina. |
-| **Prioridad** | Alta |
+| **Prioridad** | Media |
 | **Criterios de aceptación** | El cliente completa el proceso de biometría con el proveedor externo definido, desde el dispositivo que tenga disponible, y el sistema registra el resultado (aprobado, rechazado o en revisión) asociado a su solicitud. |
 | **Relaciones** | Casos de uso: CU-004. Historias relacionadas:[HU-007](../2.%20KYC/HU-007%20Cargar%20soportes%20bancarios.md), [HU-022](../2.%20KYC/HU-022%20Revisi%C3%B3n%20Biometria.md). |
 | **Referencias** | [Procesos](../../../Operaciones/Procesos/02%20Validacion%20Kcy%20Y%20Evaluaci%C3%B3n%20Riesgo.md); no se encontró en el repositorio lógica de biometría ni integración con un proveedor externo (se buscó "biometr*" y "Olimpia" en todo `b2b/`, sin resultados). |
