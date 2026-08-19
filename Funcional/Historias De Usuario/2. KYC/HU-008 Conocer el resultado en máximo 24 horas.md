@@ -6,7 +6,7 @@
 | **Historia** | Como cliente empresarial, quiero conocer el resultado de mi solicitud en máximo 24 horas, para poder planear mis compras en D1. |
 | **Prioridad** | Alta |
 | **Criterios de aceptación** | El cliente recibe notificación de aprobación o rechazo dentro de las 24 horas siguientes a completar la validación de identidad, la biometría y la carga de soportes bancarios. |
-| **Relaciones** | Casos de uso: CU-006. Requerimientos: RF-010, RF-011, RF-012. Historias relacionadas: HU-006, HU-007. |
+| **Relaciones** | Casos de uso: CU-006. Requerimientos:[RF-010](../../Requerimientos/Requerimientos%20Funcionales.md),[RF-011](../../Requerimientos/Requerimientos%20Funcionales.md), [RF-012](../../Requerimientos/Requerimientos%20Funcionales.md). Historias relacionadas: HU-006, HU-007. |
 | **Referencias** | [Procesos](../../../Operaciones/Procesos/07%20Modelo%20Cobranza.md); `b2b/services/evaluations/src/third-party/Experian/authentication-experian.ts`, `midecisorpj.ts`, `reconocer.ts` |
 | **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
