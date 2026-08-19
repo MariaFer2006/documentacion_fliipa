@@ -2,8 +2,6 @@
 
 ![Diagrama de caso de uso CU-024](imagenes/diagrama_CU-024.svg)
 
-> **Nota:** HU-040 no traía un número de CU asignado; se asigna el consecutivo **CU-024**.
-
 | Campo | Detalle |
 |:---:|:---:|
 | **Actores** | Administrador / operaciones |
