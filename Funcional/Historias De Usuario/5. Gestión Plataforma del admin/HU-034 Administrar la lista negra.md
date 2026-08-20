@@ -3,8 +3,8 @@
 | Campo | Detalle |
 |:---:|:---:|
 | **Actor** | Administrador del producto |
-| **Historia** | Como administrador, quiero agregar o retirar clientes de la lista negra, para bloquear casos de fraude confirmado. |
-| **Prioridad** | Alta |
+| **Historia** | Como administrador, quiero agregar o retirar clientes de la lista negra |
+| **Prioridad** | Media |
 | **Criterios de aceptación** | El administrador agrega o retira clientes de la blacklist, validando que el cliente exista y registrando el motivo por el cual el cliente ingresa a la lista negra. |
 | **Relaciones** | Casos de uso: [CU-017](../../Casos%20de%20Uso/6.%20Gesti%C3%B3n%20Plataforma%20del%20admin/CU-017%20Administrar%20y%20consultar%20blacklist.md). Requerimiento:[RF-027](../../Requerimientos/Requerimientos%20Funcionales.md). Historia relacionada: [HU-011](../3.%20Credito/HU-011%20Ver%20mensaje%20de%20no%20disponibilidad%20de%20cr%C3%A9dito.md)  |
 | **Referencias** | `backends/b2b/src/controllers/blacklist/add-client-to-blacklist.ts`, `backends/b2b/src/controllers/blacklist/remove-client-client-from-blacklist.ts` |
