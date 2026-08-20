@@ -1,0 +1,14 @@
+# 5. Pendientes y riesgos identificados
+
+[← Volver al índice](README.md)
+
+Hallazgos que requieren validación con el equipo técnico/negocio, detectados durante la revisión del código fuente de `credits-platform-main`:
+
+1. **`REQUIRE_AUTH=false` en ambientes no locales.** Todos los middlewares de autenticación del panel admin (`authenticate`, `requireAdmin`, `requireSysAdmin`, `requirePermission`) se desactivan por completo si esta variable de entorno es `'false'`, inyectando un usuario simulado con rol `sys_admin`. Se recomienda confirmar explícitamente que esta variable está en `'true'` (o no definida) en staging y producción.
+2. **Alerta operativa de impersonación deshabilitada.** El código para notificar cada impersonación de cliente por canal interno existe pero está comentado en `impersonate.service.ts`. Se recomienda decidir si debe reactivarse.
+3. **Migración de roles sin rollback.** `UsersRoleVarcharDropEnum` no soporta `down()` (lanza error explícito). Cualquier plan de reversión de esa migración debe ser manual y se debe evaluar el riesgo de pérdida de información del modelo de roles anterior (`user`/`admin`).
+4. **Rol por defecto silencioso.** `buildEffectivePermissionSlugs` asigna `core_read_only` a cualquier valor de rol no reconocido (`isAppRole` retorna `false`), sin lanzar error. Esto es una salvaguarda razonable, pero puede ocultar un dato corrupto o un rol mal escrito en la base de datos sin que nadie lo note. Se recomienda evaluar si conviene loggear esos casos.
+5. **No existe un rol específico para el "Analista de riesgo"** (actor de negocio documentado en [Negocio/Actores](../Negocio/Actores/README.md) y en las historias de KYC, p. ej. [HU-022](../Funcional/Historias%20De%20Usuario/2.%20KYC/HU-022%20Revisi%C3%B3n%20Biometria.md), [HU-023](../Funcional/Historias%20De%20Usuario/2.%20KYC/HU-023%20Analisis%20Kyc%20evaluci%C3%B3n%20credito.md)) dentro del modelo de roles técnico (`sys_admin` / `core_admin` / `product_admin` / `core_read_only` / `product_read_only`). Se recomienda confirmar con el equipo qué rol de panel usa hoy el analista de riesgo en la práctica (probablemente `core_read_only` o `product_read_only` según lo que necesite consultar), para que la documentación de negocio y la técnica queden alineadas.
+6. **`backends/core` no aplica ningún control de autenticación/autorización propio.** Sus rutas (`/clients`, `/credit-line-approval`, `/credit-line/:document`, etc.) no tienen middleware de auth visible en `routes.ts`; se asume que el acceso está restringido a nivel de red (llamadas internas desde `b2b`/`admin`), pero esto no está confirmado ni documentado explícitamente en el repositorio. Se recomienda validar este supuesto con el equipo de infraestructura.
+
+> Estos pendientes deben tratarse como preguntas abiertas para el equipo de producto/ingeniería, no como defectos confirmados; se documentan aquí para trazabilidad y seguimiento.
