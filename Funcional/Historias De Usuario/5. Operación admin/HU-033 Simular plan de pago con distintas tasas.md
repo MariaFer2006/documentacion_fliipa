@@ -11,4 +11,4 @@
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
 | **Versión** | V.1.7 |
-| **Comentarios** | Implementada, exactamente con los campos descritos en la historia (tasa corriente, tasa de mora, umbral de días) y con descarga CSV real. |
+| **Comentarios** | Implementada, exactamente con los campos descritos en la historia (tasa corriente, tasa de mora) y con descarga CSV real. |
