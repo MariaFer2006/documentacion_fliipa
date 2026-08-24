@@ -2,7 +2,6 @@
 
 ![Diagrama de caso de uso CU-025](imagenes/diagrama_CU-025.svg)
 
-> **Nota:** HU-041 no traía un número de CU asignado; se asigna el consecutivo **CU-025**.
 
 | Campo | Detalle |
 |---|---|
