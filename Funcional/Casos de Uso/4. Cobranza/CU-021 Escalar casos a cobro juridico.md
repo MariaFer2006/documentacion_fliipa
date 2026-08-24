@@ -2,7 +2,7 @@
 
 ![Diagrama de caso de uso CU-021](imagenes/diagrama_CU-021.svg)
 
-> **Nota:** HU-027 no traía un número de CU asignado en el documento fuente (campo "Relaciones" vacío); se asigna el consecutivo **CU-021**.
+
 
 | Campo | Detalle |
 |---|---|
@@ -11,8 +11,8 @@
 | **Precondiciones** | (Diseño) Un caso de cartera alcanzaría el bucket de escalamiento jurídico definido en las reglas de gestión y escalamiento (ver [CU-012](CU-012%20Gestionar%20y%20registrar%20cartera%20y%20cobranza.md), buckets pendientes). |
 | **Flujo principal** | *(Flujo de diseño, no vigente hoy)* 1. El sistema identificaría que un caso alcanzó el bucket de escalamiento jurídico.<br>2. El sistema enrutaría automáticamente el caso al analista jurídico.<br>3. El analista jurídico recibiría el caso e iniciaría el proceso de cobro jurídico. |
 | **Flujos alternativos / excepciones** | A1. (Diseño, no verificado en código) Si el caso saliera del bucket de escalamiento antes de ser tomado (por ejemplo, por un pago o alivio aplicado, ver [CU-013](CU-013%20Recibir%20alivios%20ante%20dificultades%20de%20pago.md)), el enrutamiento automático no debería continuar. |
-| **Postcondiciones** | (Diseño) El caso quedaría asignado al analista jurídico y se iniciaría el proceso de cobro legal correspondiente. Hoy no aplica: el CU está pendiente. |
-| **Reglas de negocio** | (Diseño) El enrutamiento al analista jurídico debería ser automático, sin depender de un traspaso manual entre áreas; no exigible hoy porque el CU no está operativo. |
+| **Postcondiciones** | El caso quedaría asignado al analista jurídico y se iniciaría el proceso de cobro legal correspondiente. Hoy no aplica: el CU está pendiente. |
+| **Reglas de negocio** | El enrutamiento al analista jurídico debería ser automático, sin depender de un traspaso manual entre áreas; no exigible hoy porque el CU no está operativo. |
 | **Historias de usuario relacionadas** | HU-027 (Recibir casos de escalamiento jurídico automáticamente) — *sin ficha propia en este repositorio; ver nota de organización arriba.* |
 | **Estado en plataforma** | Sin respaldo en el código revisado, consistente con la ausencia general de lógica de buckets de mora (ver CU-012). Depende de resolver primero la discrepancia de plazos de escalamiento documentada en los requerimientos no funcionales (RNF-017). |
 | **Referencias** | Fuente: ficha HU-027 (Recibir casos de escalamiento jurídico automáticamente) — *Historias de Usuario — Fliipa*, carpeta "4. Cobranza" (repositorio `documentacion_fliipa`, María Fernanda Herazo). **Hallazgo:** no existe un archivo HU-027 en este repositorio (a diferencia de HU-007/HU-008, que sí existen aunque vacíos); se recomienda crear la ficha faltante para cerrar la trazabilidad. |
