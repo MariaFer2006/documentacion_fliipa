@@ -5,7 +5,7 @@
 | Campo | Detalle |
 |---|---|
 | **Actores** | Cliente empresarial; Punto de venta D1 |
-| **Descripción** | El cliente puede ver el código de compra en su portal (lo genera el sistema, no el cliente) para usar su cupo aprobado en la tienda D1 y pagar su mercancía sin dinero en efectivo. |
+| **Descripción** | El cliente puede ver el código de compra en su portal  para usar su cupo aprobado en la tienda D1 y pagar su mercancía sin dinero en efectivo. |
 | **Precondiciones** | El cliente cuenta con cupo disponible en estado Aprobado o Activa (ver [CU-009](CU-009%20Consultar%20cupo%2C%20plan%20de%20pagos%20y%20disponibilidad%20de%20credito.md)). |
 | **Flujo principal** | 1. El sistema genera un código asociado al cliente.<br>2. El cliente ve ese código en su portal.<br>3. El cliente presenta el código en el punto de venta D1.<br>4. El punto de venta valida el código.<br>5. El sistema aplica el cupo a la compra. |
 | **Flujos alternativos / excepciones** | A1. El código no es válido o ya fue utilizado: el punto de venta rechaza la aplicación del cupo. |
