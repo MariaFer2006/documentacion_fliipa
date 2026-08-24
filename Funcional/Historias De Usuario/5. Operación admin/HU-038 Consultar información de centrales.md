@@ -5,7 +5,7 @@
 | **Historia** | Como analista de riesgo, quiero consultar y actualizar la información de centrales (Experian: Reconocer y Advance Score) desde la ficha del cliente, para revisar sin salir del panel. |
 | **Prioridad** | Baja |
 | **Criterios de aceptación** | Desde la ficha, con permiso, se abre la consulta a centrales. Si ya se obtuvo un primer registro se puede visualizar data guardada si se requiere actualizar se puede consultar directamente al tercero . |
-| **Relaciones** | [HU-023](../2.%20KYC/HU-023%20Analisis%20Kyc%20evaluci%C3%B3n%20credito.md), [HU-039](../5.%20Gesti%C3%B3n%20Plataforma%20del%20admin/HU-039%20%20Ver%20coincidencias%20entre%20Fliipa%20y%20Reconocer.md) (vista de coincidencias). **No** reemplaza [HU-042](../2.%20KYC/HU-042%20%20Iniciar%20la%20evaluaci%C3%B3n%20KYC%20al%20quedar%20la%20solicitud%20en%20REQUESTED.md), [HU-044](../2.%20KYC/HU-044%20Decidir%20approved%20-%20pre-rejected.md). |
+| **Relaciones** | [HU-023](../2.%20KYC/HU-023%20Analisis%20Kyc%20evaluci%C3%B3n%20credito.md), [HU-039](../5.%20Operaci%C3%B3n%20admin/HU-039%20%20Ver%20coincidencias%20entre%20Fliipa%20y%20Reconocer.md) (vista de coincidencias). **No** reemplaza [HU-042](../2.%20KYC/HU-042%20%20Iniciar%20la%20evaluaci%C3%B3n%20KYC%20al%20quedar%20la%20solicitud%20en%20REQUESTED.md), [HU-044](../2.%20KYC/HU-044%20Decidir%20approved%20-%20pre-rejected.md). |
 | **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
 | **Versión** | V.1.7 |

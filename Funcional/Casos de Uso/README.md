@@ -51,23 +51,23 @@ Cada carpeta incluye, además de las fichas CU-XXX:
 | CU-005 | Revisar manualmente casos de biometría en revisión | HU-022 |
 | CU-006 | Consultar análisis de KYC y evaluación de crédito | HU-023, HU-038, HU-039 |
 | CU-007 | Firmar contrato mediante firma digital | HU-009 |
-| CU-009 | Consultar cupo, plan de pagos y disponibilidad | HU-010, HU-011 |
+| CU-009 | Consultar cupo, plan de pagos y disponibilidad de crédito | HU-010, HU-011 |
 | CU-010 | Usar el cupo en tienda D1 | HU-012 |
 | CU-011 | Pagar y gestionar cuotas del crédito | HU-013, HU-014 |
 | CU-012 | Gestionar y registrar cartera y cobranza | HU-024, HU-025, HU-026 |
-| CU-013 | Recibir alivios y priorizar el comité de cartera | HU-015, HU-026 |
+| CU-013 | Recibir alivios ante dificultades de pago | HU-015 |
 | CU-014 | Atender al cliente por IA y escalar a agente humano | HU-016, HU-017, HU-028, HU-029 |
-| CU-015 | Buscar cliente, ver historial y ajustar cupo o fecha de corte | HU-031, HU-032 |
+| CU-015 | Buscar cliente, ver historial auditado y ajustar cupo o fecha de corte | HU-031, HU-032 |
 | CU-016 | Simular plan de pago con distintas tasas | HU-033 |
-| CU-017 | Administrar y consultar blacklist | HU-034, HU-035 |
+| CU-017 | Administrar y consultar clientes en blacklist | HU-034, HU-035 |
 | CU-018 | Monitorear salud del sistema en tiempo real | HU-036 |
 | CU-019 *(nuevo)* | Cargar soportes bancarios y conocer el resultado | HU-007, HU-008, HU-037 |
 | CU-020 *(nuevo)* | Motor KYC automático post-solicitud | HU-042, HU-043, HU-044 |
 | CU-021 *(nuevo)* | Escalar casos a cobro jurídico | HU-027 |
 | CU-022 *(nuevo)* | Recuperar PIN o desbloquear la cuenta | HU-018 |
 | CU-023 *(nuevo)* | Registrar cada contacto con el cliente | HU-030 |
-| CU-024 *(nuevo)* | Ver y reconectar cuenta Druo | HU-040 |
-| CU-025 *(nuevo)* | Cambiar el estado del crédito manualmente | HU-041 |
+| CU-024 *(nuevo)* | Ver y reconectar la cuenta Druo del cliente | HU-040 |
+| CU-025 *(nuevo)* | Cambiar el estado del crédito manualmente (incluye pre-rechazado) | HU-041 |
 
 ## Hallazgos pendientes
 

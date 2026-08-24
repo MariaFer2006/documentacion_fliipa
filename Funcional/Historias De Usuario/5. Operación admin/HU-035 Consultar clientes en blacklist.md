@@ -6,7 +6,7 @@
 | **Historia** | Como administrador, quiero consultar el listado de clientes en blacklist y gestionar sus ingresos y salidas, para identificar a quién no se le debe ofrecer ningún producto o beneficio. |
 | **Prioridad** | Baja |
 | **Criterios de aceptación** | El administrador puede consultar desde el panel administrativo el listado de clientes registrados en blacklist, incluyendo el motivo de ingreso registrado en HU-034.  |
-| **Relaciones** | Casos de uso: [CU-017](../../Casos%20de%20Uso/6.%20Gesti%C3%B3n%20Plataforma%20del%20admin/CU-017%20Administrar%20y%20consultar%20blacklist.md). Historia relacionada: [HU-034](../5.%20Gesti%C3%B3n%20Plataforma%20del%20admin/HU-034%20Administrar%20la%20lista%20negra.md) . |
+| **Relaciones** | Casos de uso: [CU-017](../../Casos%20de%20Uso/6.%20Operaci%C3%B3n%20Admin/CU-017%20Administrar%20y%20consultar%20clientes%20en%20blacklist.md). Historia relacionada: [HU-034](../5.%20Operaci%C3%B3n%20admin/HU-034%20Administrar%20la%20lista%20negra.md) . |
 | **Referencias** | Pendiente de verificar en código la existencia de un endpoint y una pantalla para consultar y gestionar el listado completo de blacklist. |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |

@@ -6,7 +6,7 @@
 | **Historia** | Como Fliipa, quiero gestionar el débito automático de créditos que hayan superado su fecha de pago y mantengan un saldo pendiente, para facilitar el recaudo de la cartera vencida sin depender de una acción manual del cliente. |
 | **Prioridad** | Media |
 | **Criterios de aceptación** | El sistema debe identificar los créditos vencidos que podrían ser candidatos a débito automático de acuerdo con las reglas de cartera definidas. La cuenta bancaria del cliente debe estar previamente conectada y vigente mediante Druo. Cuando el débito automático de cartera vencida esté habilitado como producto, el sistema deberá ejecutar el débito conforme a las reglas definidas y registrar el resultado del intento. Si la cuenta en este momento no esta conectada se envía solicitud de conexión a Druo y se reintenta el día siguiente enviando una alerta operativa. |
-| **Relaciones** | Casos de uso:  [CU-011](../../Casos%20de%20Uso/4.%20Cobranza/CU-011%20Pagar%20y%20gestionar%20cuotas%20del%20credito%20.md). Requerimiento:[RF-022](../../Requerimientos/Requerimientos%20Funcionales.md). Historia relacionada: [HU-013](../4.%20Cobranza/HU-013%20Prepagar%20la%20cuota%20por%20PSE.md) . |
+| **Relaciones** | Casos de uso:  [CU-011](../../Casos%20de%20Uso/4.%20Cobranza/CU-011%20Pagar%20y%20gestionar%20cuotas%20del%20credito.md). Requerimiento:[RF-022](../../Requerimientos/Requerimientos%20Funcionales.md). Historia relacionada: [HU-013](../4.%20Cobranza/HU-013%20Prepagar%20la%20cuota%20por%20PSE.md) . |
 | **Referencias** | `b2b/fliipa-back/src/services/druo/debit-bank-account.druo.ts`, `connect-bank-account.druo.ts`; `b2b/fliipa-back/src/controllers/webhooks/druo-events.webhook.ts` |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |

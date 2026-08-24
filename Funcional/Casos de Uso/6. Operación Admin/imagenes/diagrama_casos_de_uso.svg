@@ -9,17 +9,19 @@
 <line x1="860" y1="547.5" x2="610.0" y2="660.0" stroke="black" stroke-width="1.2"/>
 <text x="490.0" y="118" font-size="16" font-weight="bold" text-anchor="middle">Gestión de Plataforma (Admin)</text>
 <ellipse cx="490.0" cy="180.0" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
-<text x="490.0" y="169.33333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-015: Buscar cliente,</text>
-<text x="490.0" y="183.83333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">ver historial y ajustar</text>
-<text x="490.0" y="198.33333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">cupo o fecha de corte</text>
+<text x="490.0" y="162.08333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-015: Buscar cliente,</text>
+<text x="490.0" y="176.58333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">ver historial auditado y</text>
+<text x="490.0" y="191.08333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">ajustar cupo o fecha de</text>
+<text x="490.0" y="205.58333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">corte</text>
 
 <ellipse cx="490.0" cy="276.0" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
 <text x="490.0" y="272.5833333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-016: Simular plan de</text>
 <text x="490.0" y="287.0833333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">pago con distintas tasas</text>
 
 <ellipse cx="490.0" cy="372.0" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
-<text x="490.0" y="368.5833333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-017: Administrar y</text>
-<text x="490.0" y="383.0833333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">consultar blacklist</text>
+<text x="490.0" y="361.3333333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-017: Administrar y</text>
+<text x="490.0" y="375.8333333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">consultar clientes en</text>
+<text x="490.0" y="390.3333333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">blacklist</text>
 
 <ellipse cx="490.0" cy="468.0" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
 <text x="490.0" y="457.3333333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-018: Monitorear salud</text>
@@ -27,13 +29,15 @@
 <text x="490.0" y="486.3333333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">real</text>
 
 <ellipse cx="490.0" cy="564.0" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
-<text x="490.0" y="560.5833333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-024: Ver y reconectar</text>
-<text x="490.0" y="575.0833333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">cuenta Druo</text>
+<text x="490.0" y="553.3333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-024: Ver y reconectar</text>
+<text x="490.0" y="567.8333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">la cuenta Druo del</text>
+<text x="490.0" y="582.3333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">cliente</text>
 
 <ellipse cx="490.0" cy="660.0" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
-<text x="490.0" y="649.3333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-025: Cambiar el</text>
-<text x="490.0" y="663.8333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">estado del crédito</text>
-<text x="490.0" y="678.3333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">manualmente</text>
+<text x="490.0" y="642.0833333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-025: Cambiar el</text>
+<text x="490.0" y="656.5833333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">estado del crédito</text>
+<text x="490.0" y="671.0833333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">manualmente (incluye</text>
+<text x="490.0" y="685.5833333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">pre-rechazado)</text>
 
 
     <g>

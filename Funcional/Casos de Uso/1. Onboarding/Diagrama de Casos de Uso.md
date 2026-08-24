@@ -6,7 +6,7 @@
 
 **Casos de uso incluidos:**
 
-- [CU-001](CU-001%20Iniciar%20contacto%20y%20solicitud%20de%20crédito.md)
+- [CU-001](CU-001%20Iniciar%20contacto%20y%20solicitud%20de%20Credito.md)
 - [CU-002](CU-002%20Consultar%20y%20ver%20cupo%20preaprobado.md)
 - [CU-003](CU-003%20Confirmar%20identidad%20mediante%20OTP.md)
 

@@ -7,7 +7,7 @@
 | **Historia** | Como analista de riesgo, quiero ver en un solo lugar el resultado de Experian, el histórico transaccional de D1 y el score calculado, para validar o ajustar la decisión automática. |
 | **Prioridad** | Alta |
 | **Criterios de aceptación** | El analista consulta, para un cliente dado, el resultado de Experian, el histórico D1 y el score consolidado antes de aprobar o rechazar. |
-| **Relaciones** | Casos de uso: [CU-006](../../Casos%20de%20Uso/2.%20KYC/CU-006%20Consultar%20analisis%20de%20KYC%20y%20evaluaci%C3%B3n%20de%20credito.md). . Requerimiento: [RF-010](../../Requerimientos/Requerimientos%20Funcionales.md). |
+| **Relaciones** | Casos de uso: [CU-006](../../Casos%20de%20Uso/2.%20KYC/CU-006%20Consultar%20analisis%20de%20KYC%20y%20evaluacionn%20de%20credito.md). . Requerimiento: [RF-010](../../Requerimientos/Requerimientos%20Funcionales.md). |
 | **Referencias** | `b2b/fliipa-back/src/controllers/companies/lookup-company.ts`, `institutions/get-advance-score.ts`; `b2b/services/evaluations/src/third-party/Experian/*` |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
