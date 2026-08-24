@@ -5,7 +5,7 @@
 | Campo | Detalle |
 |---|---|
 | **Actores** | Analista de cartera; Comité de Cartera |
-| **Descripción** | *(Parcial — ver Estado en plataforma.)* Hoy el analista de cartera registra cada interacción de cobranza realizada; la segmentación por bucket de mora y el tablero semanal del Comité de Cartera son diseño previsto, no disponible aún. |
+| **Descripción** | Hoy el analista de cartera registra cada interacción de cobranza realizada; la segmentación por bucket de mora y el tablero semanal del Comité de Cartera. |
 | **Precondiciones** | Existen créditos en distintos estados de mora dentro de la cartera. |
 | **Flujo principal** | 1. (Diseño, no disponible) El analista consultaría la cartera agrupada en pago anticipado y buckets 1 a 5.<br>2. (Diseño) El analista priorizaría su gestión de cobro diaria según esa segmentación.<br>3. El analista contacta al cliente y registra la interacción (canal, tipo de contacto, resultado, monto comprometido). Esto sí está disponible hoy.<br>4. El registro queda disponible en el resumen de atención del cliente.<br>5. (Diseño, no disponible) Semanalmente, el Comité de Cartera visualizaría el tablero de casos priorizados (días de mora, flujo de caja, cuota vencida, historial y monto adeudado) para decidir alivios o escalamiento jurídico. |
 | **Flujos alternativos / excepciones** | A1. (Diseño, depende de buckets no disponibles hoy) El caso alcanzaría el bucket de escalamiento legal y se enrutaría al analista jurídico (ver [CU-021](CU-021%20Escalar%20casos%20a%20cobro%20juridico.md), también pendiente). |
