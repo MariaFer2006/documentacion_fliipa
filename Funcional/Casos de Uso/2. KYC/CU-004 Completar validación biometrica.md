@@ -5,9 +5,9 @@
 | Campo | Detalle |
 |---|---|
 | **Actores** | Cliente empresarial |
-| **Descripción** | *(Pendiente / no disponible en esta plataforma.)* Diseño previsto: el cliente completaría el proceso de biometría con un proveedor externo, desde cualquier dispositivo disponible, para verificar su identidad sin acudir a una oficina física. Hoy este proceso no está implementado en el código revisado. |
+| **Descripción** |  Diseño previsto: el cliente completaría el proceso de biometría con un proveedor externo, desde cualquier dispositivo disponible, para verificar su identidad sin acudir a una oficina física. Hoy este proceso no está implementado en el código revisado. |
 | **Precondiciones** | El cliente ya validó su identidad mediante OTP (CU-003). No implica que exista biometría disponible a continuación (ver Estado en plataforma). |
-| **Flujo principal** | *(Flujo de diseño, no vigente hoy)* 1. El sistema presentaría al cliente el paso de validación biométrica.<br>2. El cliente completaría el proceso de biometría con el proveedor externo, desde el dispositivo disponible (celular, computador u otro).<br>3. El proveedor externo procesaría la validación.<br>4. El sistema registraría el resultado (aprobado, rechazado o en revisión) asociado a la solicitud. |
+| **Flujo principal** |  1. El sistema presentaría al cliente el paso de validación biométrica.<br>2. El cliente completaría el proceso de biometría con el proveedor externo, desde el dispositivo disponible (celular, computador u otro).<br>3. El proveedor externo procesaría la validación.<br>4. El sistema registraría el resultado (aprobado, rechazado o en revisión) asociado a la solicitud. |
 | **Flujos alternativos / excepciones** | A1. (Diseño) Si el resultado quedara "en revisión", el caso pasaría a revisión manual del analista de riesgo (ver CU-005, también pendiente / no disponible hoy). |
 | **Postcondiciones** | (Diseño) La solicitud del cliente quedaría con un resultado biométrico (aprobado, rechazado o en revisión) registrado. Hoy no aplica porque el CU no está disponible en la plataforma. |
 | **Reglas de negocio** | (Diseño) El proceso no debería limitarse a un flujo exclusivamente móvil; el cliente podría usar cualquier dispositivo disponible. Esta regla no puede validarse hoy porque el CU no está implementado. |
