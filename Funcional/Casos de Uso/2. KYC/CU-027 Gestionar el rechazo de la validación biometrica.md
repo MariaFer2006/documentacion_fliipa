@@ -1,5 +1,7 @@
 ### CU-027: Gestionar el rechazo de la validación biométrica
 
+![Diagrama de caso de uso CU-027](imagenes/diagrama_CU-027.svg)
+
 | Campo | Detalle |
 |---|---|
 | **Actores** | Sistema (Fliipa); Analista de riesgo (secundario, cuando el rechazo se origina en revisión manual) |
