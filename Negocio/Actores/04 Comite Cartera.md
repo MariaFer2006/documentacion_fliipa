@@ -21,7 +21,7 @@
 
 ## ⚠️ Nota de consistencia con otras fuentes
 
-El Journey Colpatria B2B (ajuste jun. 2026, pág. 10) documenta una escalada jurídica más corta —bloqueo permanente del cupo e inicio de cobro jurídico desde el día 30 de mora—, distinta al esquema de buckets aquí descrito (jurídico entre bucket 3 y bucket 5, es decir 61 a 120+ días). Esto puede afectar en qué momento intervienen el Analista jurídico y el Comité Legal. El detalle de esta discrepancia ya está documentado en [Procesos → 9. Gestión de cobranza](../procesos/09-cobranza.md) y en [Reglas Negocio](../reglas-negocio/04-gestion-escalamiento.md); se referencia aquí porque impacta directamente a estos dos actores.
+El Journey Colpatria B2B (ajuste jun. 2026, pág. 10) documenta una escalada jurídica más corta —bloqueo permanente del cupo e inicio de cobro jurídico desde el día 30 de mora—, distinta al esquema de buckets aquí descrito (jurídico entre bucket 3 y bucket 5, es decir 61 a 120+ días). Esto puede afectar en qué momento intervienen el Analista jurídico y el Comité Legal. El detalle de esta discrepancia ya está documentado en [Procesos → 9. Gestión de cobranza](../../Operaciones/Procesos/README.md) y en [Reglas Negocio](../../README.md); se referencia aquí porque impacta directamente a estos dos actores.
 
 ## Fuentes consultadas
 

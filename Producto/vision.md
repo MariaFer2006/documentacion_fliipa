@@ -197,11 +197,11 @@ La visión del producto se considerará cumplida cuando Fliipa logre:
 
 # Documentos relacionados
 
-- [Producto](README.md)
+- [Producto](../README.md)
 - [Objetivo](objetivo.md)
 - [Alcance](alcance.md)
-- [Roadmap](roadmap.md)
-- [Negocio](../negocio/README.md)
-- [Funcional](../funcional/README.md)
-- [Conocimiento](../conocimiento/README.md)
-- [Mapa del Conocimiento](../MAPA_DEL_CONOCIMIENTO.md)
+- [Roadmap](../README.md)
+- [Negocio](../README.md)
+- [Funcional](../README.md)
+- [Conocimiento](../README.md)
+- [Mapa del Conocimiento](../README.md)

@@ -14,7 +14,7 @@ El monorepo soporta dos vías de despliegue equivalentes por entorno: **CLI** (s
 
 `pdeploy-prod.sh` es idempotente: valida o crea el Dockerfile del servicio, su entrada en la matriz, el workflow de GitHub y los *mounts* de secretos si faltan, antes de desplegar. Cada workflow `.github/workflows/creds-*-prod.yml` reproduce el mismo comportamiento vía Actions, por lo que ambas vías son intercambiables.
 
-Los Dockerfiles nuevos parten de plantillas versionadas en [`docs/infra/templates/`](../../docs/infra/templates/): `Dockerfile.node-service` (servicios Node) y `Dockerfile.next-app` (apps Next.js).
+Los Dockerfiles nuevos parten de plantillas versionadas en [`docs/infra/templates/`](../README.md): `Dockerfile.node-service` (servicios Node) y `Dockerfile.next-app` (apps Next.js).
 
 ## STG / demo (`product-fintech-dev`)
 

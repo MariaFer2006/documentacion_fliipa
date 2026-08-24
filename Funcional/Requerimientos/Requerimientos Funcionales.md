@@ -20,7 +20,7 @@
 | 1.2 | 2026-07-30 | Maria Fernanda Herazo Escobar  | Se corrigen 5 requerimientos (RF-005, RF-008, RF-010, RF-011, RF-015) marcados como "no verificable" en la v1.1: esa revisión no había cubierto la carpeta `services/` del repositorio (motor de reglas, evaluaciones de riesgo, aprobación de líneas de crédito), donde sí existe evidencia real. Ver detalle en cada fila corregida. |
 | 1.3 | 2026-08-13 | María Fernanda Herazo | Se corrige RF-006 para que ya no incluya la firma de contrato dentro de la validación por OTP (queda limitada a teléfono y correo del onboarding). Se reescribe RF-013 ("OTP de firma" → "Firma digital con proveedor externo"): la firma del contrato ya no ocurre mediante código OTP, según retroalimentación de negocio ya reflejada en HU-009 de Historias de Usuario. |
 | 1.4 | 2026-08-20 | María Fernanda Herazo | Se agrega RF-036 (Visualización y confirmación del cupo aprobado), separado de RF-010 (consulta de riesgo crediticio del analista). Corresponde a la nueva historia HU-045 en Historias de Usuario, desprendida de HU-023. |
-| 1.5 | 2026-08-20 | María Fernanda Herazo | Se agregan RF-037 (Administración de usuarios, roles y permisos del panel) y RF-038 (Impersonación de clientes para soporte), a partir de la revisión de código documentada en la nueva sección [Autorizaciones, Roles y Permisos](../../Autorizaciones%2C%20Roles%20y%20Permisos/README.md). Corresponden a las nuevas historias HU-047 y HU-048. |
+| 1.5 | 2026-08-20 | María Fernanda Herazo | Se agregan RF-037 (Administración de usuarios, roles y permisos del panel) y RF-038 (Impersonación de clientes para soporte), a partir de la revisión de código documentada en la nueva sección [Autorizaciones, Roles y Permisos](../../Autorizacion Roles y Permiso/README.md). Corresponden a las nuevas historias HU-047 y HU-048. |
 
 ---
 
@@ -30,22 +30,22 @@ Enumerar las capacidades que el sistema Fliipa debe cubrir, agrupadas por módul
 
 ## Alcance
 
-Cubre los 11 procesos de negocio definidos en [Alcance del Producto](../../producto/alcance.md). Cada requerimiento usa el identificador `RF-XXX` de [Convenciones](../../CONVENCIONES.md). La columna "Prioridad" sigue los criterios de priorización del alcance del producto (Alta: valida el modelo de negocio, reduce fraude, disminuye riesgo, mejora experiencia del cliente, aumenta uso del crédito o garantiza sostenibilidad financiera; Media: automatiza procesos internos; Baja: mejora continua). La columna "Estado" indica si el requerimiento está implementado, parcialmente implementado o pendiente, según lo verificado en el repositorio de código; cuando no fue posible confirmarlo (por ejemplo, lógica que vive en microservicios no incluidos en el repositorio revisado) se indica explícitamente. No incluye requisitos de calidad, seguridad o desempeño (ver [Requerimientos No Funcionales](02-requerimientos-no-funcionales.md)).
+Cubre los 11 procesos de negocio definidos en [Alcance del Producto](../../producto/alcance.md). Cada requerimiento usa el identificador `RF-XXX` de [Convenciones](../../README.md). La columna "Prioridad" sigue los criterios de priorización del alcance del producto (Alta: valida el modelo de negocio, reduce fraude, disminuye riesgo, mejora experiencia del cliente, aumenta uso del crédito o garantiza sostenibilidad financiera; Media: automatiza procesos internos; Baja: mejora continua). La columna "Estado" indica si el requerimiento está implementado, parcialmente implementado o pendiente, según lo verificado en el repositorio de código; cuando no fue posible confirmarlo (por ejemplo, lógica que vive en microservicios no incluidos en el repositorio revisado) se indica explícitamente. No incluye requisitos de calidad, seguridad o desempeño (ver [Requerimientos No Funcionales](./README.md)).
 
 ## Documentos relacionados
 
-- [Funcional](../README.md)
+- [Funcional](../../README.md)
 - [Flipa - Biblioteca de Conocimiento](../../README.md)
-- [Mapa Del Conocimiento](../../MAPA_DEL_CONOCIMIENTO.md)
-- [Onboarding](../../ONBOARDING.md)
-- [Convenciones](../../CONVENCIONES.md)
-- [Negocio](../../negocio/README.md)
-- [Tecnico](../../tecnico/README.md)
-- [Qa](../../qa/README.md)
-- [Documento Funcional](../01-marco-funcional/01-documento-funcional.md)
-- [Casos De Uso](../02-casos-de-uso/01-casos-de-uso.md)
-- [Historias Usuario](../03-historias-usuario/01-historias-usuario.md)
-- [Requerimientos No Funcionales](02-requerimientos-no-funcionales.md)
+- [Mapa Del Conocimiento](../../README.md)
+- [Onboarding](../../README.md)
+- [Convenciones](../../README.md)
+- [Negocio](../../README.md)
+- [Tecnico](../../Infraestructura/01 Arquitectura y Entornos.md)
+- [Qa](../../README.md)
+- [Documento Funcional](../../README.md)
+- [Casos De Uso](../../README.md)
+- [Historias Usuario](../Historias De Usuario/README.md)
+- [Requerimientos No Funcionales](./README.md)
 
 ## Contenido
 
@@ -68,7 +68,7 @@ Cubre los 11 procesos de negocio definidos en [Alcance del Producto](../../produ
 
 | ID | Nombre | Descripción | Actor(es) | Prioridad | Estado | Fuente |
 |----|--------|--------------|-----------|-----------|--------|--------|
-| RF-006 | Validación por código de verificación | Enviar y validar códigos de verificación por teléfono y correo durante el onboarding, con reintentos y tiempo de bloqueo configurables. No cubre la firma de contrato, que se realiza mediante un proveedor externo de firma digital (ver RF-013). | Cliente empresarial, sistema | Alta | Implementado (ver hallazgo de seguridad en [RNF-001](02-requerimientos-no-funcionales.md#seguridad)) | `backends/b2b/src/controllers/otp/*.ts`, `backends/b2b/src/config/constants.ts` |
+| RF-006 | Validación por código de verificación | Enviar y validar códigos de verificación por teléfono y correo durante el onboarding, con reintentos y tiempo de bloqueo configurables. No cubre la firma de contrato, que se realiza mediante un proveedor externo de firma digital (ver RF-013). | Cliente empresarial, sistema | Alta | Implementado (ver hallazgo de seguridad en [RNF-001](./README.md)) | `backends/b2b/src/controllers/otp/*.ts`, `backends/b2b/src/config/constants.ts` |
 | RF-007 | Carga de documentos de soporte | Permitir cargar documento de identidad y certificación bancaria, restringiendo los tipos de archivo aceptados. | Cliente empresarial | Alta | Implementado | `clients/upload-document.ts` |
 | RF-008 | Validación biométrica (KYC) | Ejecutar la validación biométrica del cliente y derivar a revisión manual los casos ambiguos ("en revisión"). | Cliente empresarial, analista de riesgo | Alta | Parcialmente implementado, con hallazgo: existe captura de selfie y foto de cédula (frente/reverso) en el checkout, revisable manualmente desde el panel admin. No se encontró ningún proveedor de biometría automatizado (ni Olimpia, citado en negocio/técnico, ni ningún otro) que ejecute la validación o derive casos ambiguos automáticamente; hoy toda la revisión es manual. | `apps/checkout/app/checkout/[id]/steps/SelfieStep.tsx`, `IdPhotoStep.tsx`, `apps/admin/src/app/product/clients/[id]/components/client-photos-tab.tsx` |
 | RF-009 | Registro y validación del Cliente | Permitir registrar y validar al Cliente asociado al checkout (documento, teléfono, correo). | Cliente empresarial | Alta | Implementado | `clients/add-legal-representative.ts`, `clients/validate-legal-representative.ts` |
@@ -150,6 +150,6 @@ Cubre los 11 procesos de negocio definidos en [Alcance del Producto](../../produ
 ## Fuentes consultadas
 
 - [Alcance del Producto](../../producto/alcance.md)
-- [Reglas Negocio](../../negocio/reglas-negocio/README.md)
-- [Procesos](../../negocio/procesos/README.md)
+- [Reglas Negocio](../../README.md)
+- [Procesos](../../Operaciones/Procesos/README.md)
 - Inventario funcional del código fuente `credits-platform-main`: `backends/b2b/src/controllers/*`, `backends/b2b/src/config/*`, `backends/b2b/src/db/models/*`, `backends/admin/src/controllers/*`, `backends/admin/src/services/*`, `apps/checkout`, `apps/redemption`, `apps/admin`, realizado como parte de esta actualización.

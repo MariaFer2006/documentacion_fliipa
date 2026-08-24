@@ -26,22 +26,22 @@ Definir las condiciones de calidad, seguridad, disponibilidad y cumplimiento que
 
 ## Alcance
 
-Cubre seguridad, auditoría y trazabilidad, disponibilidad y monitoreo, y cumplimiento. No incluye requisitos funcionales (ver [Requerimientos Funcionales](01-requerimientos-funcionales.md)) ni la arquitectura técnica detallada (ver [Seguridad](../../tecnico/seguridad.md) y [Arquitectura](../../tecnico/arquitectura.md), ambos aún pendientes de completar).
+Cubre seguridad, auditoría y trazabilidad, disponibilidad y monitoreo, y cumplimiento. No incluye requisitos funcionales (ver [Requerimientos Funcionales](./README.md)) ni la arquitectura técnica detallada (ver [Seguridad](../../Infraestructura/01 Arquitectura y Entornos.md) y [Arquitectura](../../Infraestructura/01 Arquitectura y Entornos.md), ambos aún pendientes de completar).
 
 ## Documentos relacionados
 
-- [Funcional](../README.md)
+- [Funcional](../../README.md)
 - [Flipa - Biblioteca de Conocimiento](../../README.md)
-- [Mapa Del Conocimiento](../../MAPA_DEL_CONOCIMIENTO.md)
-- [Onboarding](../../ONBOARDING.md)
-- [Convenciones](../../CONVENCIONES.md)
-- [Negocio](../../negocio/README.md)
-- [Tecnico](../../tecnico/README.md)
-- [Qa](../../qa/README.md)
-- [Documento Funcional](../01-marco-funcional/01-documento-funcional.md)
-- [Casos De Uso](../02-casos-de-uso/01-casos-de-uso.md)
-- [Historias Usuario](../03-historias-usuario/01-historias-usuario.md)
-- [Requerimientos Funcionales](01-requerimientos-funcionales.md)
+- [Mapa Del Conocimiento](../../README.md)
+- [Onboarding](../../README.md)
+- [Convenciones](../../README.md)
+- [Negocio](../../README.md)
+- [Tecnico](../../Infraestructura/01 Arquitectura y Entornos.md)
+- [Qa](../../README.md)
+- [Documento Funcional](../../README.md)
+- [Casos De Uso](../../README.md)
+- [Historias Usuario](../Historias De Usuario/README.md)
+- [Requerimientos Funcionales](./README.md)
 
 ## Contenido
 
@@ -65,7 +65,7 @@ Cada requerimiento usa el identificador `RNF-XXX`. La columna "Severidad" solo a
 | ID | Requerimiento | Prioridad | Estado actual / Hallazgo | Fuente |
 |----|----------------|-----------|---------------------------|--------|
 | RNF-009 | Toda modificación sobre entidades de negocio del core (líneas de crédito, desembolsos, settings) debe quedar registrada con el usuario que la ejecutó, el valor anterior y el nuevo valor. | Alta | Conforme: mecanismo `runAuditedTransaction` y log `audit_log`, consultable desde el panel admin. | `backends/admin/src/controllers/clients.controller.ts` (`getClientAuditedOperations`) |
-| RNF-010 | Toda interacción de cobranza con el cliente (llamada, WhatsApp, correo, visita) debe quedar registrada, incluyendo canal, resultado y evidencia cuando aplique. | Alta | Conforme: regla documentada en Reglas Negocio e implementada mediante el módulo de notas de cobranza. | [Reglas Negocio](../../negocio/reglas-negocio/02-mora-buckets.md); `backends/b2b/src/controllers/clients/collection-notes.ts` |
+| RNF-010 | Toda interacción de cobranza con el cliente (llamada, WhatsApp, correo, visita) debe quedar registrada, incluyendo canal, resultado y evidencia cuando aplique. | Alta | Conforme: regla documentada en Reglas Negocio e implementada mediante el módulo de notas de cobranza. | [Reglas Negocio](../../README.md); `backends/b2b/src/controllers/clients/collection-notes.ts` |
 
 ### Disponibilidad y monitoreo
 
@@ -82,10 +82,10 @@ Cada requerimiento usa el identificador `RNF-XXX`. La columna "Severidad" solo a
 |----|----------------|-----------|---------------------------|--------|
 | RNF-015 | Los parámetros financieros del crédito (tasa de interés, comisiones, seguro) deben estar documentados de forma consistente entre el código y la documentación de negocio. | Alta | No conforme: `insuranceRate` está comentado como tasa decimal (ej. "0.03") pero su valor real es `20000` (monto fijo en COP, no una tasa). Pendiente de validar con negocio y finanzas. | `backends/b2b/src/config/constants.ts` |
 | RNF-016 | Los rangos de validación de un mismo campo de negocio (por ejemplo, día de corte del crédito) deben ser consistentes en todos los módulos que lo validan. | Media | No conforme: el panel admin acepta `cutoffDay` entre 0 y 31, mientras redemption exige 1 a 31. | `backends/admin/src/controllers/credit-lines.controller.ts`, `apps/redemption/lib/is-complete-redemption-credit-settings.ts` |
-| RNF-017 | Los reportes a centrales de riesgo y las acciones de escalamiento jurídico deben ejecutarse según un único esquema de plazos de mora aprobado por negocio y jurídico. | Alta | Pendiente de resolver: negocio documenta dos esquemas de plazos distintos (buckets vs. journey Colpatria B2B) sin que el código disponible permita determinar cuál está implementado. | [Procesos](../../negocio/procesos/09-cobranza.md), [Reglas Negocio](../../negocio/reglas-negocio/02-mora-buckets.md) |
+| RNF-017 | Los reportes a centrales de riesgo y las acciones de escalamiento jurídico deben ejecutarse según un único esquema de plazos de mora aprobado por negocio y jurídico. | Alta | Pendiente de resolver: negocio documenta dos esquemas de plazos distintos (buckets vs. journey Colpatria B2B) sin que el código disponible permita determinar cuál está implementado. | [Procesos](../../Operaciones/Procesos/README.md), [Reglas Negocio](../../README.md) |
 
 ## Fuentes consultadas
 
-- [Reglas Negocio](../../negocio/reglas-negocio/02-mora-buckets.md)
-- [Procesos](../../negocio/procesos/README.md)
+- [Reglas Negocio](../../README.md)
+- [Procesos](../../Operaciones/Procesos/README.md)
 - Inventario funcional del código fuente `credits-platform-main`: `backends/b2b/src/controllers/otp`, `backends/b2b/src/controllers/clients`, `backends/b2b/src/config/constants.ts`, `backends/b2b/src/config/index.ts`, `backends/admin/src/middleware/auth.middleware.ts`, `backends/admin/src/config/cors.ts`, `backends/admin/src/services/*`, `backends/admin/src/controllers/system-*.controller.ts`, realizado como parte de esta actualización.

@@ -274,7 +274,7 @@ Una vez finalizada la solicitud, el caso pasa a **Sistema & Riesgo** para la ver
 - El proceso de captación es el punto de entrada al resto del ciclo del producto: se conecta directamente con Onboarding digital (documento 2), KYC (documento 3) y Firma de Contrato (documento 4).
 - El piloto contempla una hoja de ruta de activación con las siguientes fases (según *Modelo Comercial B2B.pptx*, diapositiva 9): validar la base de datos de clientes preaprobados con D1, activar y configurar los canales (plantillas de WhatsApp, email y speech de llamada con Flipa), lanzar el piloto contactando un primer lote de clientes/micronegocios (300, según la referencia inicial\*) para medir tasa de respuesta por canal, acompañar la originación en sitio cuando aplique, hacer seguimiento a la primera compra, y analizar métricas para escalar (canal más efectivo, tipo de negocio, tasa de conversión y de uso).
 
-> \* Ver nota en [Indicadores](../indicadores/README.md) sobre la cifra de piloto (300 vs. ~500 clientes / ~3.000 créditos mencionados en el Weekly Planning del 27 jul 2026), pendiente de conciliar con el dueño del proceso.
+> \* Ver nota en [Indicadores](../../Negocio/Indicadores/README.md) sobre la cifra de piloto (300 vs. ~500 clientes / ~3.000 créditos mencionados en el Weekly Planning del 27 jul 2026), pendiente de conciliar con el dueño del proceso.
 
 ---
 

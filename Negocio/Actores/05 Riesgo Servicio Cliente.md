@@ -10,7 +10,7 @@
 | Áreas internas de escalamiento (riesgo, cobranza, TI) | Reciben los casos estándar de servicio al cliente que el agente humano escala y los analizan según su especialidad. | Journeys Colpatria B2B, pág. 9 |
 | Área Legal/PQR | Recibe los casos legales o de PQR (tutela, derecho de petición) enrutados por el agente, con SLA de respuesta inmediata. | Journeys Colpatria B2B, pág. 9 |
 
-Ver el detalle completo del flujo de enrutamiento en [Procesos → 11. Servicio al cliente](../procesos/11-servicio-cliente.md).
+Ver el detalle completo del flujo de enrutamiento en [Procesos → 11. Servicio al cliente](../../Operaciones/Procesos/README.md).
 
 ## Fuentes consultadas
 

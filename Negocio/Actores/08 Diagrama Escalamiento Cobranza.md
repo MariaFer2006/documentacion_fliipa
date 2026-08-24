@@ -11,7 +11,7 @@ flowchart LR
     B4 --> B5["Bucket 5 · 120+ días<br/>Comité Legal (demanda)"]
 ```
 
-> Ver la nota de consistencia sobre los plazos de escalamiento jurídico frente al journey Colpatria en [04-comite-cartera.md](04-comite-cartera.md) y en [Procesos → 9. Gestión de cobranza](../procesos/09-cobranza.md).
+> Ver la nota de consistencia sobre los plazos de escalamiento jurídico frente al journey Colpatria en [./04 Comite Cartera.md](./04 Comite Cartera.md) y en [Procesos → 9. Gestión de cobranza](../../Operaciones/Procesos/README.md).
 
 ## Fuentes consultadas
 

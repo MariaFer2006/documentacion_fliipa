@@ -14,5 +14,5 @@
 ## Fuentes consultadas
 
 - Objetivo del Producto (`producto/objetivo.md`)
-- Procesos — [06. Dispersión de fondos](../procesos/06-dispersion-fondos.md)
+- Procesos — [06. Dispersión de fondos](../../Operaciones/Procesos/README.md)
 - Notas de la reunión "Producto: Weekly Sync" (10 jul 2026) y su transcripción asociada

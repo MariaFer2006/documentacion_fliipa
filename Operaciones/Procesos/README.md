@@ -29,7 +29,7 @@ Mostrar el flujo operacional del crédito Fliipa, de la captación comercial al 
 
 ## Alcance
 
-Cubre los procesos de negocio: captación comercial, onboarding, KYC, evaluación de riesgo, firma y activación, dispersión de fondos, uso y pago, cobranza y escalamiento jurídico, y servicio al cliente. No incluye reglas específicas (ver [Reglas Negocio](../reglas-negocio/README.md)) ni especificaciones técnicas (ver [Técnico](../../tecnico/README.md)).
+Cubre los procesos de negocio: captación comercial, onboarding, KYC, evaluación de riesgo, firma y activación, dispersión de fondos, uso y pago, cobranza y escalamiento jurídico, y servicio al cliente. No incluye reglas específicas (ver [Reglas Negocio](../../README.md)) ni especificaciones técnicas (ver [Técnico](../../Infraestructura/01 Arquitectura y Entornos.md)).
 
 ## Mapa del flujo
 
@@ -40,32 +40,32 @@ El conjunto de documentos del proceso se organiza de forma secuencial, desde la 
 | # | Etapa | Resumen | Documento |
 |---|-------|---------|-----------|
 | 1 | Captación comercial | Contacto simultáneo por correo, WhatsApp y llamada sobre clientes preaprobados de D1. | [01-captacion-comercial.md](01-captacion-comercial.md) |
-| 2 | Onboarding digital | Registro del cliente y validación de datos en ~3 minutos. | [02-onboarding-digital.md](02-onboarding-digital.md) |
-| 3 | Validación de identidad (KYC) | PIN, biometría (Olimpia), extractos y cuenta bancaria (Druo). | [03-validacion-kyc.md](03-validacion-kyc.md) |
-| 4 | Evaluación de riesgo | Score Experian + histórico D1; aprueba, ajusta o rechaza el cupo. | [04-evaluacion-riesgo.md](04-evaluacion-riesgo.md) |
-| 5 | Firma de contrato y activación | Revisión y firma del contrato/pagaré; asignación del bono. | [05-firma-contrato.md](05-firma-contrato.md) |
-| 6 | Dispersión de fondos | Fiducia Colpatria; costo GMF (4x1000); bloqueo del remanente. | [06-dispersion-fondos.md](06-dispersion-fondos.md) |
-| 7 | Uso y renovación del cupo | Uso del bono en D1 y evaluación de renovación por comportamiento. | [07-uso-renovacion-cupo.md](07-uso-renovacion-cupo.md) |
-| 8 | Cobro y pago del crédito | Plan de pagos, prepago por PSE, cobro automático por Druo. | [08-cobro-pago.md](08-cobro-pago.md) |
-| 9 | Gestión de cobranza por bucket de mora | 6 segmentos de mora con acciones diferenciadas; nota de inconsistencia con el journey Colpatria. | [09-cobranza.md](09-cobranza.md) |
-| 10 | Alivios y negociación | Abono parcial, congelamiento de intereses, condonación. | [10-alivios.md](10-alivios.md) |
-| 11 | Servicio al cliente | IA de primer nivel con escalamiento a agente humano. | [11-servicio-cliente.md](11-servicio-cliente.md) |
-| 12 | Gobernanza operativa transversal | Comité de Cartera semanal, indicadores y tableros. | [12-gobernanza.md](12-gobernanza.md) |
+| 2 | Onboarding digital | Registro del cliente y validación de datos en ~3 minutos. | [../../README.md](../../README.md) |
+| 3 | Validación de identidad (KYC) | PIN, biometría (Olimpia), extractos y cuenta bancaria (Druo). | [../../README.md](../../README.md) |
+| 4 | Evaluación de riesgo | Score Experian + histórico D1; aprueba, ajusta o rechaza el cupo. | [../../README.md](../../README.md) |
+| 5 | Firma de contrato y activación | Revisión y firma del contrato/pagaré; asignación del bono. | [../../README.md](../../README.md) |
+| 6 | Dispersión de fondos | Fiducia Colpatria; costo GMF (4x1000); bloqueo del remanente. | [../../README.md](../../README.md) |
+| 7 | Uso y renovación del cupo | Uso del bono en D1 y evaluación de renovación por comportamiento. | [../../README.md](../../README.md) |
+| 8 | Cobro y pago del crédito | Plan de pagos, prepago por PSE, cobro automático por Druo. | [../../README.md](../../README.md) |
+| 9 | Gestión de cobranza por bucket de mora | 6 segmentos de mora con acciones diferenciadas; nota de inconsistencia con el journey Colpatria. | [../../README.md](../../README.md) |
+| 10 | Alivios y negociación | Abono parcial, congelamiento de intereses, condonación. | [../../README.md](../../README.md) |
+| 11 | Servicio al cliente | IA de primer nivel con escalamiento a agente humano. | [../../README.md](../../README.md) |
+| 12 | Gobernanza operativa transversal | Comité de Cartera semanal, indicadores y tableros. | [../../README.md](../../README.md) |
 
 ## Documentos relacionados
 
-- [Negocio](../README.md)
+- [Negocio](../../README.md)
 - [Flipa - Biblioteca de Conocimiento](../../README.md)
-- [Mapa Del Conocimiento](../../MAPA_DEL_CONOCIMIENTO.md)
-- [Onboarding](../../ONBOARDING.md)
-- [Convenciones](../../CONVENCIONES.md)
-- [Producto](../../producto/README.md)
-- [Funcional](../../funcional/README.md)
-- [Qa](../../qa/README.md)
- - [Descripcion Negocio](../descripcion_negocio/README.md)
- - [Actores](../Actores/README.md)
- - [Indicadores](../indicadores/README.md)
- - [Reglas Negocio](../reglas-negocio/README.md)
+- [Mapa Del Conocimiento](../../README.md)
+- [Onboarding](../../README.md)
+- [Convenciones](../../README.md)
+- [Producto](../../Producto/alcance.md)
+- [Funcional](../../README.md)
+- [Qa](../../README.md)
+ - [Descripcion Negocio](../../README.md)
+ - [Actores](../../Negocio/Actores/README.md)
+ - [Indicadores](../../Negocio/Indicadores/README.md)
+ - [Reglas Negocio](../../README.md)
 
 ## Fuentes consultadas
 
@@ -74,4 +74,4 @@ El conjunto de documentos del proceso se organiza de forma secuencial, desde la 
 - Modelo Comercial B2B — *Modelo Comercial B2B.pptx*
 - Modelo y Proceso de Cobranza B2B — *Modelo Cobranza/Modelo_de_Cobranza_B2B_.pptx* y *Modelo Cobranza/Modelo y gestion de cobranza.docx*
 - Investigación B2B — *Modelo Cobranza/Investigacion B2B.docx*
-- Reglas Negocio — [Reglas Negocio](../reglas-negocio/README.md)
+- Reglas Negocio — [Reglas Negocio](../../README.md)

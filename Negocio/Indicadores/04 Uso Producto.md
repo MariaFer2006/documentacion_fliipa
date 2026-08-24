@@ -14,4 +14,4 @@
 ## Fuentes consultadas
 
 - Modelo Comercial B2B — *Modelo Comercial B2B.pptx*
-- Procesos — [07. Uso y renovación del cupo](../procesos/07-uso-renovacion-cupo.md)
+- Procesos — [07. Uso y renovación del cupo](../../Operaciones/Procesos/README.md)

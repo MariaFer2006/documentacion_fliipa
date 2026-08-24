@@ -11,7 +11,7 @@
 
 > **Nota (Check-in de Producto, 15 jul 2026):** se unificó el perfil de "asesor comercial" en un rol de experiencia del cliente (customer experience) enfocado en canales digitales, dado que la operación del producto es completamente digital. Como parte de este ajuste, se eliminó el perfil de "Hunter / Visitador" (acompañamiento presencial), que no corresponde a un rol existente en el modelo operativo vigente.
 
-Ver la composición y funciones del Comité de Cartera en [04-comite-cartera.md](04-comite-cartera.md).
+Ver la composición y funciones del Comité de Cartera en [./04 Comite Cartera.md](./04 Comite Cartera.md).
 
 ## Fuentes consultadas
 

@@ -46,7 +46,7 @@ La primera etapa busca establecer las bases para una plataforma financiera digit
 
 # Alcance del MVP
 
-La primera versión del producto comprende los siguientes procesos de negocio. El detalle operativo de cada uno (con diagramas Mermaid) está en [Procesos del negocio](../negocio/procesos/README.md); esta tabla es un resumen para efectos de alcance.
+La primera versión del producto comprende los siguientes procesos de negocio. El detalle operativo de cada uno (con diagramas Mermaid) está en [Procesos del negocio](../Operaciones/Procesos/README.md); esta tabla es un resumen para efectos de alcance.
 
 > 📎 **Modelo comercial:** el detalle completo de la captación comercial (canales, guiones y hoja de ruta del piloto) está desarrollado en la presentación *Modelo Comercial B2B*. **Enlace pendiente** — falta agregar aquí la URL de la presentación para no duplicar su contenido en texto.
 
@@ -69,13 +69,13 @@ El MVP contempla integración con los siguientes sistemas externos. Para informa
 
 | Sistema | Propósito | Documentación |
 |----------|-----------|---------------|
-| D1 | Información transaccional y utilización del bono. | [Ver integración](../tecnico/Integraciones/D1.md) |
-| Experian | Consulta de riesgo crediticio. | [Ver integración](../tecnico/Integraciones/Experian.md) |
-| Druo | Débito automático para el recaudo de pagos. | [Ver integración](../tecnico/Integraciones/Druo.md) |
+| D1 | Información transaccional y utilización del bono. | [Ver integración](../Infraestructura/01 Arquitectura y Entornos.md) |
+| Experian | Consulta de riesgo crediticio. | [Ver integración](../Infraestructura/01 Arquitectura y Entornos.md) |
+| Druo | Débito automático para el recaudo de pagos. | [Ver integración](../Infraestructura/01 Arquitectura y Entornos.md) |
 | Olimpia | Validación biométrica y verificación de identidad (KYC). | Pendiente de documentación técnica |
-| Zenvia | Gestión de notificaciones y comunicaciones con clientes mediante WhatsApp y otros canales habilitados. | [Ver integración](../tecnico/Integraciones/Zenvia.md) |
-| Google Cloud Platform | Infraestructura y servicios del producto. | [Ver Infraestructura](../tecnico/infraestructura.md) |
-| Colpatria (Core Bancario) | Fondeo, fiducia y políticas de originación del crédito. | [Ver integración](../tecnico/Integraciones/CoreBancario.md) |
+| Zenvia | Gestión de notificaciones y comunicaciones con clientes mediante WhatsApp y otros canales habilitados. | [Ver integración](../Infraestructura/01 Arquitectura y Entornos.md) |
+| Google Cloud Platform | Infraestructura y servicios del producto. | [Ver Infraestructura](../Infraestructura/01 Arquitectura y Entornos.md) |
+| Colpatria (Core Bancario) | Fondeo, fiducia y políticas de originación del crédito. | [Ver integración](../Infraestructura/01 Arquitectura y Entornos.md) |
 
 ---
 
@@ -142,15 +142,15 @@ La implementación del alcance definido permitirá:
 
 # Documentos relacionados
 
-- [Producto](README.md)
+- [Producto](../README.md)
 - [Objetivo](objetivo.md)
 - [Visión](vision.md)
-- [Roadmap](roadmap.md)
-- [Negocio](../negocio/README.md)
-- [Funcional](../funcional/README.md)
-- [Conocimiento](../conocimiento/README.md)
-- [Mapa del Conocimiento](../MAPA_DEL_CONOCIMIENTO.md)
- - [Procesos del negocio](../negocio/procesos/README.md)
+- [Roadmap](../README.md)
+- [Negocio](../README.md)
+- [Funcional](../README.md)
+- [Conocimiento](../README.md)
+- [Mapa del Conocimiento](../README.md)
+ - [Procesos del negocio](../Operaciones/Procesos/README.md)
 
 ---
 

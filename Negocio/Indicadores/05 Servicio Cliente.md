@@ -14,4 +14,4 @@
 ## Fuentes consultadas
 
 - Journeys Colpatria B2B, junio 2026 — *Journeys Fran finales-1.pdf*
-- Procesos — [11. Servicio al cliente](../procesos/11-servicio-cliente.md)
+- Procesos — [11. Servicio al cliente](../../Operaciones/Procesos/README.md)
