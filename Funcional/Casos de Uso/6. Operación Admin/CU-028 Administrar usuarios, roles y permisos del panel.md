@@ -1,5 +1,7 @@
 ### CU-028: Administrar usuarios, roles y permisos del panel
 
+![Diagrama de caso de uso CU-028](imagenes/diagrama_CU-028.svg)
+
 | Campo | Detalle |
 |---|---|
 | **Actores** | Administrador con rol de sistema (Sys Admin) |
@@ -11,4 +13,4 @@
 | **Reglas de negocio** | Solo un rol elevado del panel (Sys Admin, Core Admin o Product Admin) puede gestionar usuarios distintos al propio. Todo usuario nuevo, si no se especifica rol, queda por defecto como Core Reader (rol de solo lectura más restringido). |
 | **Historias de usuario relacionadas** | [HU-047](../../Historias%20De%20Usuario/5.%20Operaci%C3%B3n%20admin/HU-047%20Administrar%20usuarios%2C%20roles%20y%20permisos%20del%20panel.md) (Administrar usuarios, roles y permisos del panel administrativo) |
 | **Estado en plataforma** | **Implementado.** Los endpoints de gestión de usuarios (`/users`, `/users/:id`, `/users/:id/role`, `/users/:id/details`, `/users/:id/reset-password`) existen y aplican auditoría en cada acción. |
-| **Referencias** | Fuente: ficha [HU-047](../../Historias%20De%20Usuario/5.%20Operaci%C3%B3n%20admin/HU-047%20Administrar%20usuarios%2C%20roles%20y%20permisos%20del%20panel.md) y sección [Autorizaciones, Roles y Permisos](../../../Autorizacion%20Roles%20y%20Permiso/README.md) — *Historias de Usuario — Fliipa*, carpeta "5. Gestión Plataforma del admin" (repositorio `documentacion_fliipa`, María Fernanda Herazo). |
+| **Referencias** | Fuente: ficha [HU-047](../../Historias%20De%20Usuario/5.%20Operaci%C3%B3n%20admin/HU-047%20Administrar%20usuarios%2C%20roles%20y%20permisos%20del%20panel.md) y sección [Autorizaciones, Roles y Permisos](../../../Autorizaciones%2C%20Roles%20y%20Permisos/README.md) — *Historias de Usuario — Fliipa*, carpeta "5. Gestión Plataforma del admin" (repositorio `documentacion_fliipa`, María Fernanda Herazo). |
