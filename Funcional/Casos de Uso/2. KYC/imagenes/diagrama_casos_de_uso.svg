@@ -1,86 +1,89 @@
-<svg viewBox="0 0 950 740" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-<rect x="0" y="0" width="950" height="740" fill="white"/>
-<rect x="180" y="90" width="620" height="610" fill="white" stroke="black" stroke-width="1.5"/>
-<line x1="90" y1="395.0" x2="370.0" y2="180.0" stroke="black" stroke-width="1.2"/>
-<line x1="90" y1="395.0" x2="370.0" y2="468.0" stroke="black" stroke-width="1.2"/>
-<line x1="90" y1="395.0" x2="370.0" y2="564.0" stroke="black" stroke-width="1.2"/>
-<line x1="860" y1="191.66666666666666" x2="610.0" y2="276.0" stroke="black" stroke-width="1.2"/>
-<line x1="860" y1="191.66666666666666" x2="610.0" y2="372.0" stroke="black" stroke-width="1.2"/>
-<line x1="860" y1="395.0" x2="610.0" y2="372.0" stroke="black" stroke-width="1.2"/>
-<line x1="860" y1="395.0" x2="610.0" y2="564.0" stroke="black" stroke-width="1.2"/>
-<line x1="860" y1="395.0" x2="610.0" y2="660.0" stroke="black" stroke-width="1.2"/>
-<line x1="860" y1="598.3333333333334" x2="610.0" y2="660.0" stroke="black" stroke-width="1.2"/>
+<svg viewBox="0 0 950 871" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="950" height="871" fill="white"/>
+<rect x="180" y="90" width="620" height="741" fill="white" stroke="black" stroke-width="1.5"/>
+<line x1="90" y1="460" x2="370" y2="180" stroke="black" stroke-width="1.2"/>
+<line x1="90" y1="460" x2="370" y2="468" stroke="black" stroke-width="1.2"/>
+<line x1="90" y1="460" x2="370" y2="564" stroke="black" stroke-width="1.2"/>
+<line x1="860" y1="213.5" x2="610" y2="276" stroke="black" stroke-width="1.2"/>
+<line x1="860" y1="213.5" x2="610" y2="372" stroke="black" stroke-width="1.2"/>
+<line x1="860" y1="213.5" x2="610" y2="756" stroke="black" stroke-width="1.2"/>
+<line x1="860" y1="460.5" x2="610" y2="372" stroke="black" stroke-width="1.2"/>
+<line x1="860" y1="460.5" x2="610" y2="564" stroke="black" stroke-width="1.2"/>
+<line x1="860" y1="460.5" x2="610" y2="660" stroke="black" stroke-width="1.2"/>
+<line x1="860" y1="707.5" x2="610" y2="660" stroke="black" stroke-width="1.2"/>
+<line x1="860" y1="707.5" x2="610" y2="756" stroke="black" stroke-width="1.2"/>
 <text x="490.0" y="118" font-size="16" font-weight="bold" text-anchor="middle">KYC</text>
-<ellipse cx="490.0" cy="180.0" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
-<text x="490.0" y="176.58333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-004: Completar</text>
-<text x="490.0" y="191.08333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">validación biométrica</text>
+<ellipse cx="490.0" cy="180" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="490.0" y="176.58" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-004: Completar</text>
+<text x="490.0" y="191.08" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">validación biométrica</text>
 
-<ellipse cx="490.0" cy="276.0" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
-<text x="490.0" y="265.3333333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-005: Revisar</text>
-<text x="490.0" y="279.8333333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">manualmente casos de</text>
-<text x="490.0" y="294.3333333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">biometría en revisión</text>
+<ellipse cx="490.0" cy="276" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="490.0" y="265.33" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-005: Revisar</text>
+<text x="490.0" y="279.83" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">manualmente casos de</text>
+<text x="490.0" y="294.33" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">biometría en revisión</text>
 
-<ellipse cx="490.0" cy="372.0" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
-<text x="490.0" y="361.3333333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-006: Consultar</text>
-<text x="490.0" y="375.8333333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">análisis de KYC y</text>
-<text x="490.0" y="390.3333333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">evaluación de crédito</text>
+<ellipse cx="490.0" cy="372" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="490.0" y="361.33" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-006: Consultar</text>
+<text x="490.0" y="375.83" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">análisis de KYC y</text>
+<text x="490.0" y="390.33" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">evaluación de crédito</text>
 
-<ellipse cx="490.0" cy="468.0" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
-<text x="490.0" y="464.5833333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-007: Firmar contrato</text>
-<text x="490.0" y="479.0833333333333" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">mediante firma digital</text>
+<ellipse cx="490.0" cy="468" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="490.0" y="464.58" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-007: Firmar contrato</text>
+<text x="490.0" y="479.08" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">mediante firma digital</text>
 
-<ellipse cx="490.0" cy="564.0" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
-<text x="490.0" y="553.3333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-019: Cargar soportes</text>
-<text x="490.0" y="567.8333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">bancarios y conocer el</text>
-<text x="490.0" y="582.3333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">resultado</text>
+<ellipse cx="490.0" cy="564" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="490.0" y="553.33" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-019: Cargar soportes</text>
+<text x="490.0" y="567.83" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">bancarios y conocer el</text>
+<text x="490.0" y="582.33" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">resultado</text>
 
-<ellipse cx="490.0" cy="660.0" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
-<text x="490.0" y="649.3333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-020: Motor KYC</text>
-<text x="490.0" y="663.8333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">automático post-</text>
-<text x="490.0" y="678.3333333333334" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">solicitud</text>
+<ellipse cx="490.0" cy="660" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="490.0" y="649.33" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-020: Motor KYC</text>
+<text x="490.0" y="663.83" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">automático post-</text>
+<text x="490.0" y="678.33" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">solicitud</text>
 
-
-    <g>
-      <circle cx="90" cy="365.0" r="10.0" fill="white" stroke="black" stroke-width="1.5"/>
-      <line x1="90" y1="375.0" x2="90" y2="410.0" stroke="black" stroke-width="1.5"/>
-      <line x1="75.0" y1="385.0" x2="105.0" y2="385.0" stroke="black" stroke-width="1.5"/>
-      <line x1="90" y1="410.0" x2="78.0" y2="430.0" stroke="black" stroke-width="1.5"/>
-      <line x1="90" y1="410.0" x2="102.0" y2="430.0" stroke="black" stroke-width="1.5"/>
-    </g>
-    <text x="90" y="448.0" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">Cliente</text>
-<text x="90" y="462.0" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">empresarial</text>
-
+<ellipse cx="490.0" cy="756" rx="120.0" ry="35.0" fill="white" stroke="black" stroke-width="1.5"/>
+<text x="490.0" y="745.33" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">CU-027: Gestionar el</text>
+<text x="490.0" y="759.83" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">rechazo de la validación</text>
+<text x="490.0" y="774.33" font-size="11.5" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">biométrica</text>
 
     <g>
-      <circle cx="860" cy="161.66666666666666" r="10.0" fill="white" stroke="black" stroke-width="1.5"/>
-      <line x1="860" y1="171.66666666666666" x2="860" y2="206.66666666666666" stroke="black" stroke-width="1.5"/>
-      <line x1="845.0" y1="181.66666666666666" x2="875.0" y2="181.66666666666666" stroke="black" stroke-width="1.5"/>
-      <line x1="860" y1="206.66666666666666" x2="848.0" y2="226.66666666666666" stroke="black" stroke-width="1.5"/>
-      <line x1="860" y1="206.66666666666666" x2="872.0" y2="226.66666666666666" stroke="black" stroke-width="1.5"/>
+      <circle cx="90" cy="460" r="10.0" fill="white" stroke="black" stroke-width="1.5"/>
+      <line x1="90" y1="470" x2="90" y2="505" stroke="black" stroke-width="1.5"/>
+      <line x1="75" y1="480" x2="105" y2="480" stroke="black" stroke-width="1.5"/>
+      <line x1="90" y1="505" x2="78" y2="525" stroke="black" stroke-width="1.5"/>
+      <line x1="90" y1="505" x2="102" y2="525" stroke="black" stroke-width="1.5"/>
     </g>
-    <text x="860" y="244.66666666666666" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">Analista</text>
-<text x="860" y="258.66666666666663" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">de riesgo</text>
-
+<text x="90" y="543" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">Cliente</text>
+<text x="90" y="557" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">empresarial</text>
 
     <g>
-      <circle cx="860" cy="365.0" r="10.0" fill="white" stroke="black" stroke-width="1.5"/>
-      <line x1="860" y1="375.0" x2="860" y2="410.0" stroke="black" stroke-width="1.5"/>
-      <line x1="845.0" y1="385.0" x2="875.0" y2="385.0" stroke="black" stroke-width="1.5"/>
-      <line x1="860" y1="410.0" x2="848.0" y2="430.0" stroke="black" stroke-width="1.5"/>
-      <line x1="860" y1="410.0" x2="872.0" y2="430.0" stroke="black" stroke-width="1.5"/>
+      <circle cx="860" cy="213.5" r="10.0" fill="white" stroke="black" stroke-width="1.5"/>
+      <line x1="860" y1="223.5" x2="860" y2="258.5" stroke="black" stroke-width="1.5"/>
+      <line x1="845" y1="233.5" x2="875" y2="233.5" stroke="black" stroke-width="1.5"/>
+      <line x1="860" y1="258.5" x2="848" y2="278.5" stroke="black" stroke-width="1.5"/>
+      <line x1="860" y1="258.5" x2="872" y2="278.5" stroke="black" stroke-width="1.5"/>
     </g>
-    <text x="860" y="448.0" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">Administrador /</text>
-<text x="860" y="462.0" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">operaciones</text>
-
+<text x="860" y="296.5" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">Analista</text>
+<text x="860" y="310.5" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">de riesgo</text>
 
     <g>
-      <circle cx="860" cy="568.3333333333334" r="10.0" fill="white" stroke="black" stroke-width="1.5"/>
-      <line x1="860" y1="578.3333333333334" x2="860" y2="613.3333333333334" stroke="black" stroke-width="1.5"/>
-      <line x1="845.0" y1="588.3333333333334" x2="875.0" y2="588.3333333333334" stroke="black" stroke-width="1.5"/>
-      <line x1="860" y1="613.3333333333334" x2="848.0" y2="633.3333333333334" stroke="black" stroke-width="1.5"/>
-      <line x1="860" y1="613.3333333333334" x2="872.0" y2="633.3333333333334" stroke="black" stroke-width="1.5"/>
+      <circle cx="860" cy="460.5" r="10.0" fill="white" stroke="black" stroke-width="1.5"/>
+      <line x1="860" y1="470.5" x2="860" y2="505.5" stroke="black" stroke-width="1.5"/>
+      <line x1="845" y1="480.5" x2="875" y2="480.5" stroke="black" stroke-width="1.5"/>
+      <line x1="860" y1="505.5" x2="848" y2="525.5" stroke="black" stroke-width="1.5"/>
+      <line x1="860" y1="505.5" x2="872" y2="525.5" stroke="black" stroke-width="1.5"/>
     </g>
-    <text x="860" y="651.3333333333334" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">Sistema</text>
-<text x="860" y="665.3333333333334" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">(Fliipa)</text>
+<text x="860" y="543.5" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">Administrador /</text>
+<text x="860" y="557.5" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">operaciones</text>
+
+    <g>
+      <circle cx="860" cy="707.5" r="10.0" fill="white" stroke="black" stroke-width="1.5"/>
+      <line x1="860" y1="717.5" x2="860" y2="752.5" stroke="black" stroke-width="1.5"/>
+      <line x1="845" y1="727.5" x2="875" y2="727.5" stroke="black" stroke-width="1.5"/>
+      <line x1="860" y1="752.5" x2="848" y2="772.5" stroke="black" stroke-width="1.5"/>
+      <line x1="860" y1="752.5" x2="872" y2="772.5" stroke="black" stroke-width="1.5"/>
+    </g>
+<text x="860" y="790.5" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">Sistema</text>
+<text x="860" y="804.5" font-size="12" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">(Fliipa)</text>
 
 </svg>
