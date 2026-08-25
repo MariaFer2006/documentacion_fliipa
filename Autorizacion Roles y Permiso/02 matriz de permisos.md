@@ -2,7 +2,7 @@
 
 [← Volver al índice](README.md)
 
-Cada permiso es un *slug* (`PermissionSlug`) agrupado en dos familias: `core:*` (administración del crédito/core bancario) y `product:*` (gestión de producto sobre datos del cliente). Un usuario tiene los permisos base de su rol (ver [01](01%20Roles%20del%20Panel%20Administrativo.md)) más cualquier permiso individual otorgado en `extra_permissions`.
+Cada permiso es un *slug* (`PermissionSlug`) agrupado en dos familias: `core:*` (administración del crédito/core bancario) y `product:*` (gestión de producto sobre datos del cliente). Un usuario tiene los permisos base de su rol (ver [01](01%20roles%20del%20panel%20administrativo.md)) más cualquier permiso individual otorgado en `extra_permissions`.
 
 ## Permisos `core:*`
 

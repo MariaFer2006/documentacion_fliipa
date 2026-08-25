@@ -69,7 +69,7 @@ El conjunto de documentos del proceso se organiza de forma secuencial, desde la 
 
 ## Fuentes consultadas
 
-- Alcance del Producto — [Alcance](../../producto/alcance.md)
+- Alcance del Producto — [Alcance](../../Producto/alcance.md)
 - Journeys Colpatria B2B, junio 2026 — *Journeys Fran finales-1.pdf*
 - Modelo Comercial B2B — *Modelo Comercial B2B.pptx*
 - Modelo y Proceso de Cobranza B2B — *Modelo Cobranza/Modelo_de_Cobranza_B2B_.pptx* y *Modelo Cobranza/Modelo y gestion de cobranza.docx*

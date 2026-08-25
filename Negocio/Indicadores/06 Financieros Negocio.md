@@ -2,7 +2,7 @@
 
 [← Volver a Indicadores](README.md)
 
-**Horizonte:** Largo plazo — objetivo de escalamiento, no una condición del piloto (ver [Objetivo del Producto](../../producto/objetivo.md)).
+**Horizonte:** Largo plazo — objetivo de escalamiento, no una condición del piloto (ver [Objetivo del Producto](../../Producto/objetivo.md)).
 
 ## Indicadores
 
@@ -13,6 +13,6 @@
 
 ## Fuentes consultadas
 
-- Objetivo del Producto (`producto/objetivo.md`)
+- Objetivo del Producto (`Producto/objetivo.md`)
 - Procesos — [06. Dispersión de fondos](../../Operaciones/Procesos/README.md)
 - Notas de la reunión "Producto: Weekly Sync" (10 jul 2026) y su transcripción asociada

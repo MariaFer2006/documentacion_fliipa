@@ -16,7 +16,7 @@
 |---------|-------|-------|-------------|
 | 0.1 | 2026-07-06 | Maria Fernanda Herazo | Borrador vacío (pendiente de completar). |
 | 1.0 | 2026-07-10 | María Fernanda Herazo | Primera versión completa: 35 requerimientos funcionales organizados en tablas por módulo, con estado de implementación verificado contra el código fuente de `credits-platform-main`. |
-| 1.1 | 2026-07-10 | María Fernanda Herazo  | Se amplía cada requerimiento con nombre corto, descripción detallada, actor(es) involucrados y prioridad, según los criterios de priorización de [Alcance del Producto](../../producto/alcance.md#criterios-de-priorización). |
+| 1.1 | 2026-07-10 | María Fernanda Herazo  | Se amplía cada requerimiento con nombre corto, descripción detallada, actor(es) involucrados y prioridad, según los criterios de priorización de [Alcance del Producto](../../Producto/alcance.md#criterios-de-priorización). |
 | 1.2 | 2026-07-30 | Maria Fernanda Herazo Escobar  | Se corrigen 5 requerimientos (RF-005, RF-008, RF-010, RF-011, RF-015) marcados como "no verificable" en la v1.1: esa revisión no había cubierto la carpeta `services/` del repositorio (motor de reglas, evaluaciones de riesgo, aprobación de líneas de crédito), donde sí existe evidencia real. Ver detalle en cada fila corregida. |
 | 1.3 | 2026-08-13 | María Fernanda Herazo | Se corrige RF-006 para que ya no incluya la firma de contrato dentro de la validación por OTP (queda limitada a teléfono y correo del onboarding). Se reescribe RF-013 ("OTP de firma" → "Firma digital con proveedor externo"): la firma del contrato ya no ocurre mediante código OTP, según retroalimentación de negocio ya reflejada en HU-009 de Historias de Usuario. |
 | 1.4 | 2026-08-20 | María Fernanda Herazo | Se agrega RF-036 (Visualización y confirmación del cupo aprobado), separado de RF-010 (consulta de riesgo crediticio del analista). Corresponde a la nueva historia HU-045 en Historias de Usuario, desprendida de HU-023. |
@@ -30,7 +30,7 @@ Enumerar las capacidades que el sistema Fliipa debe cubrir, agrupadas por módul
 
 ## Alcance
 
-Cubre los 11 procesos de negocio definidos en [Alcance del Producto](../../producto/alcance.md). Cada requerimiento usa el identificador `RF-XXX` de [Convenciones](../../README.md). La columna "Prioridad" sigue los criterios de priorización del alcance del producto (Alta: valida el modelo de negocio, reduce fraude, disminuye riesgo, mejora experiencia del cliente, aumenta uso del crédito o garantiza sostenibilidad financiera; Media: automatiza procesos internos; Baja: mejora continua). La columna "Estado" indica si el requerimiento está implementado, parcialmente implementado o pendiente, según lo verificado en el repositorio de código; cuando no fue posible confirmarlo (por ejemplo, lógica que vive en microservicios no incluidos en el repositorio revisado) se indica explícitamente. No incluye requisitos de calidad, seguridad o desempeño (ver [Requerimientos No Funcionales](./README.md)).
+Cubre los 11 procesos de negocio definidos en [Alcance del Producto](../../Producto/alcance.md). Cada requerimiento usa el identificador `RF-XXX` de [Convenciones](../../README.md). La columna "Prioridad" sigue los criterios de priorización del alcance del producto (Alta: valida el modelo de negocio, reduce fraude, disminuye riesgo, mejora experiencia del cliente, aumenta uso del crédito o garantiza sostenibilidad financiera; Media: automatiza procesos internos; Baja: mejora continua). La columna "Estado" indica si el requerimiento está implementado, parcialmente implementado o pendiente, según lo verificado en el repositorio de código; cuando no fue posible confirmarlo (por ejemplo, lógica que vive en microservicios no incluidos en el repositorio revisado) se indica explícitamente. No incluye requisitos de calidad, seguridad o desempeño (ver [Requerimientos No Funcionales](./README.md)).
 
 ## Documentos relacionados
 
@@ -149,7 +149,7 @@ Cubre los 11 procesos de negocio definidos en [Alcance del Producto](../../produ
 
 ## Fuentes consultadas
 
-- [Alcance del Producto](../../producto/alcance.md)
+- [Alcance del Producto](../../Producto/alcance.md)
 - [Reglas Negocio](../../README.md)
 - [Procesos](../../Operaciones/Procesos/README.md)
 - Inventario funcional del código fuente `credits-platform-main`: `backends/b2b/src/controllers/*`, `backends/b2b/src/config/*`, `backends/b2b/src/db/models/*`, `backends/admin/src/controllers/*`, `backends/admin/src/services/*`, `apps/checkout`, `apps/redemption`, `apps/admin`, realizado como parte de esta actualización.

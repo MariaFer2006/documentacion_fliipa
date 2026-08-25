@@ -66,13 +66,13 @@ Ver el detalle de cada actor y cada relación en el diagrama de [ecosistema comp
  - [Descripcion Negocio](../../README.md)
 - [Procesos](../../Operaciones/Procesos/README.md)
 - [Reglas Negocio](../../README.md)
-- [Indicadores](../indicadores/README.md)
+- [Indicadores](../Indicadores/README.md)
 
 ## Fuentes consultadas
 
 - Journeys Colpatria B2B, junio 2026 — *Journeys Fran finales-1.pdf* (págs. 3, 4, 9 y 10)
 - Integraciones técnicas — Olimpia y Zenvia (`tecnico/Integraciones/Olimpia.md`, `tecnico/Integraciones/Zenvia.md`)
-- Alcance del Producto (`producto/alcance.md`)
+- Alcance del Producto (`Producto/alcance.md`)
 - Modelo Comercial B2B — *Modelo Comercial B2B.pptx*
 - Modelo y Proceso de Cobranza B2B — *Modelo Cobranza/Modelo_de_Cobranza_B2B_.pptx* y *Modelo Cobranza/Modelo y gestion de cobranza.docx*
 - Investigación B2B — *Modelo Cobranza/Investigacion B2B.docx*

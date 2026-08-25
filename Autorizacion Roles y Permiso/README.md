@@ -4,11 +4,11 @@ Sección técnica que documenta el modelo de autenticación, roles y permisos im
 
 ## Contenido
 
-1. [Roles del panel administrativo](01%20Roles%20del%20Panel%20Administrativo.md)
-2. [Matriz de permisos por acción](02%20Matriz%20de%20Permisos.md)
-3. [Autenticación de clientes (checkout / redemption)](03%20Autenticacion%20de%20Clientes.md)
-4. [Impersonación de clientes (entrar como usuario)](04%20Impersonacion%20de%20Clientes.md)
-5. [Pendientes y riesgos identificados](05%20Pendientes%20y%20Riesgos.md)
+1. [Roles del panel administrativo](01%20roles%20del%20panel%20administrativo.md)
+2. [Matriz de permisos por acción](02%20matriz%20de%20permisos.md)
+3. [Autenticación de clientes (checkout / redemption)](03%20autenticacion%20de%20clientes.md)
+4. [Impersonación de clientes (entrar como usuario)](04%20impersonacion%20de%20clientes.md)
+5. [Pendientes y riesgos identificados](05%20pendientes%20y%20riesgos.md)
 
 ## Alcance
 

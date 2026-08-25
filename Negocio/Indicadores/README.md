@@ -26,7 +26,7 @@ Definir los indicadores clave (KPIs) que permiten medir el desempeño comercial,
 
 ## Alcance
 
-Este documento cubre indicadores comerciales, de originación y riesgo, de cartera y cobranza, de uso del producto, de servicio al cliente, y financieros/de negocio. No define las metas de negocio de más alto nivel (ver [Objetivo del Producto](../../producto/objetivo.md)) ni las reglas que determinan cada estado de mora (ver [Reglas Negocio](../../README.md)).
+Este documento cubre indicadores comerciales, de originación y riesgo, de cartera y cobranza, de uso del producto, de servicio al cliente, y financieros/de negocio. No define las metas de negocio de más alto nivel (ver [Objetivo del Producto](../../Producto/objetivo.md)) ni las reglas que determinan cada estado de mora (ver [Reglas Negocio](../../README.md)).
 
 ## Diagrama: indicadores por horizonte
 
@@ -92,8 +92,8 @@ flowchart LR
 
 ## Fuentes consultadas
 
-- Objetivo del Producto (`producto/objetivo.md`)
-- Alcance del Producto (`producto/alcance.md`)
+- Objetivo del Producto (`Producto/objetivo.md`)
+- Alcance del Producto (`Producto/alcance.md`)
 - Modelo Comercial B2B — *Modelo Comercial B2B.pptx*
 - Modelo y Proceso de Cobranza B2B — *Modelo Cobranza/Modelo_de_Cobranza_B2B_.pptx* y *Modelo Cobranza/Modelo y gestion de cobranza.docx*
 - Reglas Negocio (`negocio/reglas-negocio/README.md`)
