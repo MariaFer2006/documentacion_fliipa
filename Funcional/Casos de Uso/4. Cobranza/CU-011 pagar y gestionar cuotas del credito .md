@@ -7,7 +7,7 @@
 | **Actores** | Cliente empresarial |
 | **Descripción** | El cliente prepaga su cuota antes de la fecha de vencimiento mediante PSE, de forma voluntaria. Hoy no hay pago por PSE implementado en el repositorio. |
 | **Precondiciones** | El cliente tiene una cuota vigente asociada a su línea de crédito. |
-| **Flujo principal** | 1. El cliente inicia el pago de su cuota en cualquier momento antes de la fecha de vencimiento (30 días después del desembolso), mediante PSE.<br>2. El sistema reflejaría el pago en el plan de pagos y en el cupo disponible del cliente. |
+| **Flujo principal** | 1. El cliente inicia el pago de su cuota en cualquier momento antes de la fecha de vencimiento, mediante PSE.<br>2. El sistema reflejaría el pago en el plan de pagos y en el cupo disponible del cliente. |
 | **Flujos alternativos / excepciones** | A1. El pago por PSE no se completaría: la cuota permanecería pendiente. |
 | **Postcondiciones** | La cuota quedaría pagada por PSE y reflejada en el plan de pagos y el cupo del cliente. Hoy el pago efectivo por PSE de punta a punta no está disponible. |
 | **Reglas de negocio** | El pago por PSE es un proceso voluntario e iniciado por el cliente, distinto del débito automático (ver [CU-026](CU-026%20Gestionar%20debito%20automatico%20de%20creditos%20vencidos.md)), aunque ambos usarían Druo como conector bancario. |
