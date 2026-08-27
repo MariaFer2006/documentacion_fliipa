@@ -10,5 +10,6 @@
 - [CU-012](CU-012%20Gestionar%20y%20registrar%20cartera%20y%20cobranza.md)
 - [CU-013](CU-013%20Recibir%20alivios%20ante%20dificultades%20de%20pago.md)
 - [CU-021](CU-021%20Escalar%20casos%20a%20cobro%20juridico.md)
+- [CU-026](CU-026%20Gestionar%20debito%20automatico%20de%20creditos%20vencidos.md) *(nuevo, separado de CU-011)*
 
 > Diagrama UML de casos de uso generado a partir de las fichas de este capítulo (ver `README.md` del proyecto para la tabla de correspondencia Historias de Usuario → Casos de Uso).
