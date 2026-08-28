@@ -1,4 +1,4 @@
-# Casos Críticos y Validación de Identidad — Servicio al Cliente
+# Casos Críticos y Validación de Identidad — Servicio al Cliente *PLACEHOLDER*
 
 Bogotá · 2026 · Documento confidencial
 
