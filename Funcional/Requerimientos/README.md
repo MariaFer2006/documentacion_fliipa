@@ -6,12 +6,13 @@ Agrupar los requisitos funcionales y no funcionales en una sola sección para fa
 
 ## Documentos relacionados
 
-- [Funcional](../../README.md)
-- [Marco Funcional](../../README.md)
-- [Casos De Uso](../../README.md)
-- [Historias Usuario](../Historias De Usuario/README.md)
+- [Documentación general](../../README.md)
+- [Casos de Uso](../Casos%20de%20Uso/README.md)
+- [Historias de Usuario](../Historias%20De%20Usuario/README.md)
+- [Requerimientos Funcionales](./Requerimientos%20Funcionales.md)
+- [Requerimientos No Funcionales](./Requerimientos%20No%20Funcionales.md)
 
 ## Contenido
 
-- [01 Requerimientos Funcionales](./README.md): capacidades que debe cubrir el sistema.
-- [02 Requerimientos No Funcionales](./README.md): condiciones de seguridad, calidad, trazabilidad y cumplimiento.
+- [Requerimientos Funcionales](./Requerimientos%20Funcionales.md): capacidades que debe cubrir el sistema.
+- [Requerimientos No Funcionales](./Requerimientos%20No%20Funcionales.md): condiciones de seguridad, calidad, trazabilidad y cumplimiento.
