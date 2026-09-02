@@ -1,7 +1,7 @@
-# Estrategia Comercial B2B
+# Estrategia Comercial
 ### Fliipa × D1 × Cliente — Socios D1
 
-*Captación, originación y activación del crédito rotativo B2B*
+*Captación, originación y activación del crédito popular de producto urbano*
 Agosto 2026 · Documento confidencial
 
 ---
@@ -30,9 +30,9 @@ La estrategia se apoya en tres pilares:
 
 ## El ecosistema: Fliipa × D1 × Cliente
 
-El negocio comercial se sostiene sobre tres actores que conforman un ecosistema de crédito B2B de bajo riesgo:
+El negocio comercial se sostiene sobre tres actores que conforman un ecosistema del crédito popular de producto urbano:
 
-- **Fliipa:** plataforma financiera que origina y gestiona el crédito rotativo B2B. Evalúa con datos de consumo real, no solo con historial bancario.
+- **Fliipa:** plataforma financiera que origina y gestiona el crédito popular de producto urbano. Evalúa con datos de consumo real, no solo con historial bancario.
 - **D1:** la cadena de descuento más grande de Colombia, con más de 3.000 tiendas y millones de clientes que compran semanalmente.
 - **Cliente:** el pequeño comercio con alta frecuencia de compra en D1, que necesita flujo de caja flexible para surtir su negocio sin descapitalizarse.
 
@@ -40,7 +40,7 @@ El negocio comercial se sostiene sobre tres actores que conforman un ecosistema 
 
 ### ¿Qué es el crédito Fliipa?
 
-Un cupo rotativo preaprobado para comprar en D1 y pagar en una sola cuota diferida, sin salir de caja. Los atributos comerciales clave que se comunican al cliente son:
+Un cupo preaprobado del crédito popular de producto urbano para comprar en D1 y pagar en una sola cuota diferida, sin salir de caja. Los atributos comerciales clave que se comunican al cliente son:
 
 - Cupo preaprobado por cliente, calculado con base en su comportamiento de compra en D1.
 - Pago diferido en una cuota (30 días), sin necesidad de desembolsar efectivo de inmediato.
@@ -99,7 +99,7 @@ Para mantener un tono conversacional y cercano, el equipo comercial evita tecnic
 |---|---|
 | Representante legal | Aliado comercial |
 | Capital de trabajo | Recursos de liquidez |
-| Crédito rotativo / línea de financiamiento | Cupo que se renueva al pagar |
+| Crédito popular / línea de financiamiento | Cupo que se renueva al pagar |
 | Verificar / evaluar el negocio | Conocer y acompañar el negocio |
 
 *Fuente: Speech_Ofrecimiento_Fliipa.docx y Arquetipos.docx*
@@ -124,7 +124,7 @@ Una vez el cliente muestra interés, toda la interacción migra a WhatsApp, que 
 Antes de ejecutar el speech, el equipo comercial interioriza reglas no negociables que garantizan una conversación natural y efectiva:
 
 - Es una conversación, no un guion: se habla como quien cuenta algo bueno a un conocido.
-- Cero tecnicismos: se evitan términos como "crédito rotativo" o "representante legal" a menos que el cliente pregunte.
+- Cero tecnicismos: se evitan términos como "crédito popular" o "representante legal" a menos que el cliente pregunte.
 - Se afirma, no se pregunta: en lugar de "¿le interesa?", se usa "cuéntame qué te parece".
 - El asesor ya conoce al cliente: se usan los datos disponibles del negocio para generar confianza, sin preguntar lo que ya se sabe.
 - El monto se comunica a la mitad de la llamada, una vez el cliente está enganchado — nunca al abrir la conversación.

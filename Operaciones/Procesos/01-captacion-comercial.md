@@ -2,19 +2,19 @@
 
 ## Objetivo
 
-Contactar a los clientes preaprobados de la base del piloto (clientes/micronegocios socios D1) a través de tres canales simultáneos (email, WhatsApp y llamada), generar su interés en el crédito rotativo, acompañarlos hasta que completen la solicitud digital y hacer seguimiento posterior a la aprobación —firma de contrato y primer uso del cupo— para asegurar la activación efectiva del cliente.
+Contactar a los clientes preaprobados de la base del piloto (clientes/micronegocios socios D1) a través de tres canales simultáneos (email, WhatsApp y llamada), generar su interés en el crédito popular de producto urbano, acompañarlos hasta que completen la solicitud digital y hacer seguimiento posterior a la aprobación —firma de contrato y primer uso del cupo— para asegurar la activación efectiva del cliente.
 
 ---
 
 ## Contexto del producto
 
-El proceso de captación comercial es la puerta de entrada al ecosistema del crédito B2B **Socios D1**, que conecta tres actores:
+El proceso de captación comercial es la puerta de entrada al ecosistema del crédito **popular de producto urbano** para clientes de D1, que conecta tres actores:
 
 - **D1**: la cadena de descuento, con más de 3.000 tiendas y millones de clientes que compran semanalmente.
-- **Sumz / Flipa**: la plataforma financiera que origina y gestiona el crédito rotativo B2B, evaluando con datos de consumo real (no solo historial bancario).
+- **Sumz / Flipa**: la plataforma financiera que origina y gestiona el crédito popular de producto urbano, evaluando con datos de consumo real (no solo historial bancario).
 - **El cliente/micronegocio**: pequeño comercio con alta frecuencia de compra en D1, que necesita flujo de caja flexible para surtir su negocio sin descapitalizarse.
 
-El producto es un **cupo rotativo preaprobado** para comprar en D1 y pagar en *1 cuota\**, con aprobación máxima en *24 horas\**. El cliente paga, libera cupo y puede volver a usarlo; el cupo se bloquea ante retrasos de pago y se reporta a centrales de riesgo según los plazos legales.
+El producto es un **cupo preaprobado del crédito popular de producto urbano** para comprar en D1 y pagar en *1 cuota\**, con aprobación máxima en *24 horas\**. El cliente paga, libera cupo y puede volver a usarlo; el cupo se bloquea ante retrasos de pago y se reporta a centrales de riesgo según los plazos legales.
 
 
 

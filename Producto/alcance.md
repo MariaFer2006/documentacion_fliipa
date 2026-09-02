@@ -36,7 +36,7 @@ Delimitar el alcance del MVP para validar el modelo de crédito empresarial basa
 
 # Contexto
 
-Fliipa es una plataforma de crédito rotativo B2B orientada a micro y pequeñas empresas, diseñada para facilitar el acceso al crédito formal mediante el análisis de información transaccional y comportamiento comercial.
+Fliipa es una plataforma de crédito popular de producto urbano, diseñada para facilitar el acceso al crédito formal mediante el análisis de información transaccional y comportamiento comercial.
 
 Durante el MVP, el crédito estará disponible para ser utilizado en tiendas D1, permitiendo validar el modelo de negocio, la aceptación del mercado y el desempeño del modelo de riesgo antes de su expansión a nuevos comercios y productos financieros.
 
