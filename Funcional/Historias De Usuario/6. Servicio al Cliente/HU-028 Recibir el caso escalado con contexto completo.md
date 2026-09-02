@@ -6,8 +6,8 @@
 | **Historia** | Como agente de servicio al cliente, quiero recibir el caso escalado por la IA con el contexto completo de la conversación, para no pedirle al cliente que repita su problema. |
 | **Prioridad** | Baja|
 | **Criterios de aceptación** | Cuando la IA escala un caso, el agente humano ve el historial completo de la conversación antes de responder. |
-| **Relaciones** | Casos de uso: [CU-014](../../Casos%20de%20Uso/5.%20Servicio%20al%20Cliente/CU-014%20Atender%20al%20cliente%20por%20IA%20y%20escalar%20a%20agente%20humano.md). Requerimiento: [RF-028](../../Requerimientos/Requerimientos%20Funcionales.md). Historia relacionada: [HU-017](../6.%20Servicio%20al%20Cliente/HU-017%20Escalar%20a%20agente%20humano%20cuando%20la%20IA%20no%20resuelve%20el%20caso.md).  |
-| **Referencias** | [Atención al cliente](../../../Operaciones/Procesos/06%20Servicio%20Cliente.md); |
+| **Relaciones** | Casos de uso: [CU-014](../../Casos de Uso/5. Servicio al Cliente/CU-014 Atender al cliente por IA y escalar a agente humano.md). Requerimiento: [RF-028](../../Requerimientos/Requerimientos Funcionales.md). Historia relacionada: [HU-017](../6. Servicio al Cliente/HU-017 Escalar a agente humano cuando la IA no resuelve el caso.md).  |
+| **Referencias** | [Atención al cliente](../../../Operaciones/Procesos/06 Servicio Cliente.md); |
  **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
 | **Versión** | V.1.7 |

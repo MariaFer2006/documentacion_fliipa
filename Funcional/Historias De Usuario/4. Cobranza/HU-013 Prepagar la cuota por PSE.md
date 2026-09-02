@@ -6,8 +6,8 @@
 | **Historia** | Como cliente empresarial, quiero prepagar mi cuota antes de su fecha de vencimiento mediante PSE, para no incurrir en mora y mantener un buen comportamiento de cr茅dito. |
 | **Prioridad** | Media |
 | **Criterios de aceptaci贸n** | El cliente puede realizar el pago de su cuota en cualquier momento antes de la fecha de vencimiento (30 d铆as despu茅s del desembolso) mediante PSE, y el sistema refleja el pago en su plan de pagos y en su cupo disponible. |
-| **Relaciones** | Casos de uso: [CU-011](../../Casos%20de%20Uso/4.%20Cobranza/CU-011%20pagar%20y%20gestionar%20cuotas%20del%20credito%20.md) Requerimiento:  [RF-022](../../Requerimientos/Requerimientos%20Funcionales.md). Historia relacionada: [HU-014](../4.%20Cobranza/HU-014%20Debito%20autom%C3%A1tico%20de%20cr%C3%A9ditos%20vencidos.md). |
-| **Referencias** | [Procesos](../../../Operaciones/Procesos/07%20Modelo%20Cobranza.md); no se encontr贸 implementaci贸n de pago por PSE en ning煤n archivo del repositorio (se busc贸 "PSE" en todo el proyecto sin coincidencias). |
+| **Relaciones** | Casos de uso: [CU-011](../../Casos de Uso/4. Cobranza/CU-011 pagar y gestionar cuotas del credito .md) Requerimiento:  [RF-022](../../Requerimientos/Requerimientos Funcionales.md). Historia relacionada: [HU-014](../4. Cobranza/HU-014 Debito autom醫ico de cr閐itos vencidos.md). |
+| **Referencias** | [Procesos](../../../Operaciones/Procesos/07 Modelo Cobranza.md); no se encontr贸 implementaci贸n de pago por PSE en ning煤n archivo del repositorio (se busc贸 "PSE" en todo el proyecto sin coincidencias). |
 | **Autor** | Mar铆a Fernanda Herazo |
 | **Fecha** | 20/08/2026 |
 | **Versi贸n** | V.1.8 |

@@ -6,7 +6,7 @@
 | **Historia** | Como administrador, quiero agregar o retirar clientes de la lista negra |
 | **Prioridad** | Media |
 | **Criterios de aceptaciÃ³n** | El administrador agrega o retira clientes de la blacklist, validando que el cliente exista y registrando el motivo por el cual el cliente ingresa a la lista negra. |
-| **Relaciones** | Casos de uso: [CU-017](../../Casos%20de%20Uso/6.%20Operaci%C3%B3n%20Admin/CU-017%20Administrar%20y%20consultar%20clientes%20en%20blacklist.md). Requerimiento:[RF-027](../../Requerimientos/Requerimientos%20Funcionales.md). Historia relacionada: [HU-011](../3.%20Credito/HU-011%20Ver%20mensaje%20de%20no%20disponibilidad%20de%20cr%C3%A9dito.md)  |
+| **Relaciones** | Casos de uso: [CU-017](../../Casos de Uso/6. Operación Admin/CU-017 Administrar y consultar clientes en blacklist.md). Requerimiento:[RF-027](../../Requerimientos/Requerimientos Funcionales.md). Historia relacionada: [HU-011](../3. Credito/HU-011 Ver mensaje de no disponibilidad de crédito.md)  |
 | **Referencias** | `backends/b2b/src/controllers/blacklist/add-client-to-blacklist.ts`, `backends/b2b/src/controllers/blacklist/remove-client-client-from-blacklist.ts` |
  **Autor** | MarÃ­a Fernanda Herazo |
 | **Fecha** | 18/08/2026 |

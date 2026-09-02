@@ -3,7 +3,7 @@
 ## Navegación
 
 - [Procesos](Procesos/README.md)
-- [Estrategia Comercial](Comercial/Estrategia%20Comercial.md)
+- [Estrategia Comercial](Comercial/Estrategia Comercial.md)
 
 ## Descripción
 

@@ -6,7 +6,7 @@
 | **Historia** | Como cliente empresarial, quiero cargar mi certificación bancaria y mis extractos de los últimos 3 meses, para respaldar mi solicitud de crédito. |
 | **Prioridad** | Alta |
 | **Criterios de aceptación** | 1. El cliente carga **dos archivos PDF**: uno correspondiente a la certificación bancaria y otro correspondiente a los extractos bancarios de los últimos 3 meses.<br>2. El sistema recibe los archivos y permite al cliente continuar con el flujo sin esperar a que finalice su almacenamiento.<br>3. Los archivos son enviados y almacenados en el repositorio correspondiente **en segundo plano**.<br>4. La consulta o apertura de los archivos desde el panel administrativo corresponde a la **HU-037** y no hace parte de esta historia. |
-| **Relaciones** |  Historia relacionada: [HU-006](../1.%20Onboarding/HU-006%20Completar%20la%20validaci%C3%B3n%20biom%C3%A9trica%20%28KYC%29.md). |
+| **Relaciones** |  Historia relacionada: [HU-006](../1. Onboarding/HU-006%20Completar%20la%20validaci%C3%B3n%20biom%C3%A9trica%20%28KYC%29.md). |
 | **Referencias** | `b2b/fliipa-back/src/controllers/clients/upload-document.ts` |
 | **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |

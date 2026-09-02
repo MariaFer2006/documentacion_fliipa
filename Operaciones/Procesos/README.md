@@ -40,17 +40,17 @@ El conjunto de documentos del proceso se organiza de forma secuencial, desde la 
 | # | Etapa | Resumen | Documento |
 |---|-------|---------|-----------|
 | 1 | Captación comercial | Contacto simultáneo por correo, WhatsApp y llamada sobre clientes preaprobados de D1. | [01-captacion-comercial.md](01-captacion-comercial.md) |
-| 2 | Onboarding digital | Registro del cliente y validación de datos en ~3 minutos. | [01 Onboarding Digital.md](01%20Onboarding%20Digital.md) |
-| 3 | Validación de identidad (KYC) | PIN, biometría (Olimpia), extractos y cuenta bancaria (Druo). | [02 Validacion Kcy Y Evaluación Riesgo.md](02%20Validacion%20Kcy%20Y%20Evaluaci%C3%B3n%20Riesgo.md) |
-| 4 | Evaluación de riesgo | Score Experian + histórico D1; aprueba, ajusta o rechaza el cupo. | [02 Validacion Kcy Y Evaluación Riesgo.md](02%20Validacion%20Kcy%20Y%20Evaluaci%C3%B3n%20Riesgo.md) |
-| 5 | Firma de contrato y activación | Revisión y firma del contrato/pagaré; asignación del bono. | [03 Firma Contrato.md](03%20Firma%20Contrato.md) |
-| 6 | Dispersión de fondos | Fiducia Colpatria; costo GMF (4x1000); bloqueo del remanente. | [05 Dispersion Fondos.md](05%20Dispersion%20Fondos.md) |
-| 7 | Uso y renovación del cupo | Uso del bono en D1 y evaluación de renovación por comportamiento. | [05 Dispersion Fondos.md](05%20Dispersion%20Fondos.md) |
-| 8 | Cobro y pago del crédito | Plan de pagos, prepago por PSE, cobro automático por Druo. | [04 Calculadora Cobro Del Credito.md](04%20Calculadora%20Cobro%20Del%20Credito.md) |
-| 9 | Gestión de cobranza por bucket de mora | 6 segmentos de mora con acciones diferenciadas; nota de inconsistencia con el journey Colpatria. | [07 Modelo Cobranza.md](07%20Modelo%20Cobranza.md) |
-| 10 | Alivios y negociación | Abono parcial, congelamiento de intereses, condonación. | [07 Modelo Cobranza.md](07%20Modelo%20Cobranza.md) |
-| 11 | Servicio al cliente | IA de primer nivel con escalamiento a agente humano. | [06 Servicio Cliente.md](06%20Servicio%20Cliente.md) |
-| 12 | Gobernanza operativa transversal | Comité de Cartera semanal, indicadores y tableros. | [07 Modelo Cobranza.md](07%20Modelo%20Cobranza.md) |
+| 2 | Onboarding digital | Registro del cliente y validación de datos en ~3 minutos. | [01 Onboarding Digital.md](01 Onboarding Digital.md) |
+| 3 | Validación de identidad (KYC) | PIN, biometría (Olimpia), extractos y cuenta bancaria (Druo). | [02 Validacion Kcy Y Evaluación Riesgo.md](02 Validacion Kcy Y Evaluaci�n Riesgo.md) |
+| 4 | Evaluación de riesgo | Score Experian + histórico D1; aprueba, ajusta o rechaza el cupo. | [02 Validacion Kcy Y Evaluación Riesgo.md](02 Validacion Kcy Y Evaluaci�n Riesgo.md) |
+| 5 | Firma de contrato y activación | Revisión y firma del contrato/pagaré; asignación del bono. | [03 Firma Contrato.md](03 Firma Contrato.md) |
+| 6 | Dispersión de fondos | Fiducia Colpatria; costo GMF (4x1000); bloqueo del remanente. | [05 Dispersion Fondos.md](05 Dispersion Fondos.md) |
+| 7 | Uso y renovación del cupo | Uso del bono en D1 y evaluación de renovación por comportamiento. | [05 Dispersion Fondos.md](05 Dispersion Fondos.md) |
+| 8 | Cobro y pago del crédito | Plan de pagos, prepago por PSE, cobro automático por Druo. | [04 Calculadora Cobro Del Credito.md](04 Calculadora Cobro Del Credito.md) |
+| 9 | Gestión de cobranza por bucket de mora | 6 segmentos de mora con acciones diferenciadas; nota de inconsistencia con el journey Colpatria. | [07 Modelo Cobranza.md](07 Modelo Cobranza.md) |
+| 10 | Alivios y negociación | Abono parcial, congelamiento de intereses, condonación. | [07 Modelo Cobranza.md](07 Modelo Cobranza.md) |
+| 11 | Servicio al cliente | IA de primer nivel con escalamiento a agente humano. | [06 Servicio Cliente.md](06 Servicio Cliente.md) |
+| 12 | Gobernanza operativa transversal | Comité de Cartera semanal, indicadores y tableros. | [07 Modelo Cobranza.md](07 Modelo Cobranza.md) |
 
 ## Documentos relacionados
 

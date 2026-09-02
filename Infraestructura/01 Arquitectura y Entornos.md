@@ -91,4 +91,4 @@ Runtime service accounts: `creds-runtime-{public,core,hub,product}@…`. GitHub 
 | Secretos reales de Experian / Score | No (hoy son *placeholders*) |
 | Registro de webhooks de terceros con el dominio final | No |
 
-Ver detalle en [Dominio y Load Balancer](05%20Dominio%20y%20Load%20Balancer.md) y en [Operación y pendientes](06%20Operacion%20y%20Pendientes.md).
+Ver detalle en [Dominio y Load Balancer](05 Dominio y Load Balancer.md) y en [Operación y pendientes](06 Operacion y Pendientes.md).

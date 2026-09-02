@@ -6,11 +6,11 @@
 
 **Casos de uso incluidos:**
 
-- [CU-015](CU-015%20Buscar%20cliente,%20ver%20historial%20auditado%20y%20ajustar%20cupo%20o%20fecha%20de%20corte.md)
-- [CU-016](CU-016%20Simular%20plan%20de%20pago%20con%20distintas%20tasas.md)
-- [CU-017](CU-017%20Administrar%20y%20consultar%20clientes%20en%20blacklist.md)
-- [CU-018](CU-018%20Monitorear%20salud%20del%20sistema%20en%20tiempo%20real.md)
-- [CU-024](CU-024%20Ver%20y%20reconectar%20la%20cuenta%20Druo%20del%20cliente.md)
-- [CU-025](CU-025%20Cambiar%20el%20estado%20del%20credito%20manualmente%20%28incluye%20pre-rechazado%29.md)
+- [CU-015](CU-015 Buscar cliente, ver historial auditado y ajustar cupo o fecha de corte.md)
+- [CU-016](CU-016 Simular plan de pago con distintas tasas.md)
+- [CU-017](CU-017 Administrar y consultar clientes en blacklist.md)
+- [CU-018](CU-018 Monitorear salud del sistema en tiempo real.md)
+- [CU-024](CU-024 Ver y reconectar la cuenta Druo del cliente.md)
+- [CU-025](CU-025%20Cambiar%20el%20estado%20del%20credito%20manualmente%20%28incluye%20pre-rechazado%29.md).md)
 
 > Diagrama UML de casos de uso generado a partir de las fichas de este capítulo (ver `README.md` del proyecto para la tabla de correspondencia Historias de Usuario → Casos de Uso).

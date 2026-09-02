@@ -64,7 +64,7 @@ bash scripts/prod-urls.sh              # sync → apply → verify
 bash scripts/prod-urls.sh verify
 ```
 
-El registro de URLs vive como secreto en Secret Manager (`creds-prod-url-registry` en PROD, `creds-dev-url-registry` en STG) y se calcula con `scripts/lib/prod_urls.py`, cruzando `url-bindings.json` con las URLs reales de Cloud Run (o con los orígenes públicos de `domains.prod.env` cuando `DEPLOY_PHASE=F`, ver [Dominio y Load Balancer](05%20Dominio%20y%20Load%20Balancer.md)).
+El registro de URLs vive como secreto en Secret Manager (`creds-prod-url-registry` en PROD, `creds-dev-url-registry` en STG) y se calcula con `scripts/lib/prod_urls.py`, cruzando `url-bindings.json` con las URLs reales de Cloud Run (o con los orígenes públicos de `domains.prod.env` cuando `DEPLOY_PHASE=F`, ver [Dominio y Load Balancer](05 Dominio y Load Balancer.md)).
 
 ## Checklist para un servicio nuevo
 

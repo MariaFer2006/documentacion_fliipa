@@ -6,9 +6,9 @@
 
 **Casos de uso incluidos:**
 
-- [CU-014](CU-014%20Atender%20al%20cliente%20por%20IA%20y%20escalar%20a%20agente%20humano.md)
-- [CU-022](CU-022%20Recuperar%20PIN%20o%20desbloquear%20la%20cuenta.md)
-- [CU-023](CU-023%20Registrar%20cada%20contacto%20con%20el%20cliente.md)
-- [CU-027](CU-027%20Desbloquear%20la%20cuenta.md) *(nuevo, separado de CU-022)*
+- [CU-014](CU-014 Atender al cliente por IA y escalar a agente humano.md)
+- [CU-022](CU-022%20Recuperar%20PIN.md)
+- [CU-023](CU-023 Registrar cada contacto con el cliente.md)
+- [CU-027](CU-%20034%20desbloquear%20la%20cuenta.md) *(nuevo, separado de CU-022)*
 
 > Diagrama UML de casos de uso generado a partir de las fichas de este capítulo (ver `README.md` del proyecto para la tabla de correspondencia Historias de Usuario → Casos de Uso).

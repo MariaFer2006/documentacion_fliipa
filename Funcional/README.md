@@ -2,8 +2,8 @@
 
 ## Navegación
 
-- [Casos de Uso](Casos%20de%20Uso/README.md)
-- [Historias de Usuario](Historias%20De%20Usuario/README.md)
+- [Casos de Uso](Casos de Uso/README.md)
+- [Historias de Usuario](Historias De Usuario/README.md)
 - [Requerimientos](Requerimientos/README.md)
 
 ## Descripción

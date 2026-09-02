@@ -29,7 +29,7 @@ El JWT de sesión de un cliente autenticado normalmente expira en **2 minutos** 
 
 El acceso al portal (`redemption`) está condicionado al estado de la línea de crédito del cliente:
 
-- Si el estado es `approved`, el cliente es redirigido al flujo de onboarding de redemption (ver [HU-045](../Funcional/Historias De Usuario/2. KYC/HU-045 Visualización y confirmación del cupo aprobado.md)).
+- Si el estado es `approved`, el cliente es redirigido al flujo de onboarding de redemption (ver [HU-045](../Funcional/Historias De Usuario/2. KYC/HU-045 Visualizaci%C3%B3n%20y%20confirmaci%C3%B3n%20del%20cupo%20aprobado.md)).
 - Solo los estados `approved` y `active` se consideran válidos para continuar en el portal (`isValidStatus`).
 - El estado `preapproved` se maneja como un caso distinto dentro del flujo de autenticación.
 

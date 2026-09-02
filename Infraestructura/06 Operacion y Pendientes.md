@@ -29,14 +29,14 @@ Los valores de `minInstances`/`maxInstances`/`concurrency`/CPU/memoria salen de 
 4. `bash scripts/prod-urls.sh`.
 5. Commitear el Dockerfile, la entrada de la matriz y el workflow generados.
 
-(Ver detalle completo del pipeline en [Pipeline de Despliegue](02%20Pipeline%20de%20Despliegue.md).)
+(Ver detalle completo del pipeline en [Pipeline de Despliegue](02 Pipeline de Despliegue.md).)
 
 ## Pendientes identificados (a la fecha de esta revisión)
 
 | Pieza | Estado | ¿Bloquea `*.run.app` hoy? |
 |---|---|---|
 | Custodia de DNS + *cutover* de Webflow | Pendiente de decisión de negocio | No |
-| Load Balancer + NEGs + certificados + DNS → IP del LB | No creado | No (sí para `fliipa.com`, ver [Dominio y Load Balancer](05%20Dominio%20y%20Load%20Balancer.md)) |
+| Load Balancer + NEGs + certificados + DNS → IP del LB | No creado | No (sí para `fliipa.com`, ver [Dominio y Load Balancer](05 Dominio y Load Balancer.md)) |
 | `DEPLOY_PHASE=F` + rebuild de frontends | No activado (`DEPLOY_PHASE=1`) | No |
 | Secretos reales de Experian / Score | *Placeholders* (`__REPLACE_BEFORE_GO_LIVE__`) en `b2b` | No, pero bloquea el uso real de esos proveedores |
 | Registro de webhooks de terceros con el dominio final | Pendiente hasta el *cutover* de dominio | No |

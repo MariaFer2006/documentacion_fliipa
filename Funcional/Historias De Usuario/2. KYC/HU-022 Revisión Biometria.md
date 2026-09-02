@@ -6,8 +6,8 @@
 | **Historia** | Como analista de riesgo, quiero revisar manualmente los casos de biometr铆a marcados "en revisi贸n", para decidir si el cliente puede continuar el proceso. |
 | **Prioridad** | Alta |
 | **Criterios de aceptaci贸n** | El analista visualiza los casos "en revisi贸n" y registra la decisi贸n (continuar o rechazar). |
-| **Relaciones** | Casos de uso: [CU-005](../../Casos%20de%20Uso/2.%20KYC/CU-005%20Revisar%20manualmente%20casos%20de%20biometria%20en%20revision.md). Historias relacionadas: [HU-006](../1.%20Onboarding/HU-006%20Completar%20la%20validaci%C3%B3n%20biom%C3%A9trica%20%28KYC%29.md), [HU-046](../2.%20KYC/HU-046%20Manejo%20de%20rechazo%20en%20biometr%C3%ADa.md). |
-| **Referencias** | [Procesos](../../../Operaciones/Procesos/07%20Modelo%20Cobranza.md); |
+| **Relaciones** | Casos de uso: [CU-005](../../Casos de Uso/2. KYC/CU-005 Revisar manualmente casos de biometria en revision.md). Historias relacionadas: [HU-006](../1. Onboarding/HU-006%20Completar%20la%20validaci%C3%B3n%20biom%C3%A9trica%20%28KYC%29.md), [HU-046](../2. KYC/HU-046 Manejo de rechazo en biometr韆.md). |
+| **Referencias** | [Procesos](../../../Operaciones/Procesos/07 Modelo Cobranza.md); |
  **Autor** | Mar铆a Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
 | **Versi贸n** | V.1.7 |

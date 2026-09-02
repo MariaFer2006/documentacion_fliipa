@@ -5,8 +5,8 @@
 | **Historia** | Como cliente empresarial, quiero que un asistente virtual con inteligencia artificial atienda mi primer contacto por WhatsApp, para obtener respuesta inmediata a mis dudas más comunes. |
 | **Prioridad** | Bajo |
 | **Criterios de aceptación** | El asistente virtual con IA recibe y responde el primer contacto del cliente por WhatsApp, dentro de las dudas frecuentes definidas en su alcance. |
-| **Relaciones** | Casos de uso: [CU-014](../../Casos%20de%20Uso/5.%20Servicio%20al%20Cliente/CU-014%20Atender%20al%20cliente%20por%20IA%20y%20escalar%20a%20agente%20humano.md). Requerimiento: [RF-028](../../Requerimientos/Requerimientos%20Funcionales.md). Historia relacionada: [HU-017](../6.%20Servicio%20al%20Cliente/HU-017%20Escalar%20a%20agente%20humano%20cuando%20la%20IA%20no%20resuelve%20el%20caso.md). |
-| **Referencias** | [Atención al cliente](../../../Operaciones/Procesos/06%20Servicio%20Cliente.md); `b2b/services/communications/src/controllers/whatsapp/whatsapp.controller.ts` |
+| **Relaciones** | Casos de uso: [CU-014](../../Casos de Uso/5. Servicio al Cliente/CU-014 Atender al cliente por IA y escalar a agente humano.md). Requerimiento: [RF-028](../../Requerimientos/Requerimientos Funcionales.md). Historia relacionada: [HU-017](../6. Servicio al Cliente/HU-017 Escalar a agente humano cuando la IA no resuelve el caso.md). |
+| **Referencias** | [Atención al cliente](../../../Operaciones/Procesos/06 Servicio Cliente.md); `b2b/services/communications/src/controllers/whatsapp/whatsapp.controller.ts` |
 | **Autor** | María Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
 | **Versión** | V.1.7 |

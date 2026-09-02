@@ -5,7 +5,7 @@
 | **Historia** | Como analista de riesgo, quiero ver si el correo, celulares (y del representante legal, si aplica) coinciden con lo reportado en Reconocer, para validar contacto de forma visual y r谩pida. |
 | **Prioridad** | Alta |
 | **Criterios de aceptaci贸n** | Sobre el resultado de Reconocer (HU-038): si **coincide**, se indica y se **resalta** la fila que hace match, mostrando contra qu茅 registro coincidi贸 (cliente o representante). Si el dato de Fliipa **no aparece** en centrales, se indica. Si en Fliipa no hay dato para comparar, se muestra "sin dato en registro". Si la secci贸n no trae informaci贸n de centrales, se muestra sin datos. La informaci贸n se organiza en acordeones (correos, celulares, etc.). |
-| **Relaciones** | Depende de [HU-038](../5.%20Operaci%C3%B3n%20admin/HU-038%20Consultar%20informaci%C3%B3n%20de%20centrales.md). Distinta de la regla autom谩tica de contacto en [HU-043](../2.%20KYC/HU-043%20Evaluar%20reglas%20KYC.md). |
+| **Relaciones** | Depende de [HU-038](../5. Operaci髇 admin/HU-038 Consultar informaci髇 de centrales.md). Distinta de la regla autom谩tica de contacto en [HU-043](../2. KYC/HU-043 Evaluar reglas KYC.md). |
 | **Autor** | Mar铆a Fernanda Herazo |
 | **Fecha** | 18/08/2026 |
 | **Versi贸n** | V.1.7 |

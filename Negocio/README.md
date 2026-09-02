@@ -3,7 +3,7 @@
 ## Navegación
 
 - [Actores](Actores/README.md)
-- [Descripción del Negocio](Descripción%20del%20Negocio/README.md)
+- [Descripción del Negocio](Descripci%C3%B3n%20del%20Negocio/README.md)
 - [Indicadores](Indicadores/README.md)
 
 ## Descripción

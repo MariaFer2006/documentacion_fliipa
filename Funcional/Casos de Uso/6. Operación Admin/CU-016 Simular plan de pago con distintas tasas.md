@@ -11,6 +11,6 @@
 | **Flujos alternativos / excepciones** | A1. Los parámetros ingresados no son válidos: el sistema no genera el cálculo hasta corregirlos. |
 | **Postcondiciones** | El administrador cuenta con un plan de pago simulado y descargable para preparar un acuerdo de pago o alivio con el cliente. |
 | **Reglas de negocio** | El cálculo depende de tres parámetros: tasa corriente, tasa de mora y umbral de días. |
-| **Historias de usuario relacionadas** | [HU-033](../../Historias%20De%20Usuario/5.%20Operaci%C3%B3n%20admin/HU-033%20Simular%20plan%20de%20pago%20con%20distintas%20tasas.md) (Simular plan de pago con distintas tasas) |
+| **Historias de usuario relacionadas** | [HU-033](../../Historias De Usuario/5. Operaci�n admin/HU-033 Simular plan de pago con distintas tasas.md) (Simular plan de pago con distintas tasas) |
 | **Estado en plataforma** | Implementado, exactamente con los campos descritos (`calculator.controller.ts` — `getCalculatorStatus`, recibe `currentInterestRate`, `overdueInterestRate`, `thresholdDays`) y con descarga CSV real (`generate-csv-file.ts`, `CalculatorDownloaderButton.tsx`). |
-| **Referencias** | Fuente: ficha  [HU-033](../../Historias%20De%20Usuario/5.%20Operaci%C3%B3n%20admin/HU-033%20Simular%20plan%20de%20pago%20con%20distintas%20tasas.md) — *Historias de Usuario — Fliipa*, carpeta "6. Gestión Plataforma del admin" (repositorio `documentacion_fliipa`, María Fernanda Herazo). |
+| **Referencias** | Fuente: ficha  [HU-033](../../Historias De Usuario/5. Operaci�n admin/HU-033 Simular plan de pago con distintas tasas.md) — *Historias de Usuario — Fliipa*, carpeta "6. Gestión Plataforma del admin" (repositorio `documentacion_fliipa`, María Fernanda Herazo). |
